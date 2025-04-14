@@ -1,0 +1,1264 @@
+bill_id,roll_call_id,date,chamber,description,yea,nay,nv,absent,total
+897697,658150,2017-06-06,House,"Acc Maj Otp As Amended Rep RC #245",122,24,0,5,151
+897697,659170,2017-06-07,Senate,"Accept Maj Otp-a Rpt RC #242",35,0,0,0,35
+897721,661141,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #262",78,70,0,3,151
+897721,664892,2017-06-15,Senate,"Adhere RC #303",34,1,0,0,35
+897745,625539,2017-04-11,House,"Reconsideration - Veto RC #25",106,37,0,8,151
+897745,625540,2017-04-13,Senate,"Veto Override (2/3) RC #69",31,1,0,3,35
+897770,611719,2017-03-21,House,"Enactment - Emer RC #16",116,26,0,9,151
+897770,611720,2017-03-23,Senate,"Enact-emer 2/3 Elect RC #48",34,0,0,1,35
+897803,616607,2017-03-28,Senate,"Accept Min Ontp Rpt RC #51",18,15,0,2,35
+897860,661120,2017-06-08,House,"Acc Maj Otp As Amended Rep RC #274",132,15,0,4,151
+897860,766566,2018-06-21,House,"Recede And Concur RC #681",118,17,0,16,151
+897860,766567,2018-06-21,Senate,"Enactment RC #698",30,1,0,4,35
+897860,769854,2018-07-09,House,"Reconsideration - Veto RC #715",133,9,0,9,151
+897860,769855,2018-07-09,Senate,"Reconsideration - Veto RC #727",29,4,0,2,35
+897993,625552,2017-04-13,House,"Reconsideration - Veto RC #29",146,0,0,5,151
+897993,629127,2017-04-18,Senate,"Reconsideration - Veto RC #77",32,2,0,1,35
+898061,705002,2018-02-20,House,"Acc Maj Ought Not To Pass Rep RC #492",75,69,0,7,151
+898061,717115,2018-03-06,Senate,"Pass To Be Engrossed As Amend RC #526",21,13,0,1,35
+898996,634683,2017-04-27,House,"Enactment RC #58",144,0,0,7,151
+900055,631526,2017-04-25,House,"Reconsideration - Veto RC #44",77,67,0,7,151
+900170,639206,2017-05-02,House,"Reconsideration - Veto RC #62",128,17,0,6,151
+900170,639207,2017-05-04,Senate,"Reconsideration - Veto RC #105",35,0,0,0,35
+900235,601422,2017-03-07,House,"Acc Maj Ought Not To Pass Rep RC #14",77,68,0,6,151
+900235,607330,2017-03-21,Senate,"Accept Min Otp Rpt RC #43",18,17,0,0,35
+900259,629172,2017-04-20,Senate,"Accept Maj Otp-a Rpt RC #81",34,0,0,1,35
+901406,665078,2017-06-19,Senate,"Insist RC #329",27,8,0,0,35
+901835,663512,2017-06-15,House,"Acc Report 'a' Otp As Amend RC #319",85,53,0,13,151
+901835,664738,2017-06-19,Senate,"Accept Rpt 'a' Otp-a RC #337",34,1,0,0,35
+902556,660680,2017-06-07,Senate,"Reconsideration - Veto RC #232",33,2,0,0,35
+902556,660681,2017-06-07,House,"Reconsideration - Veto RC #268",81,65,0,5,151
+902568,608455,2017-03-21,Senate,"Accept Min Ontp Rpt RC #45",18,17,0,0,35
+902568,611603,2017-03-23,House,"Acc Maj Otp As Amended Rep RC #17",75,69,0,7,151
+902583,611768,2017-03-23,Senate,"Enactment RC #49",34,0,0,1,35
+902599,661255,2017-06-07,Senate,"Accept Min Otp-a Rpt RC #244",16,19,0,0,35
+902615,648951,2017-05-24,Senate,"Accept Min Otp-a Rpt RC #171",16,19,0,0,35
+902615,659268,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #260",77,69,0,5,151
+902647,736504,2018-04-11,House,"Enactment - Mandate RC #590",91,48,0,12,151
+902647,737770,2018-04-12,Senate,"Enact-mandate 2/3 Elect RC #615",32,3,0,0,35
+902647,764641,2018-06-19,Senate,"Recede And Concur RC #676",4,31,0,0,35
+902647,764642,2018-06-19,House,"Recede And Concur RC #671",84,50,0,17,151
+902647,769841,2018-07-09,Senate,"Reconsideration - Veto RC #707",31,3,0,1,35
+902647,769842,2018-07-09,House,"Reconsideration - Veto RC #727",93,50,0,8,151
+902664,644748,2017-05-16,Senate,"Accept Min Otp-a Rpt ""b"" RC #138",16,19,0,0,35
+902664,645292,2017-05-17,House,"Acc Maj Otp As Amended Rep RC #109",77,67,0,7,151
+902697,643022,2017-05-11,Senate,"Accept Min Otp-a Rpt RC #128",7,25,0,3,35
+902711,666473,2017-06-19,Senate,"Acceptance Of Report RC #346",26,9,0,0,35
+902729,645193,2017-05-16,House,"Acc Min Ought Not To Pass Rep RC #98",76,70,0,5,151
+905569,633731,2017-04-27,House,"Acc Maj Otp As Amended Rep RC #59",50,93,0,8,151
+905616,717100,2017-05-09,House,"Acc Maj Otp As Amended Rep RC #79",111,34,0,6,151
+905616,717101,2017-06-06,House,"Reconsideration - Veto RC #235",114,31,0,6,151
+905616,717102,2017-05-16,Senate,"Accept Maj Otp-a Rpt 'a' RC #140",32,3,0,0,35
+905616,717103,2017-06-07,Senate,"Reconsideration - Veto RC #238",29,6,0,0,35
+905647,648661,2017-05-23,House,"Acc Min Otp As Amended Rep RC #138",77,67,0,7,151
+905647,652216,2017-05-24,Senate,"Accept Maj Ontp Rpt RC #161",9,26,0,0,35
+905658,649103,2017-05-24,House,"Acc Min Otp As Amended Rep RC #159",73,71,0,7,151
+905658,652829,2017-05-25,Senate,"Accept Maj Ontp Rpt RC #183",22,13,0,0,35
+905681,663744,2017-06-15,House,"Acc Maj Ought Not To Pass Rep RC #321",82,64,0,5,151
+905681,669926,2017-06-29,Senate,"Accept Min Otp-a Rpt RC #391",10,23,0,2,35
+905703,637692,2017-05-04,House,"Acc Maj Ought Not To Pass Rep RC #69",98,46,0,7,151
+905726,716433,2017-01-26,House,"Acc Ought To Pass As Amend Rep RC #3",146,0,0,5,151
+905726,716434,2017-01-26,House,"Adopt Hah-3 To Cah-1 RC #4",67,79,0,5,151
+905726,716435,2017-01-26,House,"Enactment - Emer RC #8",143,0,0,8,151
+905726,716436,2017-01-26,Senate,"Pass To Be Engrossed As Amend RC #4",33,0,0,2,35
+905726,716437,2017-01-26,Senate,"Reconsider RC #5",7,27,0,1,35
+905744,663414,2017-06-15,House,"Acc Maj Ought Not To Pass Rep RC #322",83,60,0,8,151
+905744,664690,2017-06-19,Senate,"Accept Min Otp Rpt RC #336",12,23,0,0,35
+905775,624813,2017-04-13,House,"Acc Maj Otp As Amended Rep RC #31",78,68,0,5,151
+905775,628430,2017-04-20,Senate,"Accept Maj Otp-a Rpt RC #88",27,6,0,2,35
+905775,644530,2017-05-16,House,"Reconsideration - Veto RC #95",73,70,0,8,151
+905817,644644,2017-05-16,House,"Acc Maj Ought Not To Pass Rep RC #104",99,42,0,10,151
+906031,611751,2017-03-23,Senate,"Enactment RC #50",34,0,0,1,35
+906111,645495,2017-05-16,Senate,"Accept Min Otp-a Rpt RC #137",35,0,0,0,35
+906111,645496,2017-05-17,House,"Acc Min Otp As Amended Rep RC #112",80,64,0,7,151
+909875,647909,2017-05-18,House,"Acc Maj Otp As Amended Rep RC #119",88,58,0,5,151
+909875,656756,2017-05-31,House,"Adopt Hah-286 To Cas-101 RC #192",86,58,0,7,151
+909972,640947,2017-05-09,House,"Acc Maj Otp As Amended Rep RC #80",74,70,0,7,151
+910139,769816,2018-07-09,House,"Reconsideration - Veto RC #696",87,56,0,8,151
+910162,645864,2017-05-17,House,"Acc Maj Otp As Amended Rep RC #118",80,64,0,7,151
+910162,647934,2017-05-18,Senate,"Accept Min Ontp Rpt RC #148",12,23,0,0,35
+910162,673012,2017-07-20,Senate,"Enactment RC #404",15,16,0,4,35
+910211,630724,2017-04-25,House,"Acc Maj Ought Not To Pass Rep RC #49",76,67,0,8,151
+910211,633960,2017-04-27,Senate,"Accept Min Otp-a Rpt RC #99",15,19,0,1,35
+910236,648218,2017-05-23,House,"Acc Maj Otp As Amended Rep RC #134",99,45,0,7,151
+910236,661762,2017-06-13,Senate,"Reconsideration - Veto RC #283",35,0,0,0,35
+910236,663362,2017-06-15,House,"Reconsideration - Veto RC #316",79,66,0,6,151
+910330,649544,2017-05-25,Senate,"Accept Min Ontp Rpt RC #177",7,28,0,0,35
+910376,639875,2017-05-04,House,"Acc Maj Ought Not To Pass Rep RC #70",92,52,0,7,151
+910448,644080,2017-05-11,House,"Acc Maj Ought Not To Pass Rep RC #87",81,67,0,3,151
+910473,661829,2017-06-13,Senate,"Accept Maj Otp-a Rpt RC #294",19,16,0,0,35
+910473,661830,2017-06-13,Senate,"Adopt Sas-226 To Cas-54 RC #295",19,16,0,0,35
+910473,663428,2017-06-15,House,"Acc Maj Otp As Amended Rep RC #317",91,50,0,10,151
+910473,665756,2017-06-20,House,"Indef Pp Sas-226 To Cas-54 RC #359",82,61,0,8,151
+910544,629879,2017-04-19,Senate,"Veto Override (2/3) RC #80",30,1,0,4,35
+910544,629880,2017-04-20,House,"Reconsideration - Veto RC #41",123,17,0,11,151
+910567,673442,2017-08-02,House,"Reconsideration - Veto RC #441",76,59,0,16,151
+912437,654917,2017-05-31,Senate,"Accept Min Otp-a Rpt RC #198",15,19,0,1,35
+912513,618631,2017-04-04,House,"Enactment RC #24",108,34,0,9,151
+915204,640599,2017-05-04,Senate,"Veto Override (2/3) RC #107",35,0,0,0,35
+915204,644102,2017-05-11,House,"Reconsideration - Veto RC #94",139,0,0,12,151
+915263,648943,2017-05-24,House,"Reconsideration - Veto RC #143",97,43,0,11,151
+915263,664722,2017-06-19,Senate,"Veto Override (2/3) RC #333",21,14,0,0,35
+915551,649201,2017-05-23,House,"Acc Maj Otp As Amended Rep RC #139",88,56,0,7,151
+915551,649202,2017-05-24,Senate,"Accept Min Ontp Rpt RC #164",12,23,0,0,35
+915551,664558,2017-06-13,House,"Reconsideration - Veto RC #297",85,62,0,4,151
+915730,637684,2017-05-04,House,"Acc Maj Ought Not To Pass Rep RC #75",76,64,0,11,151
+915730,640934,2017-05-09,Senate,"Accept Min Otp-a Rpt RC #108",12,22,0,1,35
+915780,615181,2017-03-30,House,"Acc Min Ought To Pass Rep RC #22",66,73,0,12,151
+915780,617863,2017-04-04,Senate,"Accept Maj Ontp Rpt RC #56",21,14,0,0,35
+916514,608151,2017-03-21,Senate,"Accept Maj Ontp Rpt RC #44",18,17,0,0,35
+916559,615613,2017-03-30,House,"Acc Maj Otp As Amended Rep RC #21",74,62,0,15,151
+916559,618080,2017-04-04,Senate,"Accept Min Ontp Rpt RC #55",18,17,0,0,35
+916660,646063,2017-05-18,House,"Acc Maj Ought Not To Pass Rep RC #123",98,42,0,11,151
+916660,667593,2017-06-22,Senate,"Accept Maj Ontp Rpt RC #369",29,6,0,0,35
+916759,668304,2017-06-22,House,"Acc Maj Otp As Amended Rep RC #376",78,67,0,6,151
+916759,668305,2017-06-22,Senate,"Accept Min Ontp Rpt RC #372",13,22,0,0,35
+916759,673447,2017-08-02,House,"Reconsideration - Veto RC #442",73,64,0,14,151
+917013,732751,2018-04-03,Senate,"Accept Maj Otp-a Rpt RC #583",35,0,0,0,35
+917013,733425,2018-04-04,Senate,"Adopt Sas-423 To Cas-407 RC #588",18,14,0,3,35
+917013,734128,2018-04-05,House,"Adopt Sas-423 To Cas-407 RC #575",60,83,0,8,151
+917013,735002,2018-04-09,Senate,"Recede And Concur RC #595",25,6,0,4,35
+917013,747078,2018-05-02,Senate,"Reconsideration - Veto RC #659",31,3,0,1,35
+917013,747364,2018-05-02,House,"Reconsideration - Veto RC #659",119,29,0,3,151
+917796,769874,2018-07-09,House,"Reconsideration - Veto RC #697",83,60,0,8,151
+918036,627585,2017-04-18,House,"Reconsideration - Veto RC #38",122,20,0,9,151
+918036,627586,2017-04-19,Senate,"Reconsideration - Veto RC #78",31,0,0,4,35
+923319,644594,2017-05-16,Senate,"Accept Rpt 'c' Ontp RC #139",6,29,0,0,35
+923319,645360,2017-05-17,House,"Acc Report 'a' Otp As Amend RC #113",84,61,0,6,151
+923756,642936,2017-05-11,Senate,"Accept Min Otp-a Rpt RC #130",29,3,0,3,35
+923756,658951,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #263",78,69,0,4,151
+923859,664505,2017-06-13,Senate,"Accept Maj Ontp Rpt RC #297",19,16,0,0,35
+923985,659222,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #259",75,70,0,6,151
+924008,645593,2017-05-17,House,"Acc Maj Ought To Pass Rep RC #110",77,68,0,6,151
+924046,611994,2017-03-23,House,"Acc Maj Ought Not To Pass Rep RC #18",62,83,0,6,151
+924061,648853,2017-05-23,House,"Acc Maj Otp As Amended Rep RC #132",81,64,0,6,151
+924061,652232,2017-05-24,Senate,"Accept Min Ontp Rpt RC #165",12,23,0,0,35
+924151,651192,2017-05-24,House,"Acc Min Ought To Pass Rep RC #146",80,65,0,6,151
+924200,654662,2017-05-31,House,"Acceptance Of Committee Report RC #185",89,53,0,9,151
+924200,657655,2017-06-05,House,"Enactment RC #222",84,58,0,9,151
+924216,740924,2018-04-18,House,"Acc Maj Otp As Amended Rep RC #621",89,59,0,3,151
+924285,648994,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #152",139,5,0,7,151
+924285,659260,2017-06-07,Senate,"Accept Maj Otp-a Rpt RC #247",34,1,0,0,35
+924285,672945,2017-07-20,House,"Enactment RC #433",127,5,0,19,151
+924285,672946,2017-07-20,Senate,"Enactment RC #412",26,0,0,9,35
+924285,673419,2017-08-02,House,"Reconsideration - Veto RC #443",123,14,0,14,151
+924285,673420,2017-08-02,Senate,"Reconsideration - Veto RC #430",31,1,0,3,35
+924316,648653,2017-05-23,House,"Acc Maj Otp As Amended Rep RC #131",98,46,0,7,151
+924316,652214,2017-05-24,Senate,"Accept Min Ontp Rpt RC #162",11,24,0,0,35
+924367,633895,2017-04-27,House,"Acc Maj Otp As Amended Rep RC #52",72,72,0,7,151
+924367,633896,2017-04-27,House,"Acc Min Otp As Amended Rep RC #53",85,59,0,7,151
+924367,640728,2017-05-09,House,"Recede And Concur RC #76",91,48,0,12,151
+924367,658367,2017-06-06,Senate,"Reconsider RC #230",17,18,0,0,35
+924367,672939,2017-07-20,Senate,"Enactment RC #405",6,25,0,4,35
+924418,603446,2017-03-14,House,"Enactment - Emer RC #15",110,8,0,33,151
+924418,608065,2017-03-21,Senate,"Enactment RC #46",35,0,0,0,35
+924418,619590,2017-04-04,House,"Reconsideration - Veto RC #23",89,54,0,8,151
+924572,649986,2017-05-25,House,"Final Passage - Emer RC #166",137,2,0,12,151
+924572,673448,2017-08-02,House,"Reconsideration - Veto RC #444",135,2,0,14,151
+924572,673449,2017-08-02,Senate,"Reconsideration - Veto RC #431",32,0,0,3,35
+924605,767263,2018-06-21,Senate,"Enactment RC #700",25,7,0,3,35
+924605,769849,2018-07-09,House,"Reconsideration - Veto RC #716",83,59,0,9,151
+924622,643161,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #89",78,65,0,8,151
+924622,644698,2017-05-16,Senate,"Accept Min Ontp Rpt RC #134",16,19,0,0,35
+924622,654761,2017-05-31,House,"Final Passage - Con Res RC #187",77,62,0,12,151
+924640,648977,2017-05-24,House,"Acc Maj Ought Not To Pass Rep RC #155",76,68,0,7,151
+924640,649523,2017-05-25,Senate,"Accept Min Otp Rpt RC #180",14,21,0,0,35
+924709,661212,2017-06-09,House,"Enactment RC #290",75,63,0,13,151
+931752,769828,2018-07-09,Senate,"Reconsideration - Veto RC #716",31,3,0,1,35
+931752,769829,2018-07-09,House,"Reconsideration - Veto RC #734",144,0,0,7,151
+932122,616033,2017-03-30,Senate,"Accept Maj Ontp Rpt RC #53",24,9,0,2,35
+935448,661026,2017-06-09,House,"Table Until Later RC #284",68,75,0,8,151
+935448,661027,2017-06-09,House,"Acc Maj Ought Not To Pass Rep RC #285",72,71,0,8,151
+935448,665548,2017-06-20,Senate,"Accept Min Otp Rpt RC #348",18,17,0,0,35
+935448,668038,2017-06-23,House,"Recede And Concur RC #389",71,74,0,6,151
+935469,665732,2017-06-19,House,"Acc Maj Ought Not To Pass Rep RC #341",78,69,0,4,151
+935469,668377,2017-06-21,Senate,"Insist RC #355",31,3,0,1,35
+935481,657030,2017-06-01,Senate,"Enactment RC #212",31,3,0,1,35
+935494,621162,2017-04-06,Senate,"Accept Maj Otp-a Rpt RC #59",31,4,0,0,35
+935494,623559,2017-04-11,House,"Acc Maj Otp As Amended Rep RC #27",115,30,0,6,151
+935494,623560,2017-04-11,House,"Adopt Hah-29 To Cas-17 RC #28",48,94,0,9,151
+935508,654659,2017-05-31,House,"Enactment - Emer RC #191",141,2,0,8,151
+935508,663627,2017-06-15,House,"Reconsideration - Veto RC #315",138,3,0,10,151
+935508,664339,2017-06-16,Senate,"Reconsideration - Veto RC #320",32,0,0,3,35
+935521,616800,2017-03-30,Senate,"Enactment RC #54",32,1,0,2,35
+935526,624966,2017-04-11,House,"Reconsideration - Veto RC #26",121,22,0,8,151
+935526,624967,2017-04-13,Senate,"Veto Override (2/3) RC #68",32,0,0,3,35
+935561,644116,2017-05-11,Senate,"Accept Maj Ontp Rpt RC #125",17,15,0,3,35
+935601,643697,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #90",77,66,0,8,151
+935601,645293,2017-05-16,Senate,"Accept Min Ontp Rpt RC #135",13,22,0,0,35
+935607,661099,2017-06-09,House,"Acc Maj Ought Not To Pass Rep RC #288",64,76,0,11,151
+935607,662778,2017-06-12,Senate,"Accept Min Otp-a Rpt RC #274",8,25,0,2,35
+935646,668212,2017-06-23,House,"Acc Report 'a' Otp As Amend RC #387",80,66,0,5,151
+935646,668213,2017-06-23,House,"Adopt Hah-540 To Cah-533 RC #388",80,66,0,5,151
+935646,731313,2018-03-29,Senate,"Adopt Cdh-686 RC #566",33,0,0,2,35
+935646,769839,2018-07-09,House,"Reconsideration - Veto RC #717",127,15,0,9,151
+935646,769840,2018-07-09,Senate,"Reconsideration - Veto RC #728",33,0,0,2,35
+935667,660439,2017-06-06,Senate,"Accept Rpt 'a' Otp-a RC #229",35,0,0,0,35
+935692,595965,2017-03-02,House,"Indef Pp Hah-4 To Cas-2 RC #10",108,38,0,5,151
+935692,596191,2017-03-02,Senate,"Enact-emer 2/3 Elect RC #38",34,0,0,1,35
+935692,596192,2017-03-02,House,"Enactment - Emer RC #11",142,1,0,8,151
+935747,735161,2018-04-09,House,"Acc Maj Otp As Amended Rep RC #578",76,65,0,10,151
+935747,738542,2018-04-10,Senate,"Accept Min Ontp Rpt RC #605",15,20,0,0,35
+935747,747788,2018-05-02,House,"Reconsideration - Veto RC #646",80,68,0,3,151
+935761,668804,2017-06-27,House,"Reconsideration - Veto RC #395",79,66,0,6,151
+935793,668421,2017-06-22,House,"Enactment RC #381",97,46,0,8,151
+935801,703364,2018-02-15,House,"Acc Maj Ought Not To Pass Rep RC #488",80,64,0,7,151
+935801,715396,2018-03-01,Senate,"Accept Min Otp-a Rpt RC #524",18,15,0,2,35
+935808,645202,2017-05-16,House,"Acc Min Otp As Amended Rep RC #99",76,70,0,5,151
+935819,659441,2017-06-05,House,"Reconsideration - Veto RC #229",127,16,0,8,151
+935819,659442,2017-06-07,Senate,"Reconsideration - Veto RC #236",35,0,0,0,35
+935826,653042,2017-05-30,House,"Enactment RC #180",137,0,0,14,151
+935839,635972,2017-05-02,House,"Acc Maj Ought Not To Pass Rep RC #66",82,63,0,6,151
+935839,643899,2017-05-09,Senate,"Accept Min Otp-a Rpt RC #116",17,16,0,2,35
+935839,645586,2017-05-17,Senate,"Pass To Be Engrossed As Amend RC #144",18,16,0,1,35
+935839,652010,2017-05-23,Senate,"Insist RC #150",14,20,0,1,35
+935864,657640,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #233",80,63,0,8,151
+935873,639842,2017-05-04,House,"Acc Maj Otp As Amended Rep RC #71",126,17,0,8,151
+935919,634799,2017-04-25,Senate,"Accept Min Ontp Rpt RC #94",35,0,0,0,35
+935923,659193,2017-06-07,House,"Table Until Later RC #258",75,71,0,5,151
+935923,725066,2018-03-20,House,"Acc Maj Ought Not To Pass Rep RC #522",77,68,0,6,151
+935936,657643,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #225",115,31,0,5,151
+935936,666420,2017-06-21,House,"Reconsideration - Veto RC #364",113,30,0,8,151
+935936,666777,2017-06-21,Senate,"Reconsideration - Veto RC #358",33,1,0,1,35
+935996,630685,2017-04-25,House,"Acc Maj Otp As Amended Rep RC #46",85,58,0,8,151
+935996,640889,2017-05-09,Senate,"Enactment RC #111",34,0,0,1,35
+935996,648983,2017-05-23,House,"Reconsideration - Veto RC #125",84,62,0,5,151
+939205,644108,2017-05-11,Senate,"Accept Maj Ontp Rpt RC #126",17,15,0,3,35
+939425,658953,2017-06-07,House,"Pass To Be Engrossed As Amend RC #265",146,0,0,5,151
+939722,651617,2017-05-23,House,"Acc Min Otp As Amended Rep RC #129",61,85,0,5,151
+939781,643846,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #85",82,66,0,3,151
+939781,656399,2017-05-31,Senate,"Veto Override (2/3) RC #192",33,1,0,1,35
+939781,656400,2017-05-31,House,"Reconsideration - Veto RC #201",75,61,0,15,151
+940426,642949,2017-05-11,House,"Reconsideration - Veto RC #93",140,0,0,11,151
+940426,644736,2017-05-16,Senate,"Reconsideration - Veto RC #132",35,0,0,0,35
+940451,656034,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #214",78,61,0,12,151
+940451,657672,2017-06-05,Senate,"Accept Min Ontp Rpt RC #215",14,18,0,3,35
+940507,658427,2017-06-06,House,"Acc Maj Otp As Amended Rep RC #246",74,73,0,4,151
+940507,664488,2017-06-16,Senate,"Accept Maj Otp-a Rpt RC #322",10,25,0,0,35
+940538,655118,2017-05-31,House,"Acc Maj Ought Not To Pass Rep RC #199",77,59,0,15,151
+940538,661960,2017-06-13,Senate,"Accept Min Otp-a Rpt RC #296",13,22,0,0,35
+940590,648260,2017-05-23,Senate,"Accept Min Ontp Rpt RC #153",17,17,0,1,35
+940590,649500,2017-05-25,House,"Acc Maj Otp As Amended Rep RC #161",74,67,0,10,151
+940647,636545,2017-05-02,House,"Acc Maj Ought Not To Pass Rep RC #64",78,67,0,6,151
+940876,628401,2017-04-20,Senate,"Accept Maj Ontp Rpt RC #83",21,13,0,1,35
+941106,658067,2017-06-05,Senate,"Accept Min Ontp Rpt RC #220",18,14,0,3,35
+941106,661251,2017-06-08,House,"Adhere RC #270",77,63,0,11,151
+941372,661697,2017-06-13,House,"Reconsideration - Veto RC #300",79,68,0,4,151
+941486,740475,2018-04-17,Senate,"Reconsideration - Veto RC #636",33,2,0,0,35
+941486,740476,2018-04-18,House,"Reconsideration - Veto RC #623",136,12,0,3,151
+941541,625400,2017-04-13,Senate,"Accept Maj Otp-a Rpt RC #67",27,6,0,2,35
+941602,664305,2017-06-12,Senate,"Accept Maj Ontp Rpt RC #278",10,23,0,2,35
+941602,664306,2017-06-15,Senate,"Recede And Concur RC #314",17,18,0,0,35
+941714,724231,2018-03-15,Senate,"Accept Maj Ontp Rpt RC #533",6,27,0,2,35
+941714,727764,2018-03-20,House,"Acc Min Otp As Amended Rep RC #520",78,65,0,8,151
+941714,737446,2018-04-09,Senate,"Reconsideration - Veto RC #601",14,19,0,2,35
+941893,661403,2017-06-12,House,"Acc Report 'a' Otp As Amend RC #293",81,64,0,6,151
+941893,661757,2017-06-13,Senate,"Accept Rpt ""c"" Otp-a By Ca'c' RC #286",19,16,0,0,35
+941893,661758,2017-06-13,Senate,"Indefinitely Postpone Sa S-253 RC #287",21,14,0,0,35
+941893,661759,2017-06-13,Senate,"Indefinitely Postpone Sbs-255 RC #288",18,17,0,0,35
+941893,661760,2017-06-13,Senate,"Indefinitely Postpone Scs-261 RC #289",18,17,0,0,35
+941893,661761,2017-06-13,Senate,"Adopt Cch-475 RC #290",19,16,0,0,35
+941893,670498,2017-06-30,House,"Passage To Be Engrossed RC #421",87,60,0,4,151
+941893,670499,2017-06-30,Senate,"Recede And Concur RC #395",34,1,0,0,35
+941893,670636,2017-06-30,House,"Enactment - Emer RC #422",87,60,0,4,151
+941893,670637,2017-07-01,House,"Recede And Concur - Emer RC #423",88,60,0,3,151
+941893,670638,2017-07-01,House,"Insist RC #424",61,87,0,3,151
+941893,670921,2017-07-03,House,"Passage To Be Engrossed RC #425",92,54,0,5,151
+941893,670988,2017-07-04,House,"Enactment - Emer RC #426",147,2,0,2,151
+941893,670989,2017-07-04,Senate,"Enact-emer 2/3 Elect RC #396",35,0,0,0,35
+943093,628100,2017-04-20,House,"Acc Maj Otp As Amended Rep RC #43",78,67,0,6,151
+943093,631523,2017-04-25,Senate,"Accept Min Ontp Rpt RC #92",19,16,0,0,35
+943093,631524,2017-04-25,Senate,"Accept Min Ontp Rpt RC #93",19,16,0,0,35
+943170,664483,2017-06-15,Senate,"Veto Override (2/3) RC #309",31,4,0,0,35
+943170,664484,2017-06-16,House,"Reconsideration - Veto RC #333",79,62,0,10,151
+943215,769856,2018-07-09,House,"Reconsideration - Veto RC #718",139,3,0,9,151
+943215,769857,2018-07-09,Senate,"Reconsideration - Veto RC #729",33,0,0,2,35
+943477,651522,2017-05-24,Senate,"Accept Rpt 'a' Ontp RC #169",19,16,0,0,35
+943477,651523,2017-05-25,House,"Acc Report 'a' Ontp RC #162",112,30,0,9,151
+943520,648151,2017-05-23,House,"Acc Min Otp As Amended Rep RC #137",68,77,0,6,151
+943520,652205,2017-05-24,Senate,"Accept Maj Ontp Rpt RC #160",18,17,0,0,35
+943745,578866,2017-02-07,House,"Table Until Later RC #9",134,8,0,9,151
+943875,633760,2017-04-27,House,"Acc Maj Ought Not To Pass Rep RC #55",79,65,0,7,151
+943875,635906,2017-05-02,Senate,"Accept Min Otp-a Rpt RC #103",15,19,0,1,35
+944136,623595,2017-04-11,Senate,"Accept Maj Otp-a Rpt RC #60",35,0,0,0,35
+944973,624768,2017-04-13,House,"Acc Maj Ought Not To Pass Rep RC #30",104,42,0,5,151
+944973,629912,2017-04-19,Senate,"Accept Maj Ontp Rpt RC #79",16,15,0,4,35
+945027,638657,2017-05-04,House,"Acc Maj Ought Not To Pass Rep RC #72",87,56,0,8,151
+945043,642978,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #88",120,27,0,4,151
+945100,637152,2017-05-02,Senate,"Reconsideration - Veto RC #101",34,0,0,1,35
+945100,640305,2017-05-04,House,"Reconsideration - Veto RC #67",120,17,0,14,151
+945187,661413,2017-06-12,House,"Acc Min Otp As Amended Rep RC #294",73,69,0,9,151
+945284,724232,2018-03-15,House,"Acc Min Otp As Amended Rep RC #513",77,59,0,15,151
+945319,639896,2017-05-04,House,"Acc Maj Otp As Amended Rep RC #68",75,69,0,7,151
+945319,657676,2017-06-05,House,"Reconsideration - Veto RC #230",74,69,0,8,151
+945382,615888,2017-03-30,House,"Acc Maj Otp As Amended Rep RC #20",80,58,0,13,151
+945382,622092,2017-04-06,Senate,"Accept Min Ontp Rpt RC #58",10,25,0,0,35
+945382,625470,2017-04-13,House,"Enactment RC #34",84,58,0,9,151
+945430,651588,2017-05-23,Senate,"Accept Min Ontp Rpt RC #155",18,16,0,1,35
+945459,629158,2017-04-20,Senate,"Accept Rpt 'b' Ontp RC #85",16,18,0,1,35
+945459,629159,2017-04-20,Senate,"Accept Rpt 'b' Ontp RC #86",18,16,0,1,35
+945459,632101,2017-04-25,House,"Acc Report 'a' Otp As Amend RC #45",77,66,0,8,151
+945544,638522,2017-05-02,House,"Reconsideration - Veto RC #63",109,36,0,6,151
+945544,638523,2017-05-04,Senate,"Reconsideration - Veto RC #106",30,5,0,0,35
+946052,655633,2017-05-31,House,"Acc Maj Ought Not To Pass Rep RC #195",68,74,0,9,151
+946053,653765,2017-05-30,House,"Acc Report 'a' Otp As Amended RC #176",117,25,0,9,151
+946053,657528,2017-06-01,Senate,"Accept Rpt 'a' Otp-a RC #213",34,0,0,1,35
+946053,666987,2017-06-19,House,"Reconsideration - Veto RC #335",113,33,0,5,151
+946053,666988,2017-06-19,Senate,"Reconsideration - Veto RC #344",35,0,0,0,35
+946199,660529,2017-06-06,House,"Reconsideration - Veto RC #238",145,1,0,5,151
+946199,660530,2017-06-07,Senate,"Reconsideration - Veto RC #240",35,0,0,0,35
+946332,659521,2017-06-05,House,"Reconsideration - Veto RC #231",137,6,0,8,151
+946332,659522,2017-06-07,Senate,"Reconsideration - Veto RC #237",35,0,0,0,35
+946387,669943,2017-06-29,House,"Reconsideration - Veto RC #416",122,17,0,12,151
+946387,669944,2017-06-29,Senate,"Reconsideration - Veto RC #392",34,0,0,1,35
+948332,664591,2017-06-16,House,"Acc Maj Otp As Amended Rep RC #324",86,62,0,3,151
+948704,658141,2017-06-01,Senate,"Accept Maj Ontp Rpt RC #211",18,16,0,1,35
+948828,618032,2017-04-04,Senate,"Accept Min Ontp Rpt RC #57",18,17,0,0,35
+949105,659171,2017-06-07,House,"Acc Maj Otp As Amended Rep RC #266",77,70,0,4,151
+949105,661098,2017-06-09,Senate,"Accept Min Otp-a Rpt By Ca'b' RC #270",33,2,0,0,35
+949105,672928,2017-07-20,House,"Reconsideration - Veto RC #428",116,24,0,11,151
+949105,672929,2017-07-20,Senate,"Reconsideration - Veto RC #410",30,0,0,5,35
+949126,643362,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #86",47,101,0,3,151
+949193,659632,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #264",77,70,0,4,151
+949193,661472,2017-06-09,Senate,"Accept Min Otp-a Rpt RC #269",10,25,0,0,35
+949363,660371,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #281",78,69,0,4,151
+949363,664520,2017-06-16,House,"Recede And Concur RC #330",68,76,0,7,151
+949405,645201,2017-05-16,House,"Acc Maj Ought Not To Pass Rep RC #100",92,53,0,6,151
+949430,656280,2017-05-30,House,"Acc Ought To Pass Rep RC #179",80,61,0,10,151
+949430,665845,2017-06-19,Senate,"Reconsideration - Veto RC #342",20,15,0,0,35
+949471,654458,2017-05-30,House,"Acc Report 'a Ontp RC #177",77,65,0,9,151
+949471,657614,2017-05-31,Senate,"Accept Rpt 'c' Otp-a By Ca""b"" RC #199",18,16,0,1,35
+949580,636625,2017-05-02,House,"Acc Min Ought Not To Pass Rep RC #65",66,79,0,6,151
+949580,644079,2017-05-09,Senate,"Accept Maj Otp Rpt RC #115",20,13,0,2,35
+949580,656864,2017-05-31,House,"Reconsideration - Veto RC #182",87,51,0,13,151
+949663,633719,2017-04-27,House,"Acc Report 'a' Otp As Amend RC #60",76,67,0,8,151
+949663,643760,2017-05-11,Senate,"Accept Rpt 'b' Ontp RC #127",19,13,0,3,35
+949663,651783,2017-05-24,Senate,"Recede And Concur RC #170",16,19,0,0,35
+951266,661204,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #220",79,67,0,5,151
+951309,668217,2017-06-22,House,"Acc Maj Ought Not To Pass Rep RC #375",76,67,0,8,151
+951338,731407,2018-03-29,House,"Acc Maj Otp As Amended Rep RC #547",91,48,0,12,151
+951410,625550,2017-04-13,House,"Table Until Later RC #33",75,70,0,6,151
+951410,629051,2017-04-20,House,"Acceptance Of Committee Report RC #42",88,56,0,7,151
+951410,629052,2017-04-20,Senate,"Acceptance Of Committee Report RC #42",20,13,0,2,35
+951410,641709,2017-05-09,Senate,"Enactment RC #112",26,8,0,1,35
+951410,649406,2017-05-23,House,"Reconsideration - Veto RC #126",84,61,0,6,151
+951508,644123,2017-05-11,House,"Reconsideration - Veto RC #83",85,63,0,3,151
+951607,722998,2018-03-15,House,"Acc Maj Ought Not To Pass Rep RC #514",74,63,0,14,151
+951607,724875,2018-03-20,Senate,"Accept Min Otp Rpt RC #540",14,20,0,1,35
+951758,627866,2017-04-19,House,"Acc Report 'a' Otp As Amended RC #40",79,57,0,15,151
+951758,649353,2017-05-24,Senate,"Accept Rpt 'c' Otp-a By 'b' RC #168",18,17,0,0,35
+951758,655691,2017-05-31,House,"Enactment - Emer RC #200",76,60,0,15,151
+951854,673450,2017-08-02,Senate,"Reconsideration - Veto RC #414",34,0,0,1,35
+951854,673451,2017-08-02,House,"Reconsideration - Veto RC #453",124,13,0,14,151
+951929,673406,2017-08-02,Senate,"Reconsideration - Veto RC #413",34,0,0,1,35
+951929,673407,2017-08-02,House,"Reconsideration - Veto RC #452",78,59,0,14,151
+951960,627315,2017-04-19,House,"Acc Maj Otp As Amended Rep RC #39",73,62,0,16,151
+951960,646765,2017-05-16,House,"Reconsideration - Veto RC #96",76,69,0,6,151
+951982,652194,2017-05-23,House,"Acc Maj Ought Not To Pass Rep RC #135",87,57,0,7,151
+957844,645351,2017-05-17,House,"Reconsideration - Veto RC #107",91,54,0,6,151
+957891,734858,2018-04-04,Senate,"Reconsideration - Veto RC #585",32,0,0,3,35
+957891,734859,2018-04-05,House,"Reconsideration - Veto RC #573",121,21,0,9,151
+958171,657650,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #224",76,70,0,5,151
+958171,661218,2017-06-06,Senate,"Accept Min Ontp Rpt RC #223",17,18,0,0,35
+958264,730578,2018-03-28,Senate,"Accept Maj Ontp Rpt RC #557",34,0,0,1,35
+960368,646432,2017-05-18,House,"Acc Maj Ought Not To Pass Rep RC #121",76,71,0,4,151
+960368,652220,2017-05-24,House,"Recede And Concur RC #141",69,73,0,9,151
+960368,652221,2017-05-24,House,"Insist RC #142",74,68,0,9,151
+962410,658721,2017-06-06,House,"Acc Maj Ought Not To Pass Rep RC #250",86,58,0,7,151
+962418,654837,2017-05-31,House,"Acc Maj Ought Not To Pass Rep RC #194",71,69,0,11,151
+962418,664704,2017-06-19,House,"Recede And Concur RC #343",72,76,0,3,151
+962431,652030,2017-05-25,Senate,"Accept Maj Ontp Rpt RC #184",18,17,0,0,35
+962452,645719,2017-05-17,House,"Acc Maj Otp As Amended Rep RC #111",77,68,0,6,151
+962452,660866,2017-06-07,Senate,"Reconsideration - Veto RC #233",21,14,0,0,35
+962486,644592,2017-05-16,Senate,"Accept Min Otp-a Rpt By ""b"" RC #136",18,17,0,0,35
+962486,661045,2017-06-06,House,"Reconsideration - Veto RC #239",79,66,0,6,151
+962620,633713,2017-04-27,House,"Acc Maj Otp As Amended Rep RC #51",92,52,0,7,151
+962620,639851,2017-05-02,Senate,"Accept Min Ontp Rpt RC #102",16,18,0,1,35
+962625,645753,2017-05-17,Senate,"Accept Maj Ontp Rpt RC #143",13,21,0,1,35
+962625,647853,2017-05-18,House,"Acc Maj Ought Not To Pass Rep RC #120",72,70,0,9,151
+962655,652048,2017-05-24,Senate,"Accept Min Ontp Rpt RC #167",9,26,0,0,35
+962655,657902,2017-06-05,House,"Enactment RC #223",115,31,0,5,151
+962655,658714,2017-06-06,Senate,"Enactment RC #226",25,10,0,0,35
+962655,667143,2017-06-19,Senate,"Reconsideration - Veto RC #341",20,15,0,0,35
+962698,640794,2017-05-09,House,"Acc Maj Otp As Amended Rep RC #78",81,65,0,5,151
+962698,643093,2017-05-11,Senate,"Accept Min Ontp Rpt RC #124",16,15,0,4,35
+962713,626439,2017-04-18,House,"Acc Maj Otp As Amended Rep RC #35",81,62,0,8,151
+962722,654772,2017-05-31,Senate,"Veto Override (2/3) RC #193",34,0,0,1,35
+962722,657656,2017-05-31,House,"Reconsideration - Veto RC #202",75,61,0,15,151
+962729,661274,2017-06-08,House,"Acc Maj Otp As Amended Rep RC #273",130,16,0,5,151
+962784,665471,2017-06-19,House,"Enactment - Emer RC #351",136,8,0,7,151
+962784,672958,2017-07-20,Senate,"Veto Override (2/3) RC #401",29,2,0,4,35
+962784,672959,2017-07-20,House,"Reconsideration - Veto RC #431",97,40,0,14,151
+962824,738433,2018-04-11,House,"Reconsideration - Veto RC #589",134,2,0,15,151
+962824,738434,2018-04-12,Senate,"Reconsideration - Veto RC #612",35,0,0,0,35
+962858,697153,2018-02-08,Senate,"Accept Maj Ontp Rpt RC #507",18,16,0,1,35
+962858,702495,2018-02-15,House,"Acc Maj Ought Not To Pass Rep RC #489",119,25,0,7,151
+962874,648908,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #149",138,6,0,7,151
+962874,660413,2017-06-08,Senate,"Enactment RC #264",33,1,0,1,35
+962874,666798,2017-06-21,House,"Reconsideration - Veto RC #365",131,12,0,8,151
+962874,666799,2017-06-21,Senate,"Reconsideration - Veto RC #359",21,13,0,1,35
+971218,654790,2017-05-31,Senate,"Veto Override (2/3) RC #194",34,0,0,1,35
+971218,657662,2017-05-31,House,"Reconsideration - Veto RC #203",110,25,0,16,151
+971343,659245,2017-06-07,Senate,"Accept Maj Otp-a Rpt RC #246",23,12,0,0,35
+971343,661884,2017-06-13,House,"Acc Maj Otp As Amended Rep RC #302",110,37,0,4,151
+971984,634567,2017-04-27,Senate,"Accept Min Ontp Rpt RC #100",16,18,0,1,35
+971984,639848,2017-05-02,Senate,"Accept Min Ontp Rpt RC #104",15,19,0,1,35
+971984,643609,2017-05-09,House,"Acc Maj Otp As Amended Rep RC #77",77,68,0,6,151
+972001,739116,2018-04-17,Senate,"Reconsideration - Veto RC #637",34,1,0,0,35
+972001,740331,2018-04-18,House,"Reconsideration - Veto RC #624",97,51,0,3,151
+972027,717078,2018-03-06,House,"Acc Maj Otp As Amended Rep RC #505",89,55,0,7,151
+972094,768067,2018-06-26,Senate,"Ought To Pass RC #701",13,18,0,4,35
+972094,768068,2018-06-26,House,"Indef Postpone Bill & Papers RC #692",73,49,0,29,151
+972112,657684,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #227",83,59,0,9,151
+972457,666881,2017-06-19,Senate,"Accept Maj Otp-a Rpt RC #332",23,12,0,0,35
+972457,666882,2017-06-19,House,"Acc Min Ought Not To Pass Rep RC #349",79,66,0,6,151
+975410,673402,2017-08-02,House,"Reconsideration - Veto RC #445",119,18,0,14,151
+975410,673426,2017-08-02,Senate,"Reconsideration - Veto RC #432",31,1,0,3,35
+975419,656113,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #211",36,103,0,12,151
+975429,657666,2017-06-05,House,"Acc Maj Ought Not To Pass Rep RC #228",112,31,0,8,151
+975457,769860,2018-07-09,House,"Reconsideration - Veto RC #719",131,11,0,9,151
+975457,769861,2018-07-09,Senate,"Reconsideration - Veto RC #730",33,0,0,2,35
+975495,644752,2017-05-16,House,"Acc Maj Otp As Amended Rep RC #103",77,69,0,5,151
+975529,700047,2018-02-13,House,"Acc Maj Otp As Amended Rep RC #484",108,35,0,8,151
+975529,704034,2018-02-15,Senate,"Accept Maj Otp-a Rpt RC #512",29,3,0,3,35
+975624,647553,2017-05-17,Senate,"Accept Min Ontp Rpt RC #142",4,30,0,1,35
+975690,764884,2018-06-19,House,"Enactment RC #672",135,0,0,16,151
+975737,673436,2017-08-02,House,"Reconsideration - Veto RC #446",112,25,0,14,151
+975737,673437,2017-08-02,Senate,"Reconsideration - Veto RC #433",29,3,0,3,35
+975785,769818,2018-07-09,House,"Reconsideration - Veto RC #720",140,3,0,8,151
+975785,769851,2018-07-09,Senate,"Reconsideration - Veto RC #731",32,1,0,2,35
+975832,626254,2017-04-18,House,"Acc Maj Ought Not To Pass Rep RC #36",72,71,0,8,151
+975832,644081,2017-05-11,House,"Recede And Concur RC #81",74,75,0,2,151
+975832,644082,2017-05-11,House,"Insist RC #82",77,72,0,2,151
+975832,646036,2017-05-16,Senate,"Insist RC #131",35,0,0,0,35
+975932,673433,2017-08-02,Senate,"Reconsideration - Veto RC #415",27,7,0,1,35
+975932,673434,2017-08-02,House,"Reconsideration - Veto RC #454",78,59,0,14,151
+975951,657913,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #217",80,66,0,5,151
+976045,643590,2017-05-09,Senate,"Accept Min Ontp Rpt RC #110",16,18,0,1,35
+976045,655748,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #189",108,35,0,8,151
+976045,658896,2017-06-06,Senate,"Enactment RC #227",35,0,0,0,35
+976120,648253,2017-05-23,House,"Acc Maj Ought Not To Pass Rep RC #136",96,48,0,7,151
+976120,648920,2017-05-24,Senate,"Accept Maj Ontp Rpt RC #166",35,0,0,0,35
+976196,649432,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #147",81,64,0,6,151
+976196,652951,2017-05-25,Senate,"Accept Min Ontp Rpt RC #175",10,25,0,0,35
+976805,670617,2017-06-27,Senate,"Reconsideration - Veto RC #377",28,6,0,1,35
+976805,670618,2017-06-27,House,"Reconsideration - Veto RC #405",77,65,0,9,151
+978212,656841,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #208",90,47,0,14,151
+978212,668319,2017-06-21,House,"Reconsideration - Veto RC #366",89,54,0,8,151
+978311,658226,2017-06-06,House,"Acc Maj Otp As Amended Rep RC #249",78,67,0,6,151
+978311,660699,2017-06-08,Senate,"Accept Min Ontp Rpt RC #258",18,16,0,1,35
+978991,704835,2018-02-20,House,"Acc Maj Ought Not To Pass Rep RC #491",95,50,0,6,151
+979021,630910,2017-04-25,House,"Acc Maj Ought To Pass Rep RC #48",42,102,0,7,151
+979135,661930,2017-06-13,House,"Acc Maj Ought Not To Pass Rep RC #303",79,69,0,3,151
+979135,664636,2017-06-15,Senate,"Accept Min Otp-a Rpt RC #311",25,10,0,0,35
+979135,664637,2017-06-15,Senate,"Accept Min Otp-a Rpt RC #316",18,17,0,0,35
+979166,648899,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #154",77,68,0,6,151
+979166,652262,2017-05-25,Senate,"Accept Min Ontp Rpt RC #178",17,18,0,0,35
+979206,644565,2017-05-16,House,"Acc Min Otp As Amended Rep RC #102",76,69,0,6,151
+979250,661778,2017-06-13,House,"Acc Report 'b' Otp As Amend RC #308",76,71,0,4,151
+979250,664412,2017-06-16,House,"Table Until Later RC #331",68,77,0,6,151
+979250,664413,2017-06-16,House,"Recede And Concur RC #332",69,77,0,5,151
+979250,664414,2017-06-16,Senate,"Accept Rpt 'a' Otp-a RC #324",25,10,0,0,35
+979250,666927,2017-06-21,Senate,"Disp Reading RC #364",28,6,0,1,35
+979250,666928,2017-06-21,Senate,"Adopt Sbs-298 RC #365",34,0,0,1,35
+979250,668108,2017-06-23,House,"Recede And Concur RC #382",73,74,0,4,151
+979395,632076,2017-04-25,House,"Acc Min Otp As Amended Rep RC #47",75,69,0,7,151
+979405,654946,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #186",74,67,0,10,151
+979405,661227,2017-06-07,Senate,"Accept Min Ontp Rpt RC #250",18,17,0,0,35
+979425,643059,2017-05-09,Senate,"Accept Maj Otp-a Rpt RC #113",31,3,0,1,35
+979425,644750,2017-05-16,House,"Enactment RC #105",93,50,0,8,151
+979535,656582,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #173",93,46,0,12,151
+979535,656583,2017-05-31,Senate,"Accept Maj Ontp Rpt RC #197",34,0,0,1,35
+979612,626265,2017-04-18,House,"Acc Maj Ought Not To Pass Rep RC #37",74,68,0,9,151
+979732,666843,2017-06-21,Senate,"Accept Min Ontp Rpt RC #353",18,15,0,2,35
+979732,666844,2017-06-21,House,"Acc Maj Otp As Amended Rep RC #372",75,67,0,9,151
+979750,652007,2017-05-25,Senate,"Accept Min Ontp Rpt RC #185",19,16,0,0,35
+980023,667942,2017-06-20,Senate,"Reconsideration - Veto RC #347",34,1,0,0,35
+980023,669197,2017-06-21,House,"Reconsideration - Veto RC #363",90,55,0,6,151
+980045,664198,2017-06-15,Senate,"Accept Min Ontp Rpt RC #302",8,27,0,0,35
+980045,666317,2017-06-16,House,"Acc Maj Otp As Amended Rep RC #323",83,67,0,1,151
+980045,673438,2017-08-02,Senate,"Reconsideration - Veto RC #416",24,10,0,1,35
+980045,673439,2017-08-02,House,"Reconsideration - Veto RC #455",81,56,0,14,151
+980063,769872,2018-07-09,Senate,"Reconsideration - Veto RC #711",34,0,0,1,35
+980063,769873,2018-07-09,House,"Reconsideration - Veto RC #730",91,52,0,8,151
+980085,643627,2017-05-09,Senate,"Accept Maj Otp-a Rpt RC #109",34,0,0,1,35
+980085,646213,2017-05-18,House,"Acc Maj Otp As Amended Rep RC #124",126,14,0,11,151
+980085,658931,2017-06-07,Senate,"Reconsideration - Veto RC #234",35,0,0,0,35
+980085,659336,2017-06-07,House,"Reconsideration - Veto RC #269",122,21,0,8,151
+980127,655727,2017-05-31,Senate,"Accept Maj Otp-a Rpt RC #200",34,0,0,1,35
+981240,661848,2017-06-13,House,"Acc Maj Ought Not To Pass Rep RC #304",79,67,0,5,151
+981240,664447,2017-06-16,Senate,"Insist RC #325",18,17,0,0,35
+981256,629216,2017-04-20,Senate,"Accept Min Ontp Rpt RC #82",8,26,0,1,35
+981256,644674,2017-05-16,House,"Acc Maj Otp As Amended Rep RC #106",85,57,0,9,151
+981256,659246,2017-06-07,Senate,"Reconsideration - Veto RC #235",26,9,0,0,35
+981256,660572,2017-06-08,House,"Reconsideration - Veto RC #280",89,58,0,4,151
+981435,769836,2018-07-09,House,"Reconsideration - Veto RC #700",131,12,0,8,151
+981435,769837,2018-07-09,Senate,"Reconsideration - Veto RC #720",30,2,0,3,35
+981514,649494,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #156",79,65,0,7,151
+981514,652953,2017-05-25,Senate,"Accept Min Ontp Rpt RC #181",18,17,0,0,35
+981531,764933,2018-06-19,House,"Acc Maj Otp As Amended Rep RC #668",78,56,0,17,151
+981531,764934,2018-06-19,House,"Adopt Hah-798 To Cah-751 RC #669",78,58,0,15,151
+981531,766064,2018-06-20,Senate,"Accept Min Ontp Rpt RC #680",11,21,0,3,35
+981531,766065,2018-06-20,Senate,"Adopt Scs-502 To Cah-751 RC #681",23,9,0,3,35
+981531,769876,2018-07-09,House,"Reconsideration - Veto RC #698",85,58,0,8,151
+981602,647258,2017-05-17,House,"Acc Report 'a' Ontp RC #116",72,71,0,8,151
+981602,661219,2017-06-06,House,"Recede RC #251",77,69,0,5,151
+981602,661220,2017-06-06,House,"Indef Pp Hah-415 To Cbh-182 RC #252",71,76,0,4,151
+981602,661221,2017-06-06,House,"Pass To Be Engrossed As Amend RC #253",76,70,0,5,151
+981642,767808,2018-06-25,House,"Acc Maj Otp As Amended Rep RC #689",109,17,0,25,151
+981642,767809,2018-06-25,House,"Enactment - Bond Issue RC #690",75,47,0,29,151
+981642,769852,2018-07-09,House,"Recede And Concur (2/3) RC #738",135,8,0,8,151
+981659,769847,2018-07-09,House,"Reconsideration - Veto RC #699",105,38,0,8,151
+981659,769848,2018-07-09,Senate,"Reconsideration - Veto RC #719",32,0,0,3,35
+981709,649009,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #148",78,65,0,8,151
+981792,664560,2017-06-16,Senate,"Enactment RC #321",24,11,0,0,35
+981792,670650,2017-06-28,House,"Reconsideration - Veto RC #415",83,47,0,21,151
+982275,673440,2017-08-02,Senate,"Reconsideration - Veto RC #417",30,4,0,1,35
+982275,673441,2017-08-02,House,"Reconsideration - Veto RC #456",75,62,0,14,151
+982282,645659,2017-05-17,Senate,"Accept Min Ontp Rpt RC #141",15,19,0,1,35
+982282,652025,2017-05-23,House,"Acc Maj Ought To Pass Rep RC #140",85,59,0,7,151
+982282,662967,2017-06-13,Senate,"Reconsideration - Veto RC #284",22,13,0,0,35
+982282,662968,2017-06-13,Senate,"Veto Override (2/3) RC #293",22,13,0,0,35
+982395,643618,2017-05-09,Senate,"Accept Maj Ontp Rpt RC #114",24,10,0,1,35
+982433,664543,2017-06-13,Senate,"Accept Min Otp-a Rpt RC #291",32,3,0,0,35
+982433,667033,2017-06-19,House,"Acc Maj Ought Not To Pass Rep RC #342",78,69,0,4,151
+982531,649293,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #153",93,51,0,7,151
+982531,664572,2017-06-13,House,"Reconsideration - Veto RC #298",75,72,0,4,151
+982646,647239,2017-05-17,House,"Reconsideration - Veto RC #108",125,18,0,8,151
+982646,647240,2017-05-18,Senate,"Reconsideration - Veto RC #147",35,0,0,0,35
+982750,653083,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #172",76,64,0,11,151
+982763,630734,2017-04-25,House,"Acc Maj Otp As Amended Rep RC #50",133,11,0,7,151
+982763,635261,2017-04-27,Senate,"Accept Min Ontp Rpt RC #98",10,24,0,1,35
+982763,649060,2017-05-23,House,"Reconsideration - Veto RC #127",138,8,0,5,151
+982763,649061,2017-05-24,Senate,"Reconsideration - Veto RC #159",24,11,0,0,35
+982883,665868,2017-06-20,House,"Acc Maj Ought Not To Pass Rep RC #353",80,68,0,3,151
+982883,668388,2017-06-20,Senate,"Accept Min Otp-a Rpt RC #351",18,16,0,1,35
+983358,737584,2018-04-12,House,"Acc Report 'a' Otp As Amended RC #592",76,68,0,7,151
+983358,739488,2018-04-17,Senate,"Table Until Later RC #644",15,20,0,0,35
+983358,739489,2018-04-17,Senate,"Accept Rpt 'c' Otp-a RC #645",16,19,0,0,35
+983358,740227,2018-04-18,House,"Recede And Concur RC #628",72,76,0,3,151
+983358,740228,2018-04-18,Senate,"Accept Rpt ""c"" Otp-a RC #653",18,17,0,0,35
+983358,766685,2018-06-21,House,"Recede And Concur RC #684",80,55,0,16,151
+983358,766686,2018-06-21,Senate,"Recede RC #692",20,10,0,5,35
+983358,766687,2018-06-21,Senate,"Accept Rpt 'a' Otp-a RC #693",19,11,0,5,35
+983358,768044,2018-06-26,Senate,"Enactment RC #702",19,12,0,4,35
+983358,769823,2018-07-09,House,"Reconsideration - Veto RC #724",79,61,0,11,151
+983582,635427,2017-04-27,House,"Reconsider RC #56",77,65,0,9,151
+983582,635428,2017-04-27,House,"Acc Maj Ought Not To Pass Rep RC #57",75,67,0,9,151
+983724,645174,2017-05-16,Senate,"Accept Min Ontp Rpt RC #133",17,18,0,0,35
+983724,673418,2017-08-02,House,"Reconsideration - Veto RC #451",73,64,0,14,151
+983805,660550,2017-06-06,House,"Reconsideration - Veto RC #240",142,3,0,6,151
+983805,660551,2017-06-07,Senate,"Reconsideration - Veto RC #241",35,0,0,0,35
+984049,670567,2017-06-30,House,"Reconsideration - Veto RC #418",131,15,0,5,151
+984049,672964,2017-07-20,Senate,"Veto Override (2/3) RC #403",16,15,0,4,35
+985442,649025,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #160",72,71,0,8,151
+985442,660556,2017-06-06,Senate,"Accept Min Ontp Rpt RC #228",30,5,0,0,35
+985493,764741,2018-06-19,House,"Indef Pp Hah-792 To Cah-791 RC #666",87,54,0,10,151
+985493,764742,2018-06-19,House,"Indef Pp Hbh-793 To Cah-791 RC #667",82,59,0,10,151
+985493,764743,2018-06-19,House,"Enactment - Emer RC #673",126,6,0,19,151
+985493,765895,2018-06-20,Senate,"Enact-emer 2/3 Elect RC #678",32,0,0,3,35
+985493,769866,2018-07-09,House,"Reconsideration - Veto RC #702",139,4,0,8,151
+985493,769867,2018-07-09,Senate,"Reconsideration - Veto RC #722",32,1,0,2,35
+985552,673390,2017-08-02,Senate,"Reconsideration - Veto RC #418",27,7,0,1,35
+985552,673415,2017-08-02,House,"Reconsideration - Veto RC #457",82,55,0,14,151
+985590,654253,2017-05-30,House,"Acc Maj Otp As Amended Rep RC #167",85,54,0,12,151
+985590,667248,2017-06-19,House,"Reconsideration - Veto RC #336",84,61,0,6,151
+985655,638584,2017-05-04,House,"Acc Maj Ought To Pass Rep RC #73",83,59,0,9,151
+985655,644115,2017-05-11,Senate,"Accept Min Ontp Rpt RC #129",10,22,0,3,35
+985655,660189,2017-06-05,House,"Reconsideration - Veto RC #232",80,63,0,8,151
+985666,673410,2017-08-02,Senate,"Reconsideration - Veto RC #419",30,4,0,1,35
+985666,673411,2017-08-02,House,"Reconsideration - Veto RC #458",114,23,0,14,151
+985764,766863,2018-06-21,House,"Recede And Concur RC #680",133,0,0,18,151
+985764,769870,2018-07-09,House,"Reconsideration - Veto RC #701",143,0,0,8,151
+985764,769871,2018-07-09,Senate,"Reconsideration - Veto RC #721",32,0,0,3,35
+985785,668601,2017-06-22,Senate,"Adopt Sbs-305 RC #371",17,18,0,0,35
+985785,669053,2017-06-27,House,"Enactment RC #408",73,70,0,8,151
+985785,672983,2017-07-20,Senate,"Place On Highway Table RC #399",17,14,0,4,35
+986294,740234,2018-04-17,Senate,"Reconsideration - Veto RC #638",35,0,0,0,35
+986294,740235,2018-04-18,House,"Reconsideration - Veto RC #625",146,2,0,3,151
+986334,668425,2017-06-21,Senate,"Reconsideration - Veto RC #367",34,0,0,1,35
+986334,668426,2017-06-22,House,"Reconsideration - Veto RC #377",126,17,0,8,151
+986374,738952,2018-04-17,House,"Reconsideration - Veto RC #605",135,9,0,7,151
+986374,739140,2018-04-17,Senate,"Reconsideration - Veto RC #641",35,0,0,0,35
+986494,649334,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #157",87,58,0,6,151
+986494,673394,2017-08-02,House,"Reconsideration - Veto RC #447",83,54,0,14,151
+986536,634500,2017-04-27,House,"Acc Maj Ought Not To Pass Rep RC #54",78,66,0,7,151
+986774,629007,2017-04-20,Senate,"Accept Min Ontp Rpt RC #84",20,14,0,1,35
+986857,651568,2017-05-23,Senate,"Accept Maj Ontp Rpt RC #158",18,16,0,1,35
+986897,652206,2017-05-24,House,"Acc Min Otp As Amended Rep RC #150",53,90,0,8,151
+988094,640895,2017-05-09,Senate,"Accept Maj Ontp Rpt RC #117",21,12,0,2,35
+988094,642918,2017-05-11,House,"Acc Min Otp As Amended Rep RC #84",60,88,0,3,151
+988381,663464,2017-06-15,Senate,"Veto Override (2/3) RC #310",34,1,0,0,35
+988381,664461,2017-06-16,House,"Reconsideration - Veto RC #334",99,42,0,10,151
+988573,643274,2017-05-11,House,"Acc Report 'a' Otp As Amend RC #92",78,66,0,7,151
+988573,648508,2017-05-23,House,"Enactment - Emer RC #133",78,66,0,7,151
+988573,667136,2017-06-19,House,"Reconsideration - Veto RC #337",81,65,0,5,151
+988590,668705,2017-06-22,House,"Commit To Edu RC #374",75,70,0,6,151
+988590,668706,2017-06-23,House,"Recede RC #392",93,48,0,10,151
+988590,670668,2017-06-27,House,"Indef Postpone Bill & Papers RC #403",79,66,0,6,151
+988607,658497,2017-06-06,Senate,"Accept Min Otp Rpt RC #231",18,17,0,0,35
+988640,637866,2017-05-04,House,"Acc Maj Ought Not To Pass Rep RC #74",76,64,0,11,151
+988657,662247,2017-06-13,House,"Acceptance Of Committee Report RC #307",145,2,0,4,151
+988728,667322,2017-06-21,Senate,"Accept Rpt 'a' Otp-a RC #363",30,4,0,1,35
+988728,668691,2017-06-23,House,"Adopt Hdh-551 To Cas-265 RC #393",63,79,0,9,151
+988728,668692,2017-06-23,House,"Passage To Be Engrossed RC #394",140,0,0,11,151
+988728,669198,2017-06-27,House,"Enactment RC #409",143,0,0,8,151
+988745,644552,2017-05-11,Senate,"Reconsideration - Veto RC #123",31,0,0,4,35
+988745,644553,2017-05-16,House,"Reconsideration - Veto RC #97",141,4,0,6,151
+988834,652945,2017-05-25,Senate,"Accept Min Ontp Rpt RC #182",16,19,0,0,35
+988917,649728,2017-05-25,House,"Acc Maj Otp As Amended Rep RC #163",111,31,0,9,151
+988968,654997,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #196",74,65,0,12,151
+988985,645855,2017-05-17,House,"Acc Maj Otp As Amended Rep RC #115",75,70,0,6,151
+988985,656771,2017-06-01,Senate,"Accept Min Ontp Rpt RC #214",18,16,0,1,35
+989004,664203,2017-06-13,House,"Acc Maj Otp As Amended Rep RC #306",83,65,0,3,151
+989640,724893,2018-03-20,Senate,"Reconsideration - Veto RC #538",32,2,0,1,35
+989640,726923,2018-03-22,House,"Reconsideration - Veto RC #528",135,11,0,5,151
+989774,661247,2017-06-08,Senate,"Accept Min Otp-a Rpt RC #260",18,16,0,1,35
+989827,649281,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #151",119,26,0,6,151
+989897,734840,2018-04-02,Senate,"Accept Maj Ontp Rpt RC #571",13,19,0,3,35
+989897,734841,2018-04-03,House,"Acc Min Otp As Amended Rep RC #555",77,64,0,10,151
+989897,740688,2018-04-18,Senate,"Reconsideration - Veto RC #651",21,14,0,0,35
+989933,664765,2017-06-19,House,"Acc Min Ought Not To Pass Rep RC #345",75,73,0,3,151
+989933,665454,2017-06-20,House,"Recede And Concur RC #354",73,75,0,3,151
+989933,665455,2017-06-20,House,"Insist RC #355",75,73,0,3,151
+989954,663199,2017-06-13,Senate,"Reconsideration - Veto RC #285",4,31,0,0,35
+989970,646881,2017-05-18,Senate,"Reconsideration - Veto RC #146",29,6,0,0,35
+989970,652909,2017-05-25,House,"Reconsideration - Veto RC #165",27,114,0,10,151
+989988,656208,2017-05-31,House,"Reconsideration - Veto RC #183",73,66,0,12,151
+991416,629265,2017-04-20,Senate,"Indefinitely Postpone RC #87",19,15,0,1,35
+991451,660388,2017-06-08,Senate,"Adopt Sas-196 To Cah-255 RC #263",33,1,0,1,35
+991482,656832,2017-05-31,Senate,"Veto Override (2/3) RC #195",34,0,0,1,35
+991482,656833,2017-05-31,House,"Reconsideration - Veto RC #204",73,60,0,18,151
+991575,645917,2017-05-17,House,"Acc Maj Otp As Amended Rep RC #117",79,63,0,9,151
+991575,673423,2017-08-02,Senate,"Reconsideration - Veto RC #420",28,6,0,1,35
+991575,673424,2017-08-02,House,"Reconsideration - Veto RC #460",76,58,0,17,151
+991607,668355,2017-06-20,Senate,"Enactment RC #349",23,12,0,0,35
+991607,673008,2017-07-20,Senate,"Veto Override (2/3) RC #402",18,13,0,4,35
+992558,660261,2017-06-06,House,"Reconsideration - Veto RC #236",141,5,0,5,151
+992558,661679,2017-06-08,Senate,"Veto Override (2/3) RC #265",34,0,0,1,35
+992561,658293,2017-06-06,House,"Acc Maj Otp As Amended Rep RC #254",77,69,0,5,151
+992561,661259,2017-06-08,Senate,"Accept Min Ontp Rpt RC #257",17,16,0,2,35
+992561,734857,2018-04-03,House,"Acc Maj Otp As Amended Rep RC #557",77,65,0,9,151
+992561,738250,2018-04-12,Senate,"Accept Maj Otp-a Rpt RC #616",22,13,0,0,35
+992561,738251,2018-04-12,Senate,"Adopt Sbs-460 RC #617",18,17,0,0,35
+992561,747974,2018-05-02,House,"Reconsideration - Veto RC #654",80,68,0,3,151
+992588,667010,2017-06-19,House,"Reconsideration - Veto RC #338",84,63,0,4,151
+992592,649233,2017-05-23,House,"Reconsideration - Veto RC #128",80,66,0,5,151
+992600,661279,2017-06-07,Senate,"Accept Min Ontp Rpt RC #245",8,27,0,0,35
+992600,661280,2017-06-08,House,"Acc Maj Otp As Amended Rep RC #272",88,57,0,6,151
+992600,669187,2017-06-27,Senate,"Reconsideration - Veto RC #378",19,15,0,1,35
+992633,651581,2017-05-25,Senate,"Insist RC #174",17,18,0,0,35
+992633,655875,2017-05-30,House,"Final Passage RC #181",79,59,0,13,151
+992633,672973,2017-07-20,Senate,"Final Passage RC #406",15,16,0,4,35
+992685,655973,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #212",85,55,0,11,151
+992685,661254,2017-06-07,Senate,"Accept Min Ontp Rpt RC #251",17,18,0,0,35
+992685,661692,2017-06-12,Senate,"Enactment RC #280",16,17,0,2,35
+992685,664620,2017-06-16,Senate,"Enactment RC #323",20,15,0,0,35
+993471,659426,2017-06-06,House,"Reconsideration - Veto RC #237",145,1,0,5,151
+993471,659427,2017-06-07,Senate,"Reconsideration - Veto RC #239",35,0,0,0,35
+993498,664599,2017-06-16,Senate,"Acceptance Of Report RC #326",21,14,0,0,35
+993498,667282,2017-06-20,House,"Acc Ought To Pass As Amend Rep RC #360",85,60,0,6,151
+993498,673395,2017-08-02,Senate,"Reconsideration - Veto RC #421",24,10,0,1,35
+993498,673456,2017-08-02,House,"Reconsideration - Veto RC #461",81,54,0,16,151
+993515,652146,2017-05-23,Senate,"Accept Min Ontp Rpt RC #156",19,15,0,1,35
+993530,645199,2017-05-16,House,"Acc Maj Otp As Amended Rep RC #101",78,68,0,5,151
+993624,667341,2017-06-19,House,"Acc Min Ought Not To Pass Rep RC #344",86,62,0,3,151
+993656,660473,2017-06-06,House,"Reconsideration - Veto RC #241",91,55,0,5,151
+993999,716871,2018-03-06,House,"Acc Maj Otp As Amended Rep RC #508",86,58,0,7,151
+993999,766124,2018-06-20,Senate,"Enactment RC #687",24,9,0,2,35
+993999,769820,2018-07-09,House,"Reconsideration - Veto RC #703",85,59,0,7,151
+994123,655177,2017-05-31,House,"Acc Min Ought Not To Pass Rep RC #197",58,82,0,11,151
+994123,661233,2017-06-07,Senate,"Accept Maj Otp-a Rpt RC #252",17,18,0,0,35
+994148,657882,2017-06-05,House,"Acc Min Ought Not To Pass Rep RC #221",79,67,0,5,151
+994148,661240,2017-06-06,Senate,"Accept Maj Otp-a Rpt RC #224",25,10,0,0,35
+994247,661666,2017-06-12,Senate,"Enactment RC #281",27,6,0,2,35
+994274,661248,2017-06-07,Senate,"Accept Min Ontp Rpt RC #249",5,30,0,0,35
+994274,661249,2017-06-08,House,"Acc Maj Otp As Amended Rep RC #271",83,62,0,6,151
+994274,673011,2017-07-20,House,"Enactment RC #434",82,51,0,18,151
+994274,673408,2017-08-02,Senate,"Reconsideration - Veto RC #422",29,5,0,1,35
+994274,673409,2017-08-02,House,"Reconsideration - Veto RC #462",101,34,0,16,151
+994323,667302,2017-06-19,Senate,"Accept Min Ontp Rpt RC #338",18,17,0,0,35
+994323,667303,2017-06-20,House,"Acc Maj Otp As Amended Rep RC #352",77,70,0,4,151
+994323,731363,2018-03-29,Senate,"Recede And Concur RC #560",23,11,0,1,35
+994323,766219,2018-06-20,Senate,"Enactment RC #683",22,9,0,4,35
+994323,769884,2018-07-09,Senate,"Reconsideration - Veto RC #708",21,13,0,1,35
+994605,658804,2017-06-05,Senate,"Accept Min Ontp Rpt RC #219",18,14,0,3,35
+994677,668670,2017-06-22,House,"Reconsideration - Veto RC #380",79,65,0,7,151
+996383,656297,2017-05-31,House,"Acc Maj Ought Not To Pass Rep RC #193",80,63,0,8,151
+996383,656298,2017-06-01,Senate,"Accept Maj Ontp Rpt RC #207",29,5,0,1,35
+996402,673428,2017-08-02,House,"Reconsideration - Veto RC #448",110,27,0,14,151
+996402,673429,2017-08-02,Senate,"Reconsideration - Veto RC #434",32,0,0,3,35
+996412,664619,2017-06-13,Senate,"Accept Min Ontp Rpt RC #298",13,22,0,0,35
+996412,667991,2017-06-22,Senate,"Recede And Concur RC #373",19,16,0,0,35
+996421,731040,2018-03-27,House,"Acc Maj Ought Not To Pass Rep RC #534",78,69,0,4,151
+996440,656854,2017-06-01,House,"Acc Min Ought Not To Pass Rep RC #209",72,70,0,9,151
+996440,658916,2017-06-06,House,"Recede And Concur RC #234",71,73,0,7,151
+996448,769830,2018-07-09,House,"Reconsideration - Veto RC #704",142,2,0,7,151
+996448,769831,2018-07-09,Senate,"Reconsideration - Veto RC #723",33,0,0,2,35
+996481,661282,2017-06-08,Senate,"Accept Maj Ontp Rpt RC #256",32,1,0,2,35
+996490,658913,2017-06-05,Senate,"Accept Rpt 'c' Ontp RC #217",13,19,0,3,35
+996503,656849,2017-05-30,House,"Acc Maj Otp As Amended Rep RC #170",112,27,0,12,151
+996503,672986,2017-07-20,House,"Reconsideration - Veto RC #427",109,32,0,10,151
+996503,672987,2017-07-20,Senate,"Reconsideration - Veto RC #409",28,2,0,5,35
+996522,668811,2017-06-27,House,"Reconsideration - Veto RC #396",139,5,0,7,151
+996522,668812,2017-06-27,Senate,"Reconsideration - Veto RC #382",34,0,0,1,35
+996533,658826,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #216",80,66,0,5,151
+996533,658827,2017-06-06,Senate,"Accept Min Ontp Rpt RC #222",18,17,0,0,35
+996534,658817,2017-06-06,Senate,"Accept Min Ontp Rpt RC #225",20,15,0,0,35
+996582,724230,2018-03-15,Senate,"Accept Maj Otp-a Rpt RC #531",32,0,0,3,35
+996606,648947,2017-05-24,Senate,"Accept Min Ontp Rpt RC #172",20,15,0,0,35
+996697,661264,2017-06-08,Senate,"Accept Maj Ontp Rpt RC #259",28,6,0,1,35
+996697,661265,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #282",84,60,0,7,151
+996747,672997,2017-07-20,Senate,"Accept Rpt 'a' Otp-a RC #408",16,14,0,5,35
+996747,672998,2017-07-20,House,"Acc Report 'a' Otp As Amend RC #437",74,58,0,19,151
+997277,668446,2017-06-22,Senate,"Accept Rpt 'b' Ontp RC #370",4,31,0,0,35
+997277,668447,2017-06-23,House,"Acc Report 'a' Otp As Amend RC #383",113,34,0,4,151
+997277,673396,2017-08-02,Senate,"Reconsideration - Veto RC #423",29,5,0,1,35
+997277,673422,2017-08-02,House,"Reconsideration - Veto RC #463",90,44,0,17,151
+997287,655980,2017-05-31,Senate,"Accept Min Ontp Rpt RC #201",18,16,0,1,35
+997302,664335,2017-06-16,House,"Acc Min Otp As Amended Rep RC #325",68,81,0,2,151
+997303,655237,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #188",77,62,0,12,151
+997303,656429,2017-06-01,Senate,"Accept Min Ontp Rpt RC #209",18,16,0,1,35
+997308,747128,2018-05-02,House,"Reconsideration - Veto RC #647",144,3,0,4,151
+997308,747427,2018-05-02,Senate,"Reconsideration - Veto RC #666",34,0,0,1,35
+997316,648362,2017-05-23,House,"Acc Maj Ought Not To Pass Rep RC #130",75,70,0,6,151
+997320,655036,2017-05-31,House,"Acc Maj Ought Not To Pass Rep RC #184",66,74,0,11,151
+997320,657715,2017-06-01,Senate,"Accept Maj Ontp Rpt RC #208",12,22,0,1,35
+997320,657716,2017-06-05,Senate,"Accept Min Otp-a Rpt RC #221",31,0,0,4,35
+997327,769826,2018-07-09,House,"Reconsideration - Veto RC #705",129,15,0,7,151
+997327,769827,2018-07-09,Senate,"Reconsideration - Veto RC #724",33,0,0,2,35
+997334,664289,2017-06-13,House,"Reconsideration - Veto RC #299",90,57,0,4,151
+997342,661252,2017-06-08,Senate,"Accept Maj Otp-a Rpt RC #261",18,16,0,1,35
+997342,661253,2017-06-09,House,"Acc Min Ought Not To Pass Rep RC #283",73,68,0,10,151
+997346,664226,2017-06-15,House,"Acc Min Otp As Amended Rep RC #312",88,53,0,10,151
+997346,666340,2017-06-16,Senate,"Accept Maj Ontp Rpt RC #328",18,17,0,0,35
+997592,734877,2018-04-02,House,"Acc Min Otp As Amended Rep RC #554",84,61,0,6,151
+997592,734878,2018-04-05,Senate,"Accept Maj Ontp Rpt RC #594",21,13,0,1,35
+997620,726990,2018-03-22,Senate,"Accept Maj Ontp Rpt RC #548",24,10,0,1,35
+999223,669254,2017-06-27,House,"Reconsideration - Veto RC #397",89,56,0,6,151
+999269,669830,2017-06-27,House,"Reconsideration - Veto RC #398",133,12,0,6,151
+999269,669831,2017-06-27,Senate,"Reconsideration - Veto RC #383",33,1,0,1,35
+999275,666330,2017-06-19,Senate,"Accept Min Ontp Rpt RC #345",18,17,0,0,35
+999280,664321,2017-06-15,Senate,"Accept Maj Ontp Rpt RC #313",18,17,0,0,35
+999304,646598,2017-05-18,House,"Acc Maj Otp As Amended Rep RC #122",77,70,0,4,151
+999304,648847,2017-05-23,Senate,"Accept Min Ontp Rpt RC #152",16,18,0,1,35
+999350,653547,2017-05-30,House,"Acc Maj Otp As Amended Rep RC #168",75,64,0,12,151
+999350,657510,2017-05-31,Senate,"Accept Maj Otp-a Rpt RC #196",34,0,0,1,35
+999991,653944,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #169",74,65,0,12,151
+1000100,649518,2017-05-25,House,"Acc Maj Otp As Amended Rep RC #164",74,68,0,9,151
+1000100,653512,2017-05-30,Senate,"Accept Min Ontp Rpt RC #189",20,15,0,0,35
+1000456,648915,2017-05-24,Senate,"Accept Min Ontp Rpt RC #163",10,25,0,0,35
+1000488,645979,2017-05-17,House,"Acc Min Otp As Amended Rep RC #114",71,74,0,6,151
+1000503,663397,2017-06-15,Senate,"Accept Min Ontp Rpt RC #300",35,0,0,0,35
+1000508,664666,2017-06-19,Senate,"Accept Min Ontp Rpt RC #334",13,22,0,0,35
+1000508,664837,2017-06-19,House,"Acc Maj Otp As Amended Rep RC #350",79,68,0,4,151
+1000508,672910,2017-07-20,Senate,"Veto Override (2/3) RC #400",20,11,0,4,35
+1000555,740735,2018-04-17,Senate,"Reconsideration - Veto RC #639",35,0,0,0,35
+1000555,740736,2018-04-18,House,"Reconsideration - Veto RC #626",85,63,0,3,151
+1000565,651497,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #144",99,46,0,6,151
+1000565,673416,2017-08-02,Senate,"Reconsideration - Veto RC #425",27,7,0,1,35
+1000565,673417,2017-08-02,House,"Reconsideration - Veto RC #465",100,34,0,17,151
+1000572,673445,2017-08-02,Senate,"Reconsideration - Veto RC #424",31,3,0,1,35
+1000572,673446,2017-08-02,House,"Reconsideration - Veto RC #464",77,57,0,17,151
+1001462,724272,2018-03-15,Senate,"Accept Maj Ontp Rpt RC #532",14,17,0,4,35
+1001462,727940,2018-03-20,House,"Acc Min Otp As Amended Rep RC #521",78,67,0,6,151
+1001462,736835,2018-04-09,Senate,"Reconsideration - Veto RC #602",17,16,0,2,35
+1001614,668608,2017-06-22,Senate,"Accept Min Ontp Rpt RC #375",16,19,0,0,35
+1001614,668609,2017-06-22,Senate,"Adopt Sas-295 To Cas-153 RC #376",11,24,0,0,35
+1001614,766510,2018-06-20,Senate,"Enactment RC #684",18,13,0,4,35
+1001934,659562,2017-06-07,House,"Acc Maj Otp As Amended Rep RC #267",83,63,0,5,151
+1001934,661458,2017-06-09,Senate,"Accept Min Ontp Rpt RC #271",34,1,0,0,35
+1001939,661833,2017-06-13,House,"Acc Maj Otp As Amended Rep RC #301",84,62,0,5,151
+1001961,766619,2018-06-21,Senate,"Enactment RC #696",33,0,0,2,35
+1001969,643019,2017-05-11,House,"Acc Maj Otp As Amended Rep RC #91",90,53,0,8,151
+1002001,648955,2017-05-24,House,"Acc Maj Otp As Amended Rep RC #158",81,63,0,7,151
+1002001,657354,2017-05-30,Senate,"Accept Min Ontp Rpt RC #190",16,19,0,0,35
+1002001,668062,2017-06-19,House,"Reconsideration - Veto RC #347",85,63,0,3,151
+1002035,652773,2017-05-25,Senate,"Accept Min Ontp Rpt RC #179",8,27,0,0,35
+1002042,663376,2017-06-15,Senate,"Accept Min Ontp Rpt RC #301",10,25,0,0,35
+1002042,670415,2017-06-30,House,"Reconsideration - Veto RC #419",142,4,0,5,151
+1002042,673404,2017-08-02,Senate,"Veto Override (2/3) RC #427",22,12,0,1,35
+1002042,673405,2017-08-02,Senate,"Veto Override (2/3) RC #429",25,9,0,1,35
+1002060,657642,2017-06-05,House,"Acc Maj Ought Not To Pass Rep RC #219",77,69,0,5,151
+1002087,657646,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #226",122,16,0,13,151
+1002275,664701,2017-06-19,House,"Enactment RC #348",142,3,0,6,151
+1002546,767977,2018-06-25,House,"Recede And Concur RC #686",81,43,0,27,151
+1002546,769814,2018-07-09,Senate,"Reconsideration - Veto RC #717",30,4,0,1,35
+1002546,769885,2018-07-09,House,"Reconsideration - Veto RC #735",83,60,0,8,151
+1002562,670642,2017-06-28,House,"Acc Maj Otp As Amended Rep RC #414",53,81,0,17,151
+1002562,670643,2017-06-29,House,"Recede And Concur RC #417",90,53,0,8,151
+1002568,652031,2017-05-23,Senate,"Accept Min Ontp Rpt RC #154",18,16,0,1,35
+1002782,714406,2018-02-27,House,"Acc Maj Ought Not To Pass Rep RC #494",93,46,0,12,151
+1002782,714407,2018-03-01,Senate,"Accept Min Otp-a Rpt RC #521",5,28,0,2,35
+1002794,667058,2017-06-19,House,"Reconsideration - Veto RC #339",88,60,0,3,151
+1003010,661258,2017-06-09,Senate,"Accept Min Otp-a Rpt RC #273",19,16,0,0,35
+1003010,664423,2017-06-12,House,"Acc Maj Ought Not To Pass Rep RC #291",78,67,0,6,151
+1003093,655947,2017-05-31,Senate,"Accept Min Ontp Rpt RC #202",16,18,0,1,35
+1003093,655948,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #205",76,67,0,8,151
+1003129,769845,2018-07-09,House,"Reconsideration - Veto RC #706",75,68,0,8,151
+1003167,668103,2017-06-23,House,"Commit To Edu RC #386",81,66,0,4,151
+1003167,725064,2018-03-20,House,"Adopt Hah-637 To Cbh-605 RC #526",104,38,0,9,151
+1003167,732312,2018-04-02,House,"Adhere RC #553",93,51,0,7,151
+1003636,669079,2017-06-27,Senate,"Reconsideration - Veto RC #379",34,0,0,1,35
+1003636,669080,2017-06-27,House,"Reconsideration - Veto RC #406",128,15,0,8,151
+1003716,664608,2017-06-12,Senate,"Accept Min Ontp Rpt RC #276",17,16,0,2,35
+1003716,664609,2017-06-15,Senate,"Recede And Concur RC #304",17,18,0,0,35
+1003779,658269,2017-06-06,House,"Acc Maj Otp As Amended Rep RC #243",80,63,0,8,151
+1004076,747784,2018-05-02,Senate,"Reconsideration - Veto RC #661",34,0,0,1,35
+1004076,747785,2018-05-02,House,"Reconsideration - Veto RC #661",148,0,0,3,151
+1004089,666320,2017-06-16,House,"Acc Maj Ought Not To Pass Rep RC #326",98,47,0,6,151
+1004089,666321,2017-06-19,Senate,"Accept Min Otp-a Rpt RC #330",9,26,0,0,35
+1004097,668414,2017-06-21,House,"Reconsideration - Veto RC #367",76,67,0,8,151
+1004130,661243,2017-06-09,House,"Acc Min Otp As Amended Rep RC #289",74,64,0,13,151
+1004141,669179,2017-06-27,House,"Reconsideration - Veto RC #399",142,3,0,6,151
+1004141,669180,2017-06-27,Senate,"Reconsideration - Veto RC #384",34,0,0,1,35
+1004160,668317,2017-06-21,Senate,"Veto Override (2/3) RC #368",29,5,0,1,35
+1004160,668318,2017-06-22,House,"Reconsideration - Veto RC #378",116,27,0,8,151
+1004169,673397,2017-08-02,House,"Suspend Rules - RC #438",81,56,0,14,151
+1004169,673398,2017-08-02,House,"Indef Pp Hah-566 RC #439",64,73,0,14,151
+1004169,673399,2017-08-02,House,"Adopt Hah-566 RC #440",73,64,0,14,151
+1004184,624930,2017-04-13,House,"Reference RC #32",75,69,0,7,151
+1004184,658191,2017-06-06,House,"Acc Maj Ought Not To Pass Rep RC #247",90,56,0,5,151
+1004197,655439,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #190",79,65,0,7,151
+1004197,657864,2017-06-01,Senate,"Accept Min Ontp Rpt RC #210",18,16,0,1,35
+1004236,658218,2017-06-06,House,"Acc Maj Ought Not To Pass Rep RC #248",84,63,0,4,151
+1004236,661256,2017-06-07,Senate,"Accept Min Otp-a Rpt RC #243",17,18,0,0,35
+1004564,697050,2018-02-08,Senate,"Acceptance Of Report RC #508",25,9,0,1,35
+1004564,699798,2018-02-13,Senate,"Adopt Sas-352 RC #510",10,25,0,0,35
+1004564,699799,2018-02-13,Senate,"Adopt Sas-349 RC #511",11,24,0,0,35
+1004564,702225,2018-02-15,House,"Acc Ought To Pass As Amend Rep RC #485",119,27,0,5,151
+1004564,702226,2018-02-15,House,"Adopt Hah-584 To Cas-347 RC #486",25,121,0,5,151
+1004564,723079,2018-03-15,Senate,"Veto Override (2/3) RC #537",25,8,0,2,35
+1004564,724904,2018-03-20,House,"Reconsideration - Veto RC #518",81,63,0,7,151
+1004570,665887,2017-06-20,House,"Acc Report 'a' Otp As Amend RC #361",82,63,0,6,151
+1004570,668389,2017-06-21,Senate,"Accept Rpt 'b' Otp-a Cab-523 RC #352",18,15,0,2,35
+1004570,673435,2017-08-02,House,"Reconsideration - Veto RC #449",74,63,0,14,151
+1004581,767253,2018-06-21,Senate,"Enactment RC #697",24,9,0,2,35
+1004581,769846,2018-07-09,Senate,"Reconsideration - Veto RC #712",20,14,0,1,35
+1004586,661422,2017-06-12,House,"Acc Maj Otp As Amended Rep RC #296",116,29,0,6,151
+1004586,663374,2017-06-15,House,"Enactment RC #314",104,38,0,9,151
+1004601,668315,2017-06-21,Senate,"Reconsideration - Veto RC #354",31,2,0,2,35
+1004601,668316,2017-06-21,House,"Reconsideration - Veto RC #373",119,25,0,7,151
+1004605,661281,2017-06-08,Senate,"Accept Min Ontp Rpt RC #262",18,16,0,1,35
+1004612,669093,2017-06-27,Senate,"Reconsideration - Veto RC #380",20,14,0,1,35
+1004762,661239,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #276",78,64,0,9,151
+1004773,659383,2017-06-07,House,"Acc Ought To Pass Rep RC #261",147,0,0,4,151
+1004773,662813,2017-06-13,Senate,"Enactment RC #299",35,0,0,0,35
+1004784,734145,2018-04-05,House,"Acc Min Otp As Amended Rep RC #576",80,64,0,7,151
+1004818,718208,2018-03-06,House,"Acc Maj Otp As Amended Rep RC #507",79,65,0,7,151
+1004818,737920,2018-04-10,House,"Reconsideration - Veto RC #581",84,62,0,5,151
+1004884,727741,2018-03-22,Senate,"Accept Min Otp-a Rpt RC #549",17,17,0,1,35
+1004884,729853,2018-03-27,House,"Acc Maj Ought Not To Pass Rep RC #533",79,67,0,5,151
+1004952,663947,2017-06-13,House,"Acc Min Otp As Amended Rep RC #309",53,91,0,7,151
+1004952,663948,2017-06-15,Senate,"Accept Maj Ontp Rpt RC #312",18,17,0,0,35
+1005261,734922,2018-04-05,Senate,"Accept Maj Otp-a Rpt RC #593",33,0,0,2,35
+1005332,670681,2017-06-28,House,"Reconsideration - Veto RC #413",130,14,0,7,151
+1005332,670682,2017-06-28,Senate,"Reconsideration - Veto RC #388",34,1,0,0,35
+1005498,653058,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #178",86,56,0,9,151
+1005515,670632,2017-06-30,House,"Enactment - Emer RC #420",146,0,0,5,151
+1005520,657164,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #213",99,41,0,11,151
+1005520,659688,2017-06-07,Senate,"Accept Min Ontp Rpt RC #253",7,28,0,0,35
+1005520,668347,2017-06-23,House,"Reconsideration - Veto RC #385",77,69,0,5,151
+1005524,657323,2017-06-01,House,"Acc Min Ought Not To Pass Rep RC #206",78,61,0,12,151
+1005536,713318,2018-03-01,Senate,"Accept Maj Otp-a Rpt RC #523",28,5,0,2,35
+1005536,716863,2018-03-06,House,"Acc Maj Otp As Amended Rep RC #506",106,38,0,7,151
+1005536,723412,2018-03-15,House,"Enactment RC #517",101,37,0,13,151
+1005536,732297,2018-04-02,Senate,"Reconsideration - Veto RC #567",24,9,0,2,35
+1005536,732298,2018-04-02,Senate,"Veto Override (2/3) RC #568",26,7,0,2,35
+1005536,733952,2018-04-05,House,"Reconsideration - Veto RC #570",97,52,0,2,151
+1005536,735872,2018-04-10,House,"Reconsideration - Veto RC #587",96,50,0,5,151
+1005545,732303,2018-04-02,House,"Acc Maj Otp As Amended Rep RC #549",102,43,0,6,151
+1005545,740129,2018-04-18,House,"Reconsideration - Veto RC #613",86,61,0,4,151
+1005552,667682,2017-06-19,Senate,"Accept Min Ontp Rpt RC #335",18,17,0,0,35
+1005570,661509,2017-06-12,House,"Acc Min Otp As Amended Rep RC #295",74,70,0,7,151
+1005570,664630,2017-06-16,Senate,"Accept Maj Ontp Rpt RC #327",23,12,0,0,35
+1005570,667805,2017-06-19,Senate,"Recede And Concur RC #339",14,21,0,0,35
+1005764,661278,2017-06-09,Senate,"Accept Maj Otp-a Rpt RC #272",33,2,0,0,35
+1005764,664584,2017-06-12,House,"Acc Maj Otp As Amended Rep RC #292",53,92,0,6,151
+1005764,664585,2017-06-15,House,"Recede And Concur RC #310",61,86,0,4,151
+1006062,649520,2017-05-25,Senate,"Accept Maj Ontp Rpt RC #176",35,0,0,0,35
+1006251,723025,2018-03-15,Senate,"Accept Maj Otp-a Rpt RC #530",32,0,0,3,35
+1006260,660925,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #277",76,67,0,8,151
+1006260,662489,2017-06-09,Senate,"Accept Min Otp-a Rpt RC #268",18,17,0,0,35
+1006262,726957,2018-03-22,House,"Reconsideration - Veto RC #530",115,34,0,2,151
+1006262,730694,2018-03-28,Senate,"Veto Override (2/3) RC #559",30,4,0,1,35
+1006265,738962,2018-04-17,Senate,"Accept Rpt 'a' Otp-a RC #634",18,17,0,0,35
+1006266,664583,2017-06-12,Senate,"Accept Min Ontp Rpt RC #279",18,14,0,3,35
+1006271,667164,2017-06-19,Senate,"Reconsideration - Veto RC #343",35,0,0,0,35
+1006271,667165,2017-06-21,House,"Reconsideration - Veto RC #362",89,53,0,9,151
+1006310,673403,2017-08-02,Senate,"Reconsideration - Veto RC #426",25,9,0,1,35
+1006310,673425,2017-08-02,House,"Reconsideration - Veto RC #466",112,20,0,19,151
+1006316,660627,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #278",72,71,0,8,151
+1006648,767814,2018-06-25,House,"Recede And Concur RC #685",82,40,0,29,151
+1006648,769824,2018-07-09,Senate,"Reconsideration - Veto RC #718",34,0,0,1,35
+1006648,769825,2018-07-09,House,"Reconsideration - Veto RC #736",114,28,0,9,151
+1006704,722970,2018-03-15,Senate,"Accept Maj Otp-a Rpt RC #534",26,7,0,2,35
+1006704,725077,2018-03-20,House,"Acc Maj Otp As Amended Rep RC #519",87,58,0,6,151
+1007010,652115,2017-05-23,Senate,"Accept Min Otp Rpt RC #157",18,16,0,1,35
+1007010,652116,2017-05-24,House,"Acc Maj Ought Not To Pass Rep RC #145",75,70,0,6,151
+1007555,652957,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #174",85,56,0,10,151
+1007562,767807,2018-06-25,House,"Acc Maj Otp As Amended Rep RC #688",124,2,0,25,151
+1007565,666516,2017-06-19,Senate,"Commit RC #340",18,17,0,0,35
+1007565,737938,2018-04-12,Senate,"Accept Maj Otp-a Rpt RC #618",20,15,0,0,35
+1007565,747263,2018-05-02,Senate,"Reconsideration - Veto RC #662",18,16,0,1,35
+1007577,652980,2017-05-30,House,"Acc Maj Ought Not To Pass Rep RC #171",77,63,0,11,151
+1007585,716975,2018-03-06,House,"Acc Min Otp As Amended Rep RC #510",134,10,0,7,151
+1007585,722938,2018-03-15,Senate,"Accept Maj Ontp Rpt RC #529",16,16,0,3,35
+1007585,723211,2018-03-15,Senate,"Accept Maj Ontp Rpt RC #536",15,18,0,2,35
+1007597,653501,2017-05-30,House,"Acc Maj Otp As Amended Rep RC #175",69,73,0,9,151
+1007597,661081,2017-06-07,Senate,"Accept Min Ontp Rpt RC #248",21,14,0,0,35
+1007602,667038,2017-06-19,Senate,"Accept Min Ontp Rpt RC #331",9,26,0,0,35
+1007608,664707,2017-06-19,House,"Acc Report 'c' Ontp RC #346",75,73,0,3,151
+1007608,665940,2017-06-20,House,"Recede And Concur RC #356",73,75,0,3,151
+1007608,665941,2017-06-20,House,"Insist RC #357",75,69,0,7,151
+1007608,668394,2017-06-23,House,"Table Until Later RC #390",71,73,0,7,151
+1007608,668395,2017-06-23,House,"Ptbe As Amended RC #391",125,19,0,7,151
+1007608,668897,2017-06-27,House,"Enactment RC #410",137,6,0,8,151
+1007608,673004,2017-07-20,House,"Reconsideration - Veto RC #429",124,17,0,10,151
+1007608,673005,2017-07-20,Senate,"Reconsideration - Veto RC #411",29,1,0,5,35
+1007623,656230,2017-06-01,House,"Acc Maj Ought Not To Pass Rep RC #210",79,62,0,10,151
+1007628,666979,2017-06-21,House,"Acc Maj Otp As Amended Rep RC #371",90,54,0,7,151
+1007628,669271,2017-06-28,House,"Adopt Hbh-554 To Cas-276 RC #411",105,40,0,6,151
+1007628,669272,2017-06-28,House,"Passage To Be Engrossed RC #412",105,41,0,5,151
+1007628,669419,2017-06-28,Senate,"Recede And Concur RC #387",29,6,0,0,35
+1007628,673412,2017-08-02,Senate,"Veto Override (2/3) RC #428",28,6,0,1,35
+1007628,673413,2017-08-02,House,"Reconsideration - Veto RC #459",88,48,0,15,151
+1007808,660583,2017-06-05,Senate,"Accept Min Otp-a Rpt RC #218",17,15,0,3,35
+1007808,660584,2017-06-06,House,"Acc Maj Ought Not To Pass Rep RC #242",79,66,0,6,151
+1007826,740074,2018-04-18,House,"Table Until Later RC #612",77,69,0,5,151
+1007852,633778,2017-04-27,House,"Reference Enr RC #61",75,68,0,8,151
+1007901,663982,2017-06-15,House,"Acc Maj Ought Not To Pass Rep RC #318",81,61,0,9,151
+1008283,740242,2018-04-18,Senate,"Accept Maj Otp-a Rpt RC #655",25,10,0,0,35
+1008283,769834,2018-07-09,House,"Reconsideration - Veto RC #726",119,23,0,9,151
+1008283,769835,2018-07-09,Senate,"Reconsideration - Veto RC #733",25,8,0,2,35
+1008305,655610,2017-05-31,House,"Acc Maj Otp As Amended Rep RC #198",102,35,0,14,151
+1008305,657950,2017-06-05,Senate,"Accept Min Ontp Rpt RC #216",13,19,0,3,35
+1008305,668311,2017-06-21,House,"Reconsideration - Veto RC #368",102,41,0,8,151
+1008305,668312,2017-06-21,Senate,"Reconsideration - Veto RC #360",20,14,0,1,35
+1008328,658026,2017-06-05,House,"Acc Maj Otp As Amended Rep RC #218",78,68,0,5,151
+1008759,769844,2018-07-09,House,"Reconsideration - Veto RC #721",91,52,0,8,151
+1008792,664521,2017-06-12,Senate,"Accept Min Otp-a Rpt RC #277",13,20,0,2,35
+1008792,664522,2017-06-15,House,"Acc Maj Ought Not To Pass Rep RC #320",81,60,0,10,151
+1008799,664544,2017-06-16,House,"Acc Min Otp As Amended Rep RC #327",75,71,0,5,151
+1008828,672979,2017-07-20,House,"Acc Maj Otp As Amended Rep RC #435",127,5,0,19,151
+1009503,656167,2017-06-01,House,"Acc Maj Ought Not To Pass Rep RC #215",77,62,0,12,151
+1009527,659060,2017-06-07,House,"Acc Maj Ought Not To Pass Rep RC #256",110,33,0,8,151
+1009687,737925,2018-04-12,House,"Acc Maj Otp As Amended Rep RC #594",81,61,0,9,151
+1009687,766108,2018-06-20,Senate,"Enactment RC #685",30,2,0,3,35
+1009687,769813,2018-07-09,House,"Reconsideration - Veto RC #707",84,60,0,7,151
+1009872,666990,2017-06-21,House,"Acc Maj Otp As Amended Rep RC #370",76,68,0,7,151
+1009872,673001,2017-07-20,Senate,"Reconsideration - Veto RC #398",22,9,0,4,35
+1009872,673002,2017-07-20,House,"Reconsideration - Veto RC #430",77,60,0,14,151
+1010175,665639,2017-06-20,House,"Acc Maj Otp As Amended Rep RC #358",86,57,0,8,151
+1010175,670003,2017-06-29,Senate,"Adopt Sas-307 To Cas-269 RC #393",16,19,0,0,35
+1010175,670004,2017-06-29,Senate,"Adopt Scs-315 To Cas-269 RC #394",18,17,0,0,35
+1010175,672961,2017-07-20,Senate,"Reconsideration - Veto RC #397",14,16,0,5,35
+1010204,668942,2017-06-27,House,"Reconsideration - Veto RC #400",131,13,0,7,151
+1010204,668943,2017-06-27,Senate,"Reconsideration - Veto RC #385",34,0,0,1,35
+1010383,660881,2017-06-08,House,"Acc Maj Ought Not To Pass Rep RC #279",77,66,0,8,151
+1010507,766144,2018-06-20,Senate,"Enactment RC #688",22,11,0,2,35
+1010925,715149,2018-03-01,House,"Acc Min Otp As Amended Rep RC #497",80,64,0,7,151
+1010971,732304,2018-04-02,House,"Acc Maj Otp As Amended Rep RC #551",80,66,0,5,151
+1010971,737607,2018-04-12,Senate,"Accept Maj Otp-a Rpt RC #619",22,13,0,0,35
+1010971,747339,2018-05-02,House,"Reconsideration - Veto RC #652",80,68,0,3,151
+1011239,714871,2018-02-27,Senate,"Accept Maj Ontp Rpt RC #515",17,14,0,4,35
+1011854,664633,2017-06-15,Senate,"Accept Maj Ontp Rpt RC #315",22,13,0,0,35
+1011859,658227,2017-06-06,House,"Enactment RC #255",145,0,0,6,151
+1012258,661228,2017-06-07,House,"Acc Maj Otp As Amended Rep RC #257",126,20,0,5,151
+1012296,660804,2017-06-08,House,"Acc Min Ought Not To Pass Rep RC #275",80,64,0,7,151
+1012785,656709,2017-06-01,House,"Acc Maj Otp As Amended Rep RC #207",88,50,0,13,151
+1012785,668310,2017-06-22,House,"Reconsideration - Veto RC #379",92,53,0,6,151
+1013050,661244,2017-06-06,House,"Acc Maj Ought Not To Pass Rep RC #244",84,64,0,3,151
+1013164,661237,2017-06-09,Senate,"Accept Report RC #267",34,0,0,1,35
+1013164,669511,2017-06-27,House,"Reconsideration - Veto RC #401",125,20,0,6,151
+1013164,669512,2017-06-27,Senate,"Reconsideration - Veto RC #386",33,1,0,1,35
+1013544,704801,2018-02-20,House,"Acc Maj Ought Not To Pass Rep RC #490",97,47,0,7,151
+1013564,664437,2017-06-13,Senate,"Accept Min Otp-a Rpt RC #292",18,17,0,0,35
+1013564,664438,2017-06-13,House,"Acc Maj Ought Not To Pass Rep RC #305",80,67,0,4,151
+1013583,737644,2018-04-12,Senate,"Accept Min Ontp Rpt RC #620",19,16,0,0,35
+1013583,738368,2018-04-13,House,"Acc Maj Otp As Amended Rep RC #601",82,63,0,6,151
+1013583,739076,2018-04-17,Senate,"Recede And Concur RC #628",17,18,0,0,35
+1013601,661229,2017-06-09,House,"Acc Maj Ought Not To Pass Rep RC #286",74,67,0,10,151
+1013601,663763,2017-06-12,Senate,"Accept Min Otp-a Rpt RC #275",18,15,0,2,35
+1013616,661238,2017-06-09,House,"Acc Maj Otp As Amended Rep RC #287",87,54,0,10,151
+1013616,670601,2017-06-27,House,"Reconsideration - Veto RC #402",82,63,0,6,151
+1014463,672993,2017-07-20,Senate,"Adopt Sas-339 To Cas-335 RC #407",19,11,0,5,35
+1014463,672994,2017-07-20,House,"Acc Maj Otp As Amended Rep RC #436",74,58,0,19,151
+1014469,664653,2017-06-19,House,"Acc Maj Ought Not To Pass Rep RC #340",78,69,0,4,151
+1014469,668324,2017-06-21,Senate,"Recede And Concur RC #356",8,26,0,1,35
+1014469,668325,2017-06-21,Senate,"Insist RC #357",32,2,0,1,35
+1015240,668320,2017-06-21,House,"Reconsideration - Veto RC #369",143,0,0,8,151
+1015240,668321,2017-06-21,Senate,"Reconsideration - Veto RC #361",34,0,0,1,35
+1017090,668373,2017-06-21,Senate,"Accept Rpt 'b' Ontp RC #366",17,17,0,1,35
+1017090,668374,2017-06-23,House,"Final Passage - Con Res RC #384",78,68,0,5,151
+1017102,654852,2017-05-31,Senate,"Veto Override (2/3) RC #195",34,0,0,1,35
+1017116,670380,2017-06-27,Senate,"Accept Rpt 'a' Otp-a RC #381",21,13,0,1,35
+1017116,670381,2017-06-28,Senate,"Recede And Concur RC #389",15,20,0,0,35
+1017116,670382,2017-06-28,Senate,"Recede And Concur RC #390",12,18,0,5,35
+1017116,670383,2017-06-27,House,"Acc Report 'b' Otp As Amend RC #404",79,66,0,6,151
+1017455,740176,2018-04-18,House,"Table Until Later RC #618",79,69,0,3,151
+1017455,774349,2018-09-13,House,"Recede RC #750",40,55,0,55,150
+1017455,774350,2018-09-13,House,"Recede And Concur RC #751",61,34,0,55,150
+1017493,666232,2017-06-16,House,"Acc Maj Ought Not To Pass Rep RC #328",91,52,0,8,151
+1018422,669413,2017-06-27,House,"Acc Maj Ought Not To Pass Rep RC #407",79,65,0,7,151
+1019474,663458,2017-06-15,House,"Adoption (2/3) RC #311",8,134,0,9,151
+1020382,672980,2017-07-20,House,"Enactment - Emer RC #432",101,32,0,18,151
+1020382,673443,2017-08-02,House,"Reconsideration - Veto RC #450",131,6,0,14,151
+1020382,673444,2017-08-02,Senate,"Reconsideration - Veto RC #435",31,1,0,3,35
+1025402,678893,2017-10-23,House,"Acc Report 'a' Otp As Amend RC #468",74,64,0,13,151
+1025402,678894,2017-10-23,House,"Recede And Concur RC #469",61,77,0,13,151
+1025402,678895,2017-10-23,House,"Insist RC #470",59,79,0,13,151
+1025402,678896,2017-10-23,House,"Recede RC #471",53,85,0,13,151
+1025402,678897,2017-10-23,House,"Recede And Concur RC #472",73,65,0,13,151
+1025402,678898,2017-10-23,House,"Enactment RC #475",68,63,0,20,151
+1025402,678899,2017-10-23,Senate,"Accept Rpt 'b' Otp-a RC #473",19,16,0,0,35
+1025402,678900,2017-10-23,Senate,"Enactment RC #476",19,10,0,6,35
+1030319,678766,2017-10-23,House,"Indef Postpone Bill & Papers RC #473",85,53,0,13,151
+1030319,678767,2017-10-23,Senate,"Indefinitely Postpone RC #474",21,10,0,4,35
+1030323,678768,2017-10-23,House,"Acc Report 'a' Otp RC #474",84,52,0,15,151
+1030323,678769,2017-10-23,House,"Recede And Concur RC #476",81,50,0,20,151
+1030323,678770,2017-11-06,House,"Reconsideration - Veto RC #477",74,62,0,14,150
+1030323,678771,2017-10-23,Senate,"Accept Rpt 'a' Otp RC #475",22,9,0,4,35
+1032901,717216,2018-03-06,Senate,"Accept Rpt 'a' Otp-a RC #528",34,0,0,1,35
+1032901,734115,2018-04-05,House,"Reconsideration - Veto RC #571",111,34,0,6,151
+1032901,734979,2018-04-09,Senate,"Reconsideration - Veto RC #604",33,0,0,2,35
+1033405,768016,2018-06-26,House,"Table Until Later RC #691",67,54,0,30,151
+1033410,705916,2018-02-20,Senate,"Accept Maj Otp Rpt RC #514",30,4,0,1,35
+1033412,713342,2018-03-01,House,"Acc Maj Otp As Amended Rep RC #496",85,57,0,9,151
+1033417,740061,2018-04-18,House,"Table Until Later RC #617",78,71,0,2,151
+1033417,740672,2018-04-18,House,"Acc Ought To Pass As Amend Rep RC #632",148,0,0,3,151
+1033417,765912,2018-06-20,Senate,"Enactment RC #689",33,0,0,2,35
+1033805,713243,2018-03-01,House,"Acc Min Ought To Pass Rep RC #498",81,62,0,8,151
+1033810,766956,2018-06-21,Senate,"Accept Min Otp-a Rpt RC #694",16,17,0,2,35
+1033810,766957,2018-06-21,Senate,"Accept Maj Otp-a Rpt RC #695",17,16,0,2,35
+1033810,768206,2018-06-26,House,"Enactment RC #693",116,7,0,28,151
+1033810,768207,2018-06-26,Senate,"Enactment RC #704",17,12,0,6,35
+1033810,768208,2018-06-27,Senate,"Table Until Later RC #705",9,18,0,8,35
+1033810,768209,2018-06-27,Senate,"Reconsider RC #706",9,18,0,8,35
+1036267,735349,2018-04-09,House,"Acc Maj Ought Not To Pass Rep RC #577",75,67,0,9,151
+1037718,732628,2018-04-02,House,"Acc Maj Otp As Amended Rep RC #550",88,57,0,6,151
+1037718,769875,2018-07-09,House,"Reconsideration - Veto RC #712",82,61,0,8,151
+1037722,766034,2018-06-20,Senate,"Enactment RC #690",33,0,0,2,35
+1037723,727263,2018-03-22,Senate,"Accept Min Otp-a Rpt RC #550",24,10,0,1,35
+1037723,728974,2018-03-27,House,"Acc Maj Ought Not To Pass Rep RC #535",94,54,0,3,151
+1037723,730683,2018-03-28,Senate,"Recede And Concur RC #555",8,26,0,1,35
+1037723,738419,2018-04-13,House,"Recede And Concur RC #603",75,70,0,6,151
+1037723,747494,2018-05-02,Senate,"Reconsideration - Veto RC #663",23,11,0,1,35
+1037723,747495,2018-05-02,House,"Reconsideration - Veto RC #662",74,74,0,3,151
+1037728,710989,2018-02-27,House,"Acc Maj Otp As Amended Rep RC #495",99,40,0,12,151
+1037728,715579,2018-03-01,Senate,"Accept Min Ontp Rpt RC #522",13,20,0,2,35
+1037728,769868,2018-07-09,House,"Reconsideration - Veto RC #711",102,40,0,9,151
+1037728,769869,2018-07-09,Senate,"Reconsideration - Veto RC #726",25,8,0,2,35
+1037731,739130,2018-04-17,House,"Acc Maj Otp As Amended Rep RC #608",79,63,0,9,151
+1037731,769862,2018-07-09,House,"Reconsideration - Veto RC #708",79,64,0,8,151
+1037732,735784,2018-04-10,House,"Acc Maj Otp As Amended Rep RC #585",112,34,0,5,151
+1037732,736767,2018-04-11,Senate,"Accept Maj Otp-a Rpt RC #609",24,10,0,1,35
+1037732,747302,2018-05-02,House,"Reconsideration - Veto RC #653",109,39,0,3,151
+1037732,747303,2018-05-02,Senate,"Reconsideration - Veto RC #670",28,6,0,1,35
+1037737,735757,2018-04-10,House,"Adopt Cah-737 RC #588",94,52,0,5,151
+1037737,766597,2018-06-21,Senate,"Final Passage RC #699",16,15,0,4,35
+1037737,769817,2018-07-09,House,"Reconsideration - Veto RC #722",87,56,0,8,151
+1037743,728182,2018-03-20,House,"Reconsideration - Veto RC #527",134,4,0,13,151
+1037743,728183,2018-03-22,Senate,"Reconsideration - Veto RC #545",33,0,0,2,35
+1037744,692252,2018-02-01,House,"Acc Maj Ought To Pass Rep RC #479",79,66,0,6,151
+1037744,698636,2018-02-08,Senate,"Accept Min Ontp Rpt RC #509",18,16,0,1,35
+1037746,713984,2018-03-01,House,"Enactment RC #499",117,23,0,11,151
+1037747,747132,2018-05-02,Senate,"Reconsideration - Veto RC #660",34,0,0,1,35
+1037747,747430,2018-05-02,House,"Reconsideration - Veto RC #660",136,12,0,3,151
+1037748,723439,2018-03-15,House,"Acc Maj Otp As Amended Rep RC #511",79,56,0,16,151
+1037749,732289,2018-04-02,Senate,"Accept Min Ontp Rpt RC #572",13,20,0,2,35
+1037749,733353,2018-04-04,House,"Acc Maj Otp As Amended Rep RC #566",96,49,0,6,151
+1037749,766195,2018-06-20,Senate,"Enactment RC #686",24,9,0,2,35
+1037749,769880,2018-07-09,Senate,"Reconsideration - Veto RC #709",26,8,0,1,35
+1037749,769881,2018-07-09,House,"Reconsideration - Veto RC #728",77,65,0,9,151
+1037750,725081,2018-03-20,House,"Acc Min Otp As Amended Rep RC #523",75,70,0,6,151
+1037754,699981,2018-02-13,House,"Acc Maj Otp As Amended Rep RC #483",87,56,0,8,151
+1037754,769858,2018-07-09,House,"Reconsideration - Veto RC #709",109,35,0,7,151
+1037754,769859,2018-07-09,Senate,"Reconsideration - Veto RC #725",33,0,0,2,35
+1037756,723108,2018-03-15,House,"Acc Maj Otp As Amended Rep RC #515",84,51,0,16,151
+1037760,739241,2018-04-17,Senate,"Accept Maj Otp-a Rpt RC #633",23,12,0,0,35
+1037760,739242,2018-04-17,House,"Acc Maj Otp As Amended Rep RC #609",116,27,0,8,151
+1037760,747713,2018-05-02,Senate,"Reconsideration - Veto RC #664",22,12,0,1,35
+1037765,717197,2018-03-06,Senate,"Accept Maj Otp-a Rpt RC #527",31,3,0,1,35
+1037765,723406,2018-03-15,House,"Acc Maj Otp As Amended Rep RC #512",87,49,0,15,151
+1037766,730868,2018-03-28,House,"Acc Maj Otp As Amended Rep RC #540",83,64,0,4,151
+1037768,732406,2018-03-29,Senate,"Accept Min Otp-a Rpt RC #564",18,17,0,0,35
+1037768,733050,2018-04-03,Senate,"Recede And Concur RC #577",17,17,0,1,35
+1037768,733051,2018-04-03,Senate,"Insist RC #578",18,17,0,0,35
+1037769,726586,2018-03-20,Senate,"Accept Rpt 'c' Otp-a RC #543",11,22,0,2,35
+1037769,726587,2018-03-20,Senate,"Accept Rpt 'b' Otp-a RC #544",12,21,0,2,35
+1037770,736891,2018-04-09,Senate,"Reconsideration - Veto RC #603",33,0,0,2,35
+1037770,736892,2018-04-10,House,"Reconsideration - Veto RC #583",139,8,0,4,151
+1037771,728940,2018-03-27,Senate,"Accept Min Ontp Rpt RC #552",8,27,0,0,35
+1037772,731326,2018-03-29,House,"Acc Maj Ought Not To Pass Rep RC #544",86,56,0,9,151
+1037776,727539,2018-03-22,House,"Acc Maj Otp As Amended Rep RC #531",76,68,0,7,151
+1037776,734826,2018-04-04,Senate,"Accept Min Ontp Rpt RC #587",10,22,0,3,35
+1037779,725593,2018-03-20,Senate,"Accept Rpt 'a' Otp-a RC #542",33,1,0,1,35
+1037779,741014,2018-04-18,Senate,"Reconsideration - Veto RC #657",32,3,0,0,35
+1037779,747341,2018-05-02,House,"Reconsideration - Veto RC #657",75,73,0,3,151
+1037785,740053,2018-04-18,House,"Reconsideration - Veto RC #620",147,2,0,2,151
+1037785,741017,2018-04-18,Senate,"Reconsideration - Veto RC #656",35,0,0,0,35
+1037787,766139,2018-06-20,House,"Enactment - Emer RC #679",127,0,0,24,151
+1037787,769819,2018-07-09,Senate,"Reconsideration - Veto RC #713",26,8,0,1,35
+1037787,769853,2018-07-09,House,"Reconsideration - Veto RC #731",143,0,0,8,151
+1037789,702267,2018-02-15,House,"Acc Ought To Pass As Amend Rep RC #487",87,59,0,5,151
+1037789,704784,2018-02-15,Senate,"Accept Report RC #513",31,3,0,1,35
+1037789,717018,2018-03-06,House,"Suspend Rules - RC #509",89,55,0,7,151
+1037789,729285,2018-03-27,House,"Recede And Concur RC #539",95,53,0,3,151
+1037789,769843,2018-07-09,House,"Reconsideration - Veto RC #710",91,53,0,7,151
+1037794,730073,2018-03-27,Senate,"Accept Rpt 'b' Ontp RC #554",12,23,0,0,35
+1037794,730887,2018-03-28,House,"Acc Report 'c' Otp As Amend RC #542",88,57,0,6,151
+1038202,747883,2018-05-02,House,"Reconsideration - Veto RC #648",129,19,0,3,151
+1038202,747884,2018-05-02,Senate,"Reconsideration - Veto RC #667",32,2,0,1,35
+1038208,727305,2018-03-22,House,"Acc Maj Ought Not To Pass Rep RC #529",81,69,0,1,151
+1038208,732777,2018-04-03,Senate,"Accept Min Otp-a Rpt RC #581",19,16,0,0,35
+1038208,732778,2018-04-03,Senate,"Adopt Sas-428 To Cah-666 RC #582",19,16,0,0,35
+1038208,733445,2018-04-04,House,"Table Until Later RC #564",75,70,0,6,151
+1038208,733963,2018-04-05,House,"Recede And Concur RC #572",72,75,0,4,151
+1044928,734823,2018-04-04,Senate,"Reconsideration - Veto RC #586",32,0,0,3,35
+1044928,734824,2018-04-05,House,"Reconsideration - Veto RC #574",116,26,0,9,151
+1044942,740485,2018-04-18,House,"Acc Maj Otp As Amended Rep RC #629",81,68,0,2,151
+1044942,765314,2018-06-19,House,"Enactment - Emer RC #670",76,60,0,15,151
+1044942,765315,2018-06-19,House,"Recede And Concur - Emer RC #674",74,58,0,19,151
+1044942,769821,2018-07-09,Senate,"Reconsideration - Veto RC #714",32,2,0,1,35
+1044942,769822,2018-07-09,House,"Reconsideration - Veto RC #732",80,63,0,8,151
+1044958,724751,2018-03-15,House,"Table Until Later RC #516",64,73,0,14,151
+1044958,733271,2018-04-02,Senate,"Accept Min Otp-a Rpt RC #570",18,15,0,2,35
+1044958,734936,2018-04-03,House,"Recede And Concur RC #560",71,72,0,8,151
+1044958,734937,2018-04-03,House,"Table Until Later RC #561",67,74,0,10,151
+1044972,769863,2018-07-09,House,"Reconsideration - Veto RC #723",141,1,0,9,151
+1044972,769864,2018-07-09,Senate,"Reconsideration - Veto RC #732",32,1,0,2,35
+1044985,747755,2018-05-02,Senate,"Reconsideration - Veto RC #658",34,0,0,1,35
+1044985,747756,2018-05-02,House,"Reconsideration - Veto RC #658",148,0,0,3,151
+1044999,732187,2018-03-27,Senate,"Accept Min Otp-a Rpt RC #553",20,15,0,0,35
+1044999,732188,2018-03-28,House,"Acc Maj Ought Not To Pass Rep RC #541",76,70,0,5,151
+1045870,693579,2018-02-01,House,"Acc Ought To Pass As Amend Rep RC #480",65,81,0,5,151
+1045870,697452,2018-02-08,House,"Recede And Concur RC #482",69,74,0,8,151
+1047000,734869,2018-04-04,House,"Reconsideration - Veto RC #567",145,0,0,6,151
+1047000,734870,2018-04-05,Senate,"Reconsideration - Veto RC #590",34,0,0,1,35
+1048331,728187,2018-03-22,House,"Acc Maj Otp As Amended Rep RC #532",76,67,0,8,151
+1048331,731568,2018-03-27,Senate,"Accept Min Ontp Rpt RC #551",14,21,0,0,35
+1049321,729320,2018-03-27,House,"Acc Maj Otp As Amended Rep RC #538",117,31,0,3,151
+1049321,732286,2018-03-28,Senate,"Accept Maj Otp-a Rpt RC #556",25,9,0,1,35
+1055230,769832,2018-07-09,House,"Reconsideration - Veto RC #713",99,44,0,8,151
+1055230,769833,2018-07-09,Senate,"Reconsideration - Veto RC #734",33,0,0,2,35
+1055662,724905,2018-03-20,House,"Acc Maj Ought Not To Pass Rep RC #525",83,60,0,8,151
+1055662,726921,2018-03-22,Senate,"Accept Min Otp Rpt RC #546",17,16,0,2,35
+1063715,735657,2018-04-10,House,"Reconsideration - Veto RC #582",107,40,0,4,151
+1063715,736473,2018-04-11,Senate,"Reconsideration - Veto RC #606",33,1,0,1,35
+1069130,724876,2018-03-20,House,"Acc Maj Ought Not To Pass Rep RC #524",87,56,0,8,151
+1069130,727295,2018-03-22,Senate,"Accept Min Otp Rpt RC #547",17,16,0,2,35
+1070162,724918,2018-03-20,Senate,"Accept Min Otp-a Rpt RC #541",15,19,0,1,35
+1071532,769882,2018-07-09,Senate,"Reconsideration - Veto RC #715",34,0,0,1,35
+1071532,769883,2018-07-09,House,"Reconsideration - Veto RC #733",139,5,0,7,151
+1073412,690413,2018-01-30,House,"Table Until Later RC #478",72,69,0,10,151
+1073412,715450,2018-03-01,House,"Recede RC #500",58,83,0,10,151
+1073412,715451,2018-03-01,House,"Recede And Concur RC #501",63,78,0,10,151
+1073412,715452,2018-03-01,House,"Adhere RC #502",79,62,0,10,151
+1073412,734911,2018-04-03,House,"Acc Maj Ought Not To Pass Rep RC #556",89,53,0,9,151
+1073412,734912,2018-04-04,House,"Table Until Later RC #568",64,81,0,6,151
+1073412,734913,2018-04-04,House,"Insist RC #569",89,56,0,6,151
+1074557,731332,2018-03-29,Senate,"Enactment RC #565",35,0,0,0,35
+1074671,769865,2018-07-09,House,"Enactment - Bond Issue RC #739",128,0,0,23,151
+1075479,732287,2018-04-02,Senate,"Reconsideration - Veto RC #569",33,0,0,2,35
+1075479,733350,2018-04-03,House,"Reconsideration - Veto RC #562",142,0,0,9,151
+1075604,740237,2018-04-18,House,"Table Until Later RC #619",78,71,0,2,151
+1077818,728944,2018-03-27,House,"Acc Maj Otp As Amended Rep RC #536",80,68,0,3,151
+1080418,733940,2018-04-02,House,"Reconsideration - Veto RC #548",136,6,0,9,151
+1080418,733941,2018-04-03,Senate,"Reconsideration - Veto RC #579",35,0,0,0,35
+1082539,732160,2018-03-28,Senate,"Passage To Be Engrossed RC #558",29,5,0,1,35
+1083482,735245,2018-04-09,House,"Acc Maj Ought Not To Pass Rep RC #579",76,65,0,10,151
+1083482,740489,2018-04-17,Senate,"Accept Min Otp-a Rpt RC #643",14,21,0,0,35
+1085745,740052,2018-04-18,Senate,"Veto Override (2/3) RC #652",27,8,0,0,35
+1085745,740323,2018-04-18,House,"Reconsideration - Veto RC #622",130,18,0,3,151
+1088115,740180,2018-04-17,Senate,"Reconsideration - Veto RC #640",35,0,0,0,35
+1088115,740181,2018-04-18,House,"Reconsideration - Veto RC #627",136,12,0,3,151
+1088582,738689,2018-04-12,House,"Indef Postpone Bill & Papers RC #595",84,59,0,8,151
+1095295,738603,2018-04-11,Senate,"Accept Rpt 'a' Otp-a RC #608",21,13,0,1,35
+1095295,738604,2018-04-12,Senate,"Pass To Be Engrossed As Amend RC #614",21,14,0,0,35
+1095295,738605,2018-04-13,House,"Acc Report 'a' Otp As Amend RC #604",64,81,0,6,151
+1095366,733549,2018-04-04,House,"Enactment RC #563",145,0,0,6,151
+1095752,710436,2018-02-27,House,"Table Until Later RC #493",73,64,0,14,151
+1095752,740980,2018-04-18,House,"Indef Postpone Bill & Papers RC #634",78,69,0,4,151
+1096341,740478,2018-04-17,House,"Reconsideration - Veto RC #606",137,8,0,6,151
+1096341,740479,2018-04-17,Senate,"Reconsideration - Veto RC #642",35,0,0,0,35
+1096397,729121,2018-03-27,House,"Acc Maj Ought Not To Pass Rep RC #537",82,66,0,3,151
+1096457,747740,2018-05-02,House,"Reconsideration - Veto RC #645",147,0,0,4,151
+1096457,747741,2018-05-02,Senate,"Reconsideration - Veto RC #665",34,0,0,1,35
+1098297,716833,2018-03-06,House,"Reference Slg RC #503",76,66,0,9,151
+1100026,741241,2018-04-18,House,"Indef Postpone Bill & Papers RC #635",81,67,0,3,151
+1101745,716864,2018-03-06,House,"Acceptance RC #504",144,0,0,7,151
+1101745,769879,2018-07-09,House,"Reconsideration - Veto RC #714",84,59,0,8,151
+1101752,732344,2018-04-02,House,"Enactment RC #552",142,2,0,7,151
+1101752,732959,2018-04-03,Senate,"Enactment RC #580",35,0,0,0,35
+1103667,733948,2018-04-04,House,"Acc Maj Otp As Amended Rep RC #565",77,68,0,6,151
+1104429,731341,2018-03-29,House,"Reference To Tax RC #545",71,72,0,8,151
+1104429,731342,2018-03-29,House,"Indef Postpone Bill & Papers RC #546",72,70,0,9,151
+1104429,732737,2018-04-03,House,"Recede And Concur RC #558",68,75,0,8,151
+1104429,732738,2018-04-03,House,"Table Until Later RC #559",67,75,0,9,151
+1104429,738394,2018-04-13,Senate,"Insist RC #623",28,4,0,3,35
+1105696,738990,2018-04-17,House,"Acc Maj Otp As Amended Rep RC #607",140,6,0,5,151
+1106215,747790,2018-05-02,House,"Reconsideration - Veto RC #650",82,66,0,3,151
+1106303,765930,2018-06-20,House,"Recede And Concur RC #678",62,77,0,12,151
+1106584,724879,2018-03-20,Senate,"Adoption RC #539",34,0,0,1,35
+1106599,740497,2018-04-17,Senate,"Accept Min Otp-a Rpt RC #632",18,17,0,0,35
+1106599,768387,2018-06-26,House,"Adopt Hah-805 To Cbs-469 RC #695",65,43,0,43,151
+1107456,738579,2018-04-12,House,"Final Passage - Emer RC #593",139,5,0,7,151
+1107456,738580,2018-04-11,Senate,"Accept Maj Otp-a Rpt RC #607",34,0,0,1,35
+1107456,747773,2018-05-02,House,"Reconsideration - Veto RC #649",141,7,0,3,151
+1107456,747774,2018-05-02,Senate,"Reconsideration - Veto RC #668",34,0,0,1,35
+1107497,741226,2018-04-18,House,"Indef Postpone Bill & Papers RC #636",79,69,0,3,151
+1107830,738625,2018-04-13,House,"Acc Maj Otp As Amended Rep RC #602",78,66,0,7,151
+1107830,740600,2018-04-17,Senate,"Accept Min Ontp Rpt RC #629",15,20,0,0,35
+1107830,747853,2018-05-02,House,"Reconsideration - Veto RC #655",80,68,0,3,151
+1107971,741076,2018-04-18,House,"Indef Postpone Bill & Papers RC #637",82,66,0,3,151
+1108954,765413,2018-06-20,House,"Acc Maj Otp As Amended Rep RC #676",53,86,0,12,151
+1108954,765414,2018-06-20,House,"Acc Min Otp As Amended Rep RC #677",78,60,0,13,151
+1108954,769815,2018-07-09,Senate,"Reconsideration - Veto RC #710",31,3,0,1,35
+1108954,769850,2018-07-09,House,"Reconsideration - Veto RC #729",76,67,0,8,151
+1109612,741247,2018-04-18,House,"Indef Postpone Bill & Papers RC #638",83,65,0,3,151
+1110061,738640,2018-04-11,House,"Acc Maj Otp As Amended Rep RC #591",132,7,0,12,151
+1110061,738641,2018-04-12,Senate,"Accept Maj Otp-a Rpt RC #613",35,0,0,0,35
+1110061,747860,2018-05-02,House,"Reconsideration - Veto RC #651",132,16,0,3,151
+1110061,747861,2018-05-02,Senate,"Reconsideration - Veto RC #669",34,0,0,1,35
+1110075,731290,2018-03-29,House,"Table Until Later RC #543",74,65,0,12,151
+1110075,740946,2018-04-18,House,"Indef Postpone Bill & Papers RC #639",79,69,0,3,151
+1110115,740468,2018-04-18,House,"Acc Ought To Pass As Amend Rep RC #631",104,42,0,5,151
+1110115,766367,2018-06-21,House,"Recede RC #682",78,58,0,15,151
+1110115,767234,2018-06-21,House,"Adopt Hch-796 To Cah-782 RC #683",78,56,0,17,151
+1110115,774337,2018-08-30,Senate,"Recede And Concur RC #737",23,7,0,5,35
+1110403,740776,2018-04-18,House,"Reconsideration - Veto RC #614",127,19,0,5,151
+1110403,740777,2018-04-18,Senate,"Reconsideration - Veto RC #654",35,0,0,0,35
+1111512,737670,2018-04-12,House,"Acc Report 'b' Ontp RC #596",65,77,0,9,151
+1111512,737671,2018-04-12,House,"Acc Report 'c' Otp As Amend RC #597",73,68,0,10,151
+1111512,737672,2018-04-12,House,"Adopt Hch-755 To Cas-446 RC #598",73,68,0,10,151
+1111512,737673,2018-04-12,House,"Adopt Hah-753 To Cas-446 RC #599",63,75,0,13,151
+1111512,737674,2018-04-12,House,"Adopt Hbh-754 To Cas-446 RC #600",66,75,0,10,151
+1111512,739820,2018-04-17,Senate,"Recede And Concur RC #630",12,23,0,0,35
+1111512,739821,2018-04-17,Senate,"Adhere RC #631",30,5,0,0,35
+1111512,740758,2018-04-18,House,"Table Until Later RC #611",76,70,0,5,151
+1111512,740759,2018-04-18,House,"Recede And Concur RC #633",70,77,0,4,151
+1111815,735828,2018-04-10,House,"Table Until Later RC #584",77,69,0,5,151
+1111815,741239,2018-04-18,House,"Indef Postpone Bill & Papers RC #640",75,73,0,3,151
+1112441,766200,2018-06-20,Senate,"Indefinitely Postpone RC #679",30,3,0,2,35
+1112934,747602,2018-05-02,House,"Reconsideration - Veto RC #656",146,2,0,3,151
+1112934,747603,2018-05-02,Senate,"Reconsideration - Veto RC #671",34,0,0,1,35
+1113642,740309,2018-04-18,House,"Table Until Later RC #615",75,71,0,5,151
+1123322,769878,2018-07-09,House,"Reconsideration - Veto RC #725",86,56,0,9,151
+1123328,767771,2018-06-20,House,"Table Until Later RC #675",71,68,0,12,151
+1123328,768241,2018-06-26,House,"Adopt Hah-804 RC #694",68,47,0,36,151
+1123328,769877,2018-07-09,House,"Adopt Hbh-807 RC #740",81,48,0,22,151
+1123331,767773,2018-06-20,Senate,"Indefinitely Postpone RC #677",16,17,0,2,35
+1123333,767779,2018-06-20,Senate,"Final Passage-emer 2/3 Elect RC #682",30,0,0,5,35
+1124154,769897,2018-07-09,House,"Passage To Be Engrossed RC #737",138,5,0,8,151
+1124155,774332,2018-08-30,Senate,"Enactment RC #735",32,0,0,3,35
+1125831,774268,2018-08-30,House,"Passage To Be Engrossed RC #746",68,50,0,32,150
+1125832,774269,2018-08-30,House,"Acc Maj Ought To Pass Rep RC #747",91,17,0,42,150
+1125832,774410,2018-09-13,House,"Reconsideration - Veto RC #748",74,46,0,30,150
+1125833,774270,2018-08-30,Senate,"Accept Min Otp Rpt RC #738",26,4,0,5,35
+1125833,774271,2018-08-30,House,"Acc Maj Ought Not To Pass Rep RC #744",46,74,0,30,150
+1125835,774272,2018-08-30,Senate,"Accept Maj Otp-a Rpt RC #736",31,0,0,4,35
+1125835,774273,2018-08-30,House,"Acc Maj Otp As Amended Rep RC #745",118,1,0,31,150
+1125836,774331,2018-09-13,House,"Enactment - Mandate RC #749",114,0,0,36,150
+1125837,774274,2018-08-30,House,"Acc Maj Ought Not To Pass Rep RC #743",72,53,0,25,150

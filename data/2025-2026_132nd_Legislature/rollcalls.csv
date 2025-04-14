@@ -1,0 +1,133 @@
+bill_id,roll_call_id,date,chamber,description,yea,nay,nv,absent,total
+1903030,1539818,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #70",76,69,0,6,151
+1903030,1544235,2025-04-10,Senate,"Accept Majority Ought Not To Pass Report RC #99",20,14,0,1,35
+1903047,1539915,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #71",77,67,0,7,151
+1903047,1544382,2025-04-10,Senate,"Accept Majority Ought Not To Pass Report RC #100",20,14,0,1,35
+1903113,1536301,2025-04-03,House,"Otp-am RC #67",142,0,0,9,151
+1903166,1526108,2025-03-25,House,"Acc Maj Ought To Pass Rep RC #55",78,64,0,9,151
+1903166,1528791,2025-03-27,Senate,"Accept Majority Ought To Pass Report RC #76",24,9,0,2,35
+1903269,1543672,2025-04-10,House,"Acc Maj Ought To Pass Rep RC #79",144,0,0,7,151
+1903277,1525958,2025-03-25,House,"Acc Maj Ought To Pass Rep RC #58",85,58,0,8,151
+1903277,1528634,2025-03-27,Senate,"Accept Majority Ought To Pass Report RC #79",27,6,0,2,35
+1903287,1539444,2025-04-08,Senate,"Accept Majority Ought To Pass Report RC #93",24,8,0,3,35
+1903291,1525884,2025-03-25,House,"Acc Maj Ought To Pass Rep RC #57",83,60,0,8,151
+1903291,1529126,2025-03-27,Senate,"Accept Majority Ought To Pass Report RC #78",30,3,0,2,35
+1904135,1526194,2025-03-25,House,"Acc Maj Ought To Pass Rep RC #59",78,66,0,7,151
+1904135,1528984,2025-03-27,Senate,"Accept Majority Ought To Pass Report RC #80",19,14,0,2,35
+1904135,1532910,2025-04-01,House,"Enactment RC #64",72,68,0,11,151
+1915842,1523322,2025-03-20,House,"Acc Maj Ought Not To Pass Rep RC #45",76,66,0,9,151
+1916949,1471399,2025-01-14,Senate,"Passage RC #4",15,19,0,1,35
+1916959,1471659,2025-01-14,Senate,"Passage RC #3",15,18,0,2,35
+1916970,1471383,2025-01-14,Senate,"Passage RC #5",16,19,0,0,35
+1916980,1471658,2025-01-14,Senate,"Passage RC #7",16,18,0,1,35
+1916991,1471660,2025-01-14,Senate,"Passage RC #2",22,12,0,1,35
+1917001,1471398,2025-01-14,Senate,"Passage RC #6",16,18,0,1,35
+1917328,1472847,2025-01-21,House,"Rule Comm RC #2",72,66,0,12,150
+1918872,1486739,2025-02-11,House,"Otp-am RC #3",74,71,0,5,150
+1918872,1486740,2025-02-11,House,"Indef Pp Hah-2 To Cah-1 RC #4",73,71,0,6,150
+1918872,1486741,2025-02-11,House,"Indef Pp Hbh-3 To Cah-1 RC #5",74,71,0,5,150
+1918872,1486742,2025-02-11,House,"Indef Pp Hch-4 To Cah-1 RC #6",74,71,0,5,150
+1918872,1486743,2025-02-11,House,"Indef Pp Hdh-5 To Cah-1 RC #7",73,71,0,6,150
+1918872,1486744,2025-02-11,House,"Indef Pp Heh-6 To Cah-1 RC #8",73,70,0,7,150
+1918872,1486745,2025-02-11,House,"Indef Pp Hfh-7 To Cah-1 RC #9",75,67,0,8,150
+1918872,1486746,2025-02-11,House,"Indef Pp Hgh-8 To Cah-1 RC #10",73,71,0,6,150
+1918872,1486747,2025-02-11,House,"Adopt Cah-1 RC #11",73,71,0,6,150
+1918872,1486748,2025-02-11,Senate,"Accept Report RC #23",20,14,0,1,35
+1918872,1486749,2025-02-11,Senate,"Commit RC #24",14,20,0,1,35
+1918872,1486750,2025-02-11,Senate,"Indefinitely Postpone Senate Amendment (sas-1) RC #25",16,18,0,1,35
+1918872,1486751,2025-02-11,Senate,"Adopt Sas-1 RC #26",16,18,0,1,35
+1918872,1486752,2025-02-11,Senate,"Indefinitely Postpone Senate Amendment (sbs-2) RC #27",20,14,0,1,35
+1918872,1486753,2025-02-11,Senate,"Indefinitely Postpone Senate Amendment (scs-3) RC #28",20,14,0,1,35
+1918872,1486754,2025-02-11,Senate,"Indefinitely Postpone Senate Amendment (sds-4) RC #29",21,13,0,1,35
+1918872,1486755,2025-02-11,Senate,"Indefinitely Postpone Senate Amendment (ses-5) RC #30",20,14,0,1,35
+1918872,1486756,2025-02-11,Senate,"Adopt Cah-1 RC #31",20,14,0,1,35
+1918872,1498814,2025-02-25,House,"Commit RC #12",69,76,0,5,150
+1918872,1498815,2025-02-25,House,"Passage Of Emergency Measure RC #13",75,70,0,5,150
+1918872,1499348,2025-02-25,House,"Reconsider RC #14",75,67,0,8,150
+1918872,1499349,2025-02-25,House,"Adopt Cah-1 As Amended By Hhh-9 RC #15",75,68,0,7,150
+1918872,1514735,2025-03-11,House,"Recede And Concur RC #17",129,10,0,12,151
+1918872,1514736,2025-03-11,House,"Enactment - Emer RC #18",113,27,0,11,151
+1918872,1515409,2025-03-11,House,"Insist RC #20",108,29,0,14,151
+1918872,1516880,2025-03-11,Senate,"Adopt Sfs-6 RC #33",31,2,0,2,35
+1918872,1517226,2025-03-13,Senate,"Recede RC #36",12,20,0,3,35
+1918872,1517227,2025-03-13,Senate,"Recede And Concur RC #37",22,10,0,3,35
+1918872,1517228,2025-03-13,Senate,"Insist/ask For Committee Of Conference RC #38",12,20,0,3,35
+1918872,1517229,2025-03-13,Senate,"Insist RC #39",0,32,0,3,35
+1918872,1517230,2025-03-13,Senate,"Recede And Concur RC #40",22,10,0,3,35
+1923869,1532322,2025-04-01,House,"Acc Maj Ought Not To Pass Rep RC #65",76,68,0,7,151
+1923869,1540133,2025-04-08,Senate,"Accept Majority Ought Not To Pass Report RC #92",24,9,0,2,35
+1924101,1523495,2025-03-20,House,"Acc Maj Ought Not To Pass Rep RC #46",76,66,0,9,151
+1924101,1525912,2025-03-25,Senate,"Accept Majority Ought Not To Pass Report RC #72",20,14,0,1,35
+1937249,1539918,2025-04-08,House,"Reconsider RC #74",71,75,0,5,151
+1940972,1522805,2025-03-20,House,"Passage To Be Engrossed RC #21",143,0,0,8,151
+1948295,1539895,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #75",74,72,0,5,151
+1948295,1544323,2025-04-10,Senate,"Accept Majority Ought Not To Pass Report RC #96",19,14,0,2,35
+1948735,1532314,2025-04-01,Senate,"Accept Majority Ought To Pass Report RC #83",12,17,0,6,35
+1948735,1532315,2025-04-01,House,"Acc Maj Ought To Pass Rep RC #66",91,52,0,8,151
+1948735,1540083,2025-04-08,Senate,"Recede And Concur RC #84",11,22,0,2,35
+1948735,1543554,2025-04-10,House,"Table Until Later RC #76",86,59,0,6,151
+1949104,1519402,2025-03-18,Senate,"Accept Majority Ought Not To Pass Report RC #47",19,16,0,0,35
+1951620,1543987,2025-04-10,House,"Acc Maj Ought Not To Pass Rep RC #81",79,66,0,6,151
+1951727,1526004,2025-03-25,House,"Acc Maj Ought Not To Pass Rep RC #56",78,65,0,8,151
+1951727,1528732,2025-03-27,Senate,"Accept Majority Ought Not To Pass Report RC #77",20,13,0,2,35
+1959387,1539976,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #73",76,68,0,7,151
+1959387,1544385,2025-04-10,Senate,"Accept Majority Ought Not To Pass Report RC #102",20,14,0,1,35
+1959469,1540006,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #72",78,65,0,8,151
+1959469,1543559,2025-04-10,Senate,"Accept Majority Ought Not To Pass Report RC #101",20,14,0,1,35
+1963468,1504988,2025-03-04,Senate,"Reference RC #32",15,20,0,0,35
+1974970,1539910,2025-04-08,Senate,"Accept Majority Ought To Pass As Amended Report RC #94",30,2,0,3,35
+1974970,1544276,2025-04-10,House,"Acc Maj Otp As Amended Rep RC #80",117,27,0,7,151
+1975195,1543527,2025-04-10,Senate,"Accept Majority Ought To Pass Report RC #103",19,15,0,1,35
+1977804,1522732,2025-03-20,House,"Acc Maj Otp As Amended Rep RC #22",74,69,0,8,151
+1977804,1522733,2025-03-20,House,"Indef Pp Hah-15 To Cah-13 RC #23",74,69,0,8,151
+1977804,1522734,2025-03-20,House,"Indef Pp Hbh-16 To Cah-13 RC #24",74,69,0,8,151
+1977804,1522735,2025-03-20,House,"Indef Pp Hch-17 To Cah-13 RC #25",74,68,0,9,151
+1977804,1522736,2025-03-20,House,"Dispense The Reading Of H""d"" RC #26",84,56,0,11,151
+1977804,1522737,2025-03-20,House,"Indef Pp Hdh-18 To Cah-13 RC #27",74,66,0,11,151
+1977804,1522738,2025-03-20,House,"Indef Pp Heh-19 To Cah-13 RC #28",75,63,0,13,151
+1977804,1522739,2025-03-20,House,"Indef Pp Hfh-20 To Cah-13 RC #29",75,64,0,12,151
+1977804,1522740,2025-03-20,House,"Indef Pp Hgh-21 To Cah-13 RC #30",76,66,0,9,151
+1977804,1522741,2025-03-20,House,"Indef Pp Hhh-23 To Cah-13 RC #31",75,67,0,9,151
+1977804,1522742,2025-03-20,House,"Table Until Later RC #32",67,75,0,9,151
+1977804,1522743,2025-03-20,House,"Suspend Rule 401 Part 11 RC #33",68,74,0,9,151
+1977804,1522744,2025-03-20,House,"Indef Pp Hih-24 To Cah-13 RC #34",73,66,0,12,151
+1977804,1522745,2025-03-20,House,"Indef Pp Hkh-26 To Cah-13 RC #35",75,63,0,13,151
+1977804,1522746,2025-03-20,House,"Indef Pp Hlh-27 To Cah-13 RC #36",74,63,0,14,151
+1977804,1522747,2025-03-20,House,"Indef Pp Hmh-28 To Cah-13 RC #37",75,61,0,15,151
+1977804,1522748,2025-03-20,House,"Indef Pp Hoh-30 To Cah-13 RC #38",74,61,0,16,151
+1977804,1522749,2025-03-20,House,"Indef Pp Hph-31 To Cah-13 RC #39",74,62,0,15,151
+1977804,1522750,2025-03-20,House,"Indef Pp Hqh-32 To Cah-13 RC #40",74,64,0,13,151
+1977804,1522751,2025-03-20,House,"Indef Pp Hrh-33 To Cah-13 RC #41",64,75,0,12,151
+1977804,1522752,2025-03-20,House,"Adopt Hrh-33 To Cah-13 RC #42",74,67,0,10,151
+1977804,1522753,2025-03-20,House,"Adopt C A As Am By Hrh-33 RC #43",73,67,0,11,151
+1977804,1522754,2025-03-20,House,"Passage To Be Engrossed RC #44",74,67,0,10,151
+1977804,1523894,2025-03-20,House,"Enactment RC #47",76,66,0,9,151
+1977804,1523895,2025-03-20,Senate,"Accept Majority Ought To Pass As Amended Report RC #53",18,17,0,0,35
+1977804,1523896,2025-03-20,Senate,"1st Reading RC #54",21,14,0,0,35
+1977804,1523897,2025-03-20,Senate,"Dispensing Of The Reading RC #55",24,11,0,0,35
+1977804,1523898,2025-03-20,Senate,"Adopt House Amendment R (h-33) To Commitee Amendment RC #56",18,17,0,0,35
+1977804,1523899,2025-03-20,Senate,"Adopt Committee Amendment As Amended By House Amendment RC #57",18,17,0,0,35
+1977804,1523900,2025-03-20,Senate,"Suspend Rules (2/3) RC #58",22,13,0,0,35
+1977804,1523901,2025-03-20,Senate,"Passage To Be Engrossed As Amended RC #59",18,17,0,0,35
+1977804,1523902,2025-03-20,Senate,"Forthwith RC #60",20,15,0,0,35
+1977804,1523903,2025-03-20,Senate,"Enactment RC #62",18,17,0,0,35
+1977804,1523904,2025-03-20,Senate,"Forthwith RC #63",20,15,0,0,35
+1977854,1541043,2025-04-08,House,"Acc Maj Ought Not To Pass Rep RC #68",81,63,0,7,151
+1978152,1539775,2025-04-08,House,"Acc Maj Ought To Pass Rep RC #69",103,41,0,7,151
+1978152,1544176,2025-04-10,Senate,"Accept Majority Ought To Pass Report RC #98",20,14,0,1,35
+1990953,1514737,2025-03-11,House,"Adoption RC #19",75,64,0,12,151
+2007863,1544872,2025-04-10,House,"Indef Pp Hah-47 RC #77",91,53,0,7,151
+2007863,1544873,2025-04-10,House,"Passage To Be Engrossed RC #78",113,32,0,6,151
+2009067,1522413,2025-03-20,Senate,"Reference RC #50",19,16,0,0,35
+2009189,1522675,2025-03-20,Senate,"Reference RC #48",18,17,0,0,35
+2009299,1522686,2025-03-20,Senate,"Reference RC #49",18,17,0,0,35
+2010967,1524100,2025-03-20,Senate,"Reference RC #61",19,16,0,0,35
+2012182,1523423,2025-03-20,Senate,"Passage RC #64",20,15,0,0,35
+2012182,1523424,2025-03-20,House,"Indef Pp Hah-34 To Sp 519 RC #48",75,60,0,16,151
+2012182,1523425,2025-03-20,House,"Passage RC #49",75,62,0,14,151
+2012908,1543635,2025-04-10,Senate,"Reference RC #95",18,15,0,2,35
+2013065,1526868,2025-03-25,Senate,"Reference RC #71",19,14,0,2,35
+2013320,1525886,2025-03-25,House,"Reference To Judiciary RC #53",77,68,0,6,151
+2013380,1528749,2025-03-27,Senate,"Reference RC #81",18,13,0,4,35
+2014840,1529832,2025-03-27,House,"Table Until Later RC #61",2,137,0,12,151
+2019063,1540560,2025-04-08,Senate,"Reference RC #85",18,15,0,2,35

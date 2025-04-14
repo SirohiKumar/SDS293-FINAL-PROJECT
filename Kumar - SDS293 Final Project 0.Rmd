@@ -1,0 +1,43 @@
+---
+title: "Kumar - SDS293 Final Project 0"
+output: html_notebook
+---
+
+load libraries
+```{r message=F}
+
+library(tidyverse)
+library(fs)
+
+```
+
+load data on various bills in and out of the state legislatures
+```{r message=F}
+
+## locate where all of the "bills.csv"s are for all the different years
+bills_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/bills_csv"
+
+## list these csv files
+bills_files = fs::dir_ls(bills_dir)
+
+## load in all of the bills csvs, adding an id column with the name of the original csv and creating a column for legislature
+bills_csv = bills_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 185, 193),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) 
+
+head(bills_csv)
+
+```
+
+load data on the characteristics of the maine state legislatures
+
