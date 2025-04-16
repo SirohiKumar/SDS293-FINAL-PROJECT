@@ -40,7 +40,7 @@ List of history steps / actions taken, keyed to `bills.csv` by `bill_id`.
 	action - Description of history step
 
 ## people.csv
-List of legisltors and their basic details along with third party identifiers.
+List of legislators and their basic details along with third party identifiers.
 
 	people_id - LegiScan person identifier
 	name - Full name

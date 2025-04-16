@@ -1752,30 +1752,23 @@ display: none;
 
 
 <!-- rnb-text-begin -->
-<p>load libraries</p>
+<div id="part-i-loading-and-cleaning-the-data" class="section level2">
+<h2>Part I: Loading and Cleaning the Data</h2>
+<p>Load libraries</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5cbmBgYCJ9 -->
-<pre class="r"><code>library(tidyverse)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkoZnMpXG5cbmBgYCJ9 -->
+<pre class="r"><code>
+library(tidyverse)
+library(fs)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoi4pSA4pSAIEF0dGFjaGluZyBjb3JlIHRpZHl2ZXJzZSBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDIuMC4wIOKUgOKUgFxu4pyUIGRwbHlyICAgICAxLjEuNCAgICAg4pyUIHJlYWRyICAgICAyLjEuNVxu4pyUIGZvcmNhdHMgICAxLjAuMCAgICAg4pyUIHN0cmluZ3IgICAxLjUuMVxu4pyUIGdncGxvdDIgICAzLjUuMCAgICAg4pyUIHRpYmJsZSAgICAzLjIuMVxu4pyUIGx1YnJpZGF0ZSAxLjkuMyAgICAg4pyUIHRpZHlyICAgICAxLjMuMVxu4pyUIHB1cnJyICAgICAxLjAuMiAgICAg4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxu4pyWIGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbuKcliBkcGx5cjo6bGFnKCkgICAgbWFza3Mgc3RhdHM6OmxhZygpXG7ihLkgVXNlIHRoZSBcdTAwMWJdODs7aHR0cDovL2NvbmZsaWN0ZWQuci1saWIub3JnL1x1MDAwN2NvbmZsaWN0ZWQgcGFja2FnZVx1MDAxYl04OztcdTAwMDcgdG8gZm9yY2UgYWxsIGNvbmZsaWN0cyB0byBiZWNvbWUgZXJyb3JzXG4ifQ== -->
-<pre><code>── Attaching core tidyverse packages ─────────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.0     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     ── Conflicts ───────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>load data on various bills in and out of the state legislatures</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jIyBsb2NhdGUgd2hlcmUgYWxsIG9mIHRoZSBcImJpbGxzLmNzdlwicyBhcmUgZm9yIGFsbCB0aGUgZGlmZmVyZW50IHllYXJzXG5iaWxsc19kaXIgPSBcIi9Vc2Vycy9zaXJvaGlrdW1hci9MaWJyYXJ5L0Nsb3VkU3RvcmFnZS9Hb29nbGVEcml2ZS1zaXJvaGlrdW1hcjE4NUBnbWFpbC5jb20vTXkgRHJpdmUvVU5ERVJHUkFELzIwMjQtMjUgSlVOSU9SIFlFQVIvMjAyNSBTRFMgMjkzIC0gTUFDSElORSBMRUFSTklORy9TRFMyOTMtRklOQUwtUFJPSkVDVC9kYXRhL2JpbGxzX2NzdlwiXG5cbiMjIGxpc3QgdGhlc2UgY3N2IGZpbGVzXG5iaWxsc19maWxlcyA9IGZzOjpkaXJfbHMoYmlsbHNfZGlyKVxuXG4jIyBsb2FkIGluIGFsbCBvZiB0aGUgYmlsbHMgY3N2cywgYWRkaW5nIGFuIGlkIGNvbHVtbiB3aXRoIHRoZSBuYW1lIG9mIHRoZSBvcmlnaW5hbCBjc3ZcbmJpbGxzX2NzdiA9IGJpbGxzX2ZpbGVzICU+JVxuICAgIG1hcF9kZnIocmVhZF9jc3YsIC5pZCA9IFwic291cmNlXCIpICU+JVxuICAgIG11dGF0ZSh5ZWFyID0gc3Vic3RyKHNvdXJjZSwgMTg1LCAxOTMpLFxuICAgICAgICAgICBsZWdpc2xhdHVyZSA9IGNhc2Vfd2hlbih5ZWFyID09IFwiMjAwOS0yMDEwXCIgfiBcIjEyNFwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMTEtMjAxMlwiIH4gXCIxMjVcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDEzLTIwMTRcIiB+IFwiMTI2XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAxNS0yMDE2XCIgfiBcIjEyN1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMTctMjAxOFwiIH4gXCIxMjhcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDE5LTIwMjBcIiB+IFwiMTI5XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAyMS0yMDIyXCIgfiBcIjEzMFwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMjMtMjAyNFwiIH4gXCIxMzFcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDI1LTIwMjZcIiB+IFwiMTMyXCIsKSkgJT4lXG4gICAgc2VsZWN0KC1zb3VyY2UpIFxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jIyBsb2NhdGUgd2hlcmUgYWxsIG9mIHRoZSBcImJpbGxzLmNzdlwicyBhcmUgZm9yIGFsbCB0aGUgZGlmZmVyZW50IHllYXJzXG5iaWxsc19kaXIgPSBcIi9Vc2Vycy9zaXJvaGlrdW1hci9MaWJyYXJ5L0Nsb3VkU3RvcmFnZS9Hb29nbGVEcml2ZS1zaXJvaGlrdW1hcjE4NUBnbWFpbC5jb20vTXkgRHJpdmUvVU5ERVJHUkFELzIwMjQtMjUgSlVOSU9SIFlFQVIvMjAyNSBTRFMgMjkzIC0gTUFDSElORSBMRUFSTklORy9TRFMyOTMtRklOQUwtUFJPSkVDVC9kYXRhL2JpbGxzX2NzdlwiXG5cbiMjIGxpc3QgdGhlc2UgY3N2IGZpbGVzXG5iaWxsc19maWxlcyA9IGZzOjpkaXJfbHMoYmlsbHNfZGlyKVxuXG4jIyBsb2FkIGluIGFsbCBvZiB0aGUgYmlsbHMgY3N2cywgYWRkaW5nIGFuIGlkIGNvbHVtbiB3aXRoIHRoZSB5ZWFycyBhbmQgY3JlYXRpbmcgYSBjb2x1bW4gZm9yIGxlZ2lzbGF0dXJlXG5iaWxsc19jc3YgPSBiaWxsc19maWxlcyAlPiVcbiAgICBtYXBfZGZyKHJlYWRfY3N2LCAuaWQgPSBcInNvdXJjZVwiKSAlPiVcbiAgICBtdXRhdGUoeWVhciA9IHN1YnN0cihzb3VyY2UsIDE4NSwgMTkzKSxcbiAgICAgICAgICAgbGVnaXNsYXR1cmUgPSBjYXNlX3doZW4oeWVhciA9PSBcIjIwMDktMjAxMFwiIH4gXCIxMjRcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDExLTIwMTJcIiB+IFwiMTI1XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAxMy0yMDE0XCIgfiBcIjEyNlwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMTUtMjAxNlwiIH4gXCIxMjdcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDE3LTIwMThcIiB+IFwiMTI4XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAxOS0yMDIwXCIgfiBcIjEyOVwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMjEtMjAyMlwiIH4gXCIxMzBcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDIzLTIwMjRcIiB+IFwiMTMxXCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAyNS0yMDI2XCIgfiBcIjEzMlwiLCkpICU+JVxuICAgIHNlbGVjdCgtc291cmNlKSAlPiVcbiAgICBtdXRhdGUoYmlsbF9pZCA9IGFzLmNoYXJhY3RlcihiaWxsX2lkKSxcbiAgICAgICAgICAgc3RhdHVzID0gYXMuY2hhcmFjdGVyKHN0YXR1cyksXG4gICAgICAgICAgIGNvbW1pdHRlZV9pZCA9IGFzLmNoYXJhY3Rlcihjb21taXR0ZWVfaWQpLFxuICAgICAgICAgICBzZXNzaW9uX2lkID0gYXMuY2hhcmFjdGVyKHNlc3Npb25faWQpKSAgICAgICAgICAgIyMgY29udmVydCBpZHMgdG8gY2hyc1xuYGBgIn0= -->
 <pre class="r"><code>
 ## locate where all of the &quot;bills.csv&quot;s are for all the different years
 bills_dir = &quot;/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/bills_csv&quot;
@@ -1783,7 +1776,7 @@ bills_dir = &quot;/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikuma
 ## list these csv files
 bills_files = fs::dir_ls(bills_dir)
 
-## load in all of the bills csvs, adding an id column with the name of the original csv
+## load in all of the bills csvs, adding an id column with the years and creating a column for legislature
 bills_csv = bills_files %&gt;%
     map_dfr(read_csv, .id = &quot;source&quot;) %&gt;%
     mutate(year = substr(source, 185, 193),
@@ -1796,7 +1789,11 @@ bills_csv = bills_files %&gt;%
                            year == &quot;2021-2022&quot; ~ &quot;130&quot;,
                            year == &quot;2023-2024&quot; ~ &quot;131&quot;,
                            year == &quot;2025-2026&quot; ~ &quot;132&quot;,)) %&gt;%
-    select(-source) </code></pre>
+    select(-source) %&gt;%
+    mutate(bill_id = as.character(bill_id),
+           status = as.character(status),
+           committee_id = as.character(committee_id),
+           session_id = as.character(session_id))           ## convert ids to chrs</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogT25lIG9yIG1vcmUgcGFyc2luZyBpc3N1ZXMsIGNhbGwgYHByb2JsZW1zKClgIG9uIHlvdXIgZGF0YSBmcmFtZSBmb3IgZGV0YWlscywgZS5nLjpcbiAgZGF0IDwtIHZyb29tKC4uLilcbiAgcHJvYmxlbXMoZGF0KVdhcm5pbmc6IE9uZSBvciBtb3JlIHBhcnNpbmcgaXNzdWVzLCBjYWxsIGBwcm9ibGVtcygpYCBvbiB5b3VyIGRhdGEgZnJhbWUgZm9yIGRldGFpbHMsIGUuZy46XG4gIGRhdCA8LSB2cm9vbSguLi4pXG4gIHByb2JsZW1zKGRhdClXYXJuaW5nOiBPbmUgb3IgbW9yZSBwYXJzaW5nIGlzc3VlcywgY2FsbCBgcHJvYmxlbXMoKWAgb24geW91ciBkYXRhIGZyYW1lIGZvciBkZXRhaWxzLCBlLmcuOlxuICBkYXQgPC0gdnJvb20oLi4uKVxuICBwcm9ibGVtcyhkYXQpXG4ifQ== -->
 <pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details, e.g.:
@@ -1810,10 +1807,10 @@ bills_csv = bills_files %&gt;%
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChiaWxsc19jc3YpXG5gYGAifQ== -->
 <pre class="r"><code>head(bills_csv)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTYsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAxNiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUErMVh6VzhiUlJUZnhrbXNKTFJZNHNKeGVxQnFKZnlkQTBXcXdPbmFUWkJCbGgzVUlpRlprOTJYelNqakdUTXptelJ3NlovR0Vha2NPSExreUpVYlFxamx6ZTZNUDFhSmlJVVBTR0RKZVROdjMvdTkzN3kzbnZjeURGKzBkMS9zQmtGUUNqWkxwYUMwaGN0ZzY4dmpYdldqSU5qY3dNMmRZRFBZc2ZJbEdyMkhpd3ArNytGM3UxUCsrbnRyanZJSEozOXk4bWNuZjNIeTF5RC9aSDZmSHVhYjIwb1hjOXNSS2ZYRHgyNjUyUStiallWMWMySGRXbGkzRjliN014cnZ1ekJlVmdxeThMeEFZN3RIR1lmNCt0MkFhbjNUN2xxL29KUnpldjFuSHZQSCs2OXlXWGI3N1Z5Ky90M0ozeHlscFJwdFJSeERPYUpldVJsU0F5amZGQTVRN1FqU2lRdzVsbVNnNUJrN1lZYVlNeUE5cVNLb25nTEVUQ1JFbnBJRHBtTHRuQ1p6cDA1cXpxUmkzd0toNUJrSVVKU1RYaXBpY2lEeHo1SFdLWkJUcWNoenFnMWNJZ2RGamhWUU13RmhTSTlHakRQRFFCT0sxcUZpNHR5R2U1N1pJWjlFMFlrUHVqOEVMZmtGZkdqRGRrVWtVMFVUeU1nT0ZHaFFGOVF3S1N6WGtLcHpNanBIWE9mNzNjdzNaQW9pWTROWXh4Q21WT1ZjMEEwRG5vTFdDSUtIc0lSNlRGQVJNZHdOSVVsNWptOFBqUjU0T0tQSk1PVkkvcG04QUNVc0tCYlpTSnVEcHpJVkdyaFVuc0pvbnJQdXk2bEZ6d2d3bWdpcERZdHMxaUliUUZzcVJ5S0dLUWF4ekFhSzRvUElzaFVHb1ErdkVnYUNhZU9oeVRVMTdEQkZEbWhDZW9xbThmODEvMC9XUEx0TWd0VS9GZWUzOHhZL3Q1YzNYVjUzL2VYMTZ1YkxhK1B0TGUrcnB3OUhqOGdnVlRxbG1DWWp5V2VTNGNMV2hMU2JqVnFiRERpTklDWk1rRDRrVE5zS1h1Qzd6V3pSSG9iZFR2aG8vVkQzTFZUdjZJdE92LzhWR1hSR28yNW92U0lwb2xRcEVCRTR3NE5yREt1a093R1ZvTlVWYWRYYnBNdnhiY1d3US9nbXhUYzN2aDdwMzVhSTVUSjljR2JNVkg5Y3IzTnJIMUZSaStTay9ubTNmc0k0cjJQdnJyY2FEZC9BSC95TmNiT3hrblZ6SmV2V1N0YnRsYXozYyt2bDFCeGFMM1M2dkx5c1RTZ1R3RjFLVXdVMXFaSWNMY1BROVpqcEthZFg0Nm11VVQzOXBCOCtlZnhBaTNUeXBObmFkM2hIL3d5djJWZzNZSFBkZ0sxMUE3YlhEYmcvQjF3dTlvNTlBYXF0eG14QVhiT2lNQlRQVDdUeXNqQkRDam9CUDBOV25MSnN6ejltZm1yZDFYbmpuR3YyTWdQTXhBa29QOXBxZzFuMFhXc3YzNDFqMEZGUlplOTdGOXd3dy8xbXo5b3FOclZ0MHFuZXdaL1poQmtETUErOU05TTVSUVdIWURPbVdYdGRCTjliMFB2enA0clB6b1JzWU14eEtQR042QXFvbXZuT1g0dEN3bmFVdkt6NXBObU90Mkc3SGZiRlAyNW9jTHZJaWRaT2NkaHhiVzRKcml5ekF5UFlodjF2cTF4d3ZxTXNRcWFZdDJ6LzhOMVVXQ0p4TlRwTHhYbTFXWGhjbW9xazRIM1hyYmNYMXBXY1VjbnpMdnVDZ2tqd0IrSjU0b0Uxam1TK2NweWVnTTlsS1lZTHQ3eUgyY21TVTV2aXZHZDhDbENyYTBiaWdPTTFrZVJlay9mK04zOEJyLzBjRFowT0FBQT0ifQ== -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTYsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAxNiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUErMVhYMjhhUnhBL0F6YkNibEpML1FLYmgwYUpWUDZUMUs0VU5UZ0hpU3RhSVhDVjlNbGEzdzNIeXNjdTNkMkR1SDNKOTB1L1ROK3Fxa282eTkwQ2Q4RnFhSG1vMUo0RU96TTM4NXZabVdWbkdMaXZtb2V2RGgzSHlUdUZmTjdKN3lQcDdIOS8wUzJmT0U0aGg4eWVVM0JLWm4yTlNwOGhjWng4RHBJWEIvWFRldk9rbGVJZXBiakhLZTdMRkhlUzRrNHoyTG5XeWQrZzBoajVubnVha0lXZVc2K3QwZlUxdXJGR045Zm9WZ1p1Ny9FSFJPc0RZazBuazZ3dVpTSDRtN2srVmVvMmJxT2RrNzlydUtkdi96QmxjNTcrY3U5TnZCWVQvaUJlMy82V3JMODY4Wk9xN0w0WG9xc2tVQ3NzdUZRRHJ1OHlHeWkzT1dsN21sd0kwcGRpeks2WUpub01wQ3VrQitVUmdNOTRRTVNJbkRIcHE4Um9zakpxUjNvc0pQc0pDQ1hQZ1lPa0llbEczQ2RuQXIvT2xZcUFqSVFrTDZuU01NY1lKTG1RUVBVRXVDWmQ2ckdRYVFhS1VOUjJKZVBYeHQzTGhSN0dFMGc2c1U1YkExQWluTUVYeG0ySGV5S1NOSUJGc0gwSkN1U01haWE0aWRXbDhwb01yeEUzc2YxNWFlc3lDWjQyVG95aEMxTXE0MWpRREIyT1FDa0V3VTJZZ0xxTVUrNHg1QVlRUkdHTWJ6YU5Gcmc1cmNnZ0NqSDQ1MklHa2h0UUxMSVdKZ2ZQUk1RVmhFTGFFSWFybkhWZVR3MzZJZ0JHQXk2VVpwN0ptbWNjS0JQS09mZGhpazVNWkgxSjhZVm5vdVVhb1YvY0JBdzRVOXBDa3cwMWJETkp6bWhBdXBKRy92ODEvOC9YZksrMkhXR3RIYWYwSHArUFgyKzd3dTdZSyt6TjdWZFk3djFIM2xyUEhnd2ZrbjRrVlVReFdWcVFid1JEd2xTR05PdTFTcFAwUStxQlR4Z25QUWlZTW5XYzRRbG5wblFQM0U3YmZiaDdxSHNHcW52K1hidlgrNEgwMjhOaHh6VldudUJlSkNWd0R4TEZzdzJLWmRLWmdBeFE2NFkwcWszU0NmSE1vdHNCL0JqaCtmVTNJLzNiRXBFdTArZGpyYWZxcTJvMU5Qb2U1UlZQVEtyZmRxcFhMQXlyMk1lcmpWck5OdlA3ZjZGY3IyMmxYZDlLdTdHVmRuTXI3VmFzblU3TkMyT0ZSdlA1dkRLaGpFT1lwRFNTVUJFeWlORVdHS3JxTXpVTjZjM2xWRldvbW43ZGM1K2MzbGM4bWp5cE4reUljdjdQOE9xMVhRUFdkdzNZMkRWZ2M5ZUFyUlZndXRnbGN3REtqZHB5V04yeElETWdyM2EwTlptWkpEbWRnSjBranhOaDBlei9rdG5aOVZERjdYTWxPVm9vWUNhdVFOb0JWMm5Nb3UxZFJ6RjM2WVB5c2lKejN5Zk9OZE9oWlk2TXJtUlQweXdUMFNmNE01c3dyUUZXcmt0TFdTSTR4bEZZWDlKRmsxMEhQMXFUMi8xSE1senVDYU9CeXhCSEU5dUlib0RLcGUzcVdHUVNWcEppWHJGSk14MHZaN29kOXNYZmIybHdoeGdUcll4dzVFbmFYQXF1S0JZYlJyQ2MrYWRXekJqdlNZT3dFTVRQK3N0UEkyNEM4Y3ZlT09MWDVVYm1kWDdLZzR6MW5ZUStXS09QNDRqeU51NmlMU2p3QUg4Z05rN2NzTUxCekZZdXBGZGdjNW4zWVphUWR6RTdpK1JVcGpqMWFac0NsS3FLRmpqbVdJa25RaXVKZS8rN1B3RVFMem5tMlE0QUFBPT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["bill_id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["session_id"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["bill_number"],"name":[3],"type":["chr"],"align":["left"]},{"label":["status"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["status_desc"],"name":[5],"type":["chr"],"align":["left"]},{"label":["status_date"],"name":[6],"type":["date"],"align":["right"]},{"label":["title"],"name":[7],"type":["chr"],"align":["left"]},{"label":["description"],"name":[8],"type":["chr"],"align":["left"]},{"label":["committee_id"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["committee"],"name":[10],"type":["chr"],"align":["left"]},{"label":["last_action_date"],"name":[11],"type":["date"],"align":["right"]},{"label":["last_action"],"name":[12],"type":["chr"],"align":["left"]},{"label":["url"],"name":[13],"type":["chr"],"align":["left"]},{"label":["state_link"],"name":[14],"type":["chr"],"align":["left"]},{"label":["year"],"name":[15],"type":["chr"],"align":["left"]},{"label":["legislature"],"name":[16],"type":["chr"],"align":["left"]}],"data":[{"1":"191384","2":"48","3":"LD9","4":"6","5":"Failed","6":"2009-03-25","7":"An Act To Prohibit the Force-feeding of Birds","8":"An Act To Prohibit the Force-feeding of Birds","9":"0","10":"NA","11":"2009-03-25","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD9/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=9&snum=124","15":"2009-2010","16":"124"},{"1":"191385","2":"48","3":"LD10","4":"6","5":"Failed","6":"2009-06-08","7":"An Act To Authorize a General Fund Bond Issue for Wastewater Treatment Facilities and Drinking Water Programs","8":"An Act To Authorize a General Fund Bond Issue for Wastewater Treatment Facilities and Drinking Water Programs","9":"0","10":"NA","11":"2009-06-08","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD10/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=10&snum=124","15":"2009-2010","16":"124"},{"1":"191386","2":"48","3":"LD11","4":"4","5":"Passed","6":"2009-04-16","7":"Resolve, To Encourage the Preservation of Dark Skies","8":"Resolve, To Encourage the Preservation of Dark Skies","9":"0","10":"NA","11":"2009-04-28","12":"(S) FINALLY PASSED in concurrence","13":"https://legiscan.com/ME/bill/LD11/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=11&snum=124","15":"2009-2010","16":"124"},{"1":"191387","2":"48","3":"LD12","4":"4","5":"Passed","6":"2009-04-14","7":"Resolve, Directing the Department of Professional and Financial Regulation To Amend Its Rules Governing Pastoral Counselors","8":"Resolve, Directing the Department of Professional and Financial Regulation To Amend Its Rules Governing Pastoral Counselors","9":"0","10":"NA","11":"2009-04-15","12":"(S) FINALLY PASSED - Emergency 2/3 Elected Required in concurrence","13":"https://legiscan.com/ME/bill/LD12/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=12&snum=124","15":"2009-2010","16":"124"},{"1":"191388","2":"48","3":"LD13","4":"6","5":"Failed","6":"2009-03-17","7":"An Act To Expand the Diagnostic Functions of Independent Practice Dental Hygienists","8":"An Act To Expand the Diagnostic Functions of Independent Practice Dental Hygienists","9":"0","10":"NA","11":"2009-03-17","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD13/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=13&snum=124","15":"2009-2010","16":"124"},{"1":"191389","2":"48","3":"LD14","4":"6","5":"Failed","6":"2009-03-03","7":"An Act To Prohibit Air Bag Fraud","8":"An Act To Prohibit Air Bag Fraud","9":"0","10":"NA","11":"2009-03-03","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD14/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=14&snum=124","15":"2009-2010","16":"124"}],"options":{"columns":{"min":{},"max":[10],"total":[16]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+{"columns":[{"label":["bill_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["session_id"],"name":[2],"type":["chr"],"align":["left"]},{"label":["bill_number"],"name":[3],"type":["chr"],"align":["left"]},{"label":["status"],"name":[4],"type":["chr"],"align":["left"]},{"label":["status_desc"],"name":[5],"type":["chr"],"align":["left"]},{"label":["status_date"],"name":[6],"type":["date"],"align":["right"]},{"label":["title"],"name":[7],"type":["chr"],"align":["left"]},{"label":["description"],"name":[8],"type":["chr"],"align":["left"]},{"label":["committee_id"],"name":[9],"type":["chr"],"align":["left"]},{"label":["committee"],"name":[10],"type":["chr"],"align":["left"]},{"label":["last_action_date"],"name":[11],"type":["date"],"align":["right"]},{"label":["last_action"],"name":[12],"type":["chr"],"align":["left"]},{"label":["url"],"name":[13],"type":["chr"],"align":["left"]},{"label":["state_link"],"name":[14],"type":["chr"],"align":["left"]},{"label":["year"],"name":[15],"type":["chr"],"align":["left"]},{"label":["legislature"],"name":[16],"type":["chr"],"align":["left"]}],"data":[{"1":"191384","2":"48","3":"LD9","4":"6","5":"Failed","6":"2009-03-25","7":"An Act To Prohibit the Force-feeding of Birds","8":"An Act To Prohibit the Force-feeding of Birds","9":"0","10":"NA","11":"2009-03-25","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD9/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=9&snum=124","15":"2009-2010","16":"124"},{"1":"191385","2":"48","3":"LD10","4":"6","5":"Failed","6":"2009-06-08","7":"An Act To Authorize a General Fund Bond Issue for Wastewater Treatment Facilities and Drinking Water Programs","8":"An Act To Authorize a General Fund Bond Issue for Wastewater Treatment Facilities and Drinking Water Programs","9":"0","10":"NA","11":"2009-06-08","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD10/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=10&snum=124","15":"2009-2010","16":"124"},{"1":"191386","2":"48","3":"LD11","4":"4","5":"Passed","6":"2009-04-16","7":"Resolve, To Encourage the Preservation of Dark Skies","8":"Resolve, To Encourage the Preservation of Dark Skies","9":"0","10":"NA","11":"2009-04-28","12":"(S) FINALLY PASSED in concurrence","13":"https://legiscan.com/ME/bill/LD11/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=11&snum=124","15":"2009-2010","16":"124"},{"1":"191387","2":"48","3":"LD12","4":"4","5":"Passed","6":"2009-04-14","7":"Resolve, Directing the Department of Professional and Financial Regulation To Amend Its Rules Governing Pastoral Counselors","8":"Resolve, Directing the Department of Professional and Financial Regulation To Amend Its Rules Governing Pastoral Counselors","9":"0","10":"NA","11":"2009-04-15","12":"(S) FINALLY PASSED - Emergency 2/3 Elected Required in concurrence","13":"https://legiscan.com/ME/bill/LD12/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=12&snum=124","15":"2009-2010","16":"124"},{"1":"191388","2":"48","3":"LD13","4":"6","5":"Failed","6":"2009-03-17","7":"An Act To Expand the Diagnostic Functions of Independent Practice Dental Hygienists","8":"An Act To Expand the Diagnostic Functions of Independent Practice Dental Hygienists","9":"0","10":"NA","11":"2009-03-17","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD13/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=13&snum=124","15":"2009-2010","16":"124"},{"1":"191389","2":"48","3":"LD14","4":"6","5":"Failed","6":"2009-03-03","7":"An Act To Prohibit Air Bag Fraud","8":"An Act To Prohibit Air Bag Fraud","9":"0","10":"NA","11":"2009-03-03","12":"(S) Pursuant to Joint Rule 310.3 Placed in Legislative Files (DEAD)","13":"https://legiscan.com/ME/bill/LD14/2009","14":"http://www.mainelegislature.org/legis/bills/display_ps.asp?LD=14&snum=124","15":"2009-2010","16":"124"}],"options":{"columns":{"min":{},"max":[10],"total":[16]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
@@ -1822,10 +1819,276 @@ bills_csv = bills_files %&gt;%
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>load data on the characteristics of the maine state legislatures</p>
+<p>load data on the actions taken on each bill</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jIyBsb2NhdGUgd2hlcmUgYWxsIG9mIHRoZSBcImhpc3RvcnkuY3N2XCJzIGFyZSBmb3IgYWxsIHRoZSBkaWZmZXJlbnQgeWVhcnNcbmhpc3RvcnlfZGlyID0gXCIvVXNlcnMvc2lyb2hpa3VtYXIvTGlicmFyeS9DbG91ZFN0b3JhZ2UvR29vZ2xlRHJpdmUtc2lyb2hpa3VtYXIxODVAZ21haWwuY29tL015IERyaXZlL1VOREVSR1JBRC8yMDI0LTI1IEpVTklPUiBZRUFSLzIwMjUgU0RTIDI5MyAtIE1BQ0hJTkUgTEVBUk5JTkcvU0RTMjkzLUZJTkFMLVBST0pFQ1QvZGF0YS9oaXN0b3J5X2NzdlwiXG5cbiMjIGxpc3QgdGhlc2UgY3N2IGZpbGVzXG5oaXN0b3J5X2ZpbGVzID0gZnM6OmRpcl9scyhoaXN0b3J5X2RpcilcblxuIyMgbG9hZCBpbiBhbGwgb2YgdGhlIGhpc3RvcnkgY3N2cywgYWRkaW5nIGFuIGlkIGNvbHVtbiB3aXRoIHRoZSB5ZWFycyBhbmQgY3JlYXRpbmcgYSBjb2x1bW4gZm9yIGxlZ2lzbGF0dXJlXG5oaXN0b3J5X2NzdiA9IGhpc3RvcnlfZmlsZXMgJT4lXG4gICAgbWFwX2RmcihyZWFkX2NzdiwgLmlkID0gXCJzb3VyY2VcIikgJT4lXG4gICAgbXV0YXRlKHllYXIgPSBzdWJzdHIoc291cmNlLCAxODcsIDE5NSksXG4gICAgICAgICAgIGxlZ2lzbGF0dXJlID0gY2FzZV93aGVuKHllYXIgPT0gXCIyMDA5LTIwMTBcIiB+IFwiMTI0XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAxMS0yMDEyXCIgfiBcIjEyNVwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMTMtMjAxNFwiIH4gXCIxMjZcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDE1LTIwMTZcIiB+IFwiMTI3XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAxNy0yMDE4XCIgfiBcIjEyOFwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMTktMjAyMFwiIH4gXCIxMjlcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gXCIyMDIxLTIwMjJcIiB+IFwiMTMwXCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09IFwiMjAyMy0yMDI0XCIgfiBcIjEzMVwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSBcIjIwMjUtMjAyNlwiIH4gXCIxMzJcIiwpKSAlPiVcbiAgICBzZWxlY3QoLXNvdXJjZSkgJT4lXG4gICAgbXV0YXRlKGJpbGxfaWQgPSBhcy5jaGFyYWN0ZXIoYmlsbF9pZCksXG4gICAgICAgICAgIHNlcXVlbmNlID0gYXMuY2hhcmFjdGVyKHNlcXVlbmNlKSkgICAgICAgICAgICAgIyMgY29udmVydCBzZXZlcmFsIGlkcyB0byBjaGFyYWN0ZXJzXG5cbmhlYWQoaGlzdG9yeV9jc3YpXG5gYGAifQ== -->
+<pre class="r"><code>
+## locate where all of the &quot;history.csv&quot;s are for all the different years
+history_dir = &quot;/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/history_csv&quot;
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiS3VtYXIgLSBTRFMyOTMgRmluYWwgUHJvamVjdCAwIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpsb2FkIGxpYnJhcmllcwpgYGB7ciBtZXNzYWdlPUZ9CgpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShmcykKCmBgYAoKbG9hZCBkYXRhIG9uIHZhcmlvdXMgYmlsbHMgaW4gYW5kIG91dCBvZiB0aGUgc3RhdGUgbGVnaXNsYXR1cmVzCmBgYHtyIG1lc3NhZ2U9Rn0KCiMjIGxvY2F0ZSB3aGVyZSBhbGwgb2YgdGhlICJiaWxscy5jc3YicyBhcmUgZm9yIGFsbCB0aGUgZGlmZmVyZW50IHllYXJzCmJpbGxzX2RpciA9ICIvVXNlcnMvc2lyb2hpa3VtYXIvTGlicmFyeS9DbG91ZFN0b3JhZ2UvR29vZ2xlRHJpdmUtc2lyb2hpa3VtYXIxODVAZ21haWwuY29tL015IERyaXZlL1VOREVSR1JBRC8yMDI0LTI1IEpVTklPUiBZRUFSLzIwMjUgU0RTIDI5MyAtIE1BQ0hJTkUgTEVBUk5JTkcvU0RTMjkzLUZJTkFMLVBST0pFQ1QvZGF0YS9iaWxsc19jc3YiCgojIyBsaXN0IHRoZXNlIGNzdiBmaWxlcwpiaWxsc19maWxlcyA9IGZzOjpkaXJfbHMoYmlsbHNfZGlyKQoKIyMgbG9hZCBpbiBhbGwgb2YgdGhlIGJpbGxzIGNzdnMsIGFkZGluZyBhbiBpZCBjb2x1bW4gd2l0aCB0aGUgbmFtZSBvZiB0aGUgb3JpZ2luYWwgY3N2IGFuZCBjcmVhdGluZyBhIGNvbHVtbiBmb3IgbGVnaXNsYXR1cmUKYmlsbHNfY3N2ID0gYmlsbHNfZmlsZXMgJT4lCiAgICBtYXBfZGZyKHJlYWRfY3N2LCAuaWQgPSAic291cmNlIikgJT4lCiAgICBtdXRhdGUoeWVhciA9IHN1YnN0cihzb3VyY2UsIDE4NSwgMTkzKSwKICAgICAgICAgICBsZWdpc2xhdHVyZSA9IGNhc2Vfd2hlbih5ZWFyID09ICIyMDA5LTIwMTAiIH4gIjEyNCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTEtMjAxMiIgfiAiMTI1IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxMy0yMDE0IiB+ICIxMjYiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDE1LTIwMTYiIH4gIjEyNyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTctMjAxOCIgfiAiMTI4IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxOS0yMDIwIiB+ICIxMjkiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDIxLTIwMjIiIH4gIjEzMCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMjMtMjAyNCIgfiAiMTMxIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAyNS0yMDI2IiB+ICIxMzIiLCkpICU+JQogICAgc2VsZWN0KC1zb3VyY2UpIAoKaGVhZChiaWxsc19jc3YpCgpgYGAKCmxvYWQgZGF0YSBvbiB0aGUgY2hhcmFjdGVyaXN0aWNzIG9mIHRoZSBtYWluZSBzdGF0ZSBsZWdpc2xhdHVyZXMKCg==</div>
+## list these csv files
+history_files = fs::dir_ls(history_dir)
+
+## load in all of the history csvs, adding an id column with the years and creating a column for legislature
+history_csv = history_files %&gt;%
+    map_dfr(read_csv, .id = &quot;source&quot;) %&gt;%
+    mutate(year = substr(source, 187, 195),
+           legislature = case_when(year == &quot;2009-2010&quot; ~ &quot;124&quot;,
+                           year == &quot;2011-2012&quot; ~ &quot;125&quot;,
+                           year == &quot;2013-2014&quot; ~ &quot;126&quot;,
+                           year == &quot;2015-2016&quot; ~ &quot;127&quot;,
+                           year == &quot;2017-2018&quot; ~ &quot;128&quot;,
+                           year == &quot;2019-2020&quot; ~ &quot;129&quot;,
+                           year == &quot;2021-2022&quot; ~ &quot;130&quot;,
+                           year == &quot;2023-2024&quot; ~ &quot;131&quot;,
+                           year == &quot;2025-2026&quot; ~ &quot;132&quot;,)) %&gt;%
+    select(-source) %&gt;%
+    mutate(bill_id = as.character(bill_id),
+           sequence = as.character(sequence))             ## convert several ids to characters
+
+head(history_csv)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IMOXIDciXX19LCJyZGYiOiJINHNJQUFBQUFBQUFBN1ZVelc3Yk1BeFc0eVJlTXJRYk1PeXV5NEFXV0l6WTZhRzlyWmhkcEpkbGNGeXN0MEd4bGNTWUtxZVN2Wi9iM204dnNBY28raEE3dEtOaU00aGRvUHNCS2tEZ1IxSVVQMUdVUXY5aTFML29FMElzMHJZc1luVUFrczU1ZERvNElxVGRBbVdIdEVuUHlLK3c2QVVBRytaem1OM0swWFdQWGU5bzlOZmE0WU1hc2ZhTTl1Ykh6KytHeW4xNVRlcnlabTF2a08zRWdtbGRFVVZqMjJjNUIzbTdPUUFodlRzWS95QzNENzdqSXZBUWpCNXkxYU5mN284UGFCaWMrSlRKaEo3NGsvZFI0RHVWMHpYT0taYzVuV2VLeHBtTUM2VzRqTGxESjZFZmhJRlBwOEc3aUo1T3dtajg0U3dhWStEYi9la0JQWmNKVjFRWGVzV2xUak5Kc3puTmw1eUdoZUQ2WHM3WE5KVzFGSTlLOEpVaCtHY0s5VnIxdk9Id2VPQU4zZUhqR09yWkxOYzcvRi9ZYUVQSkxqbTJvVjBaN1ZrcXhNYzB3YTVNVEZkV3JuakpMbWRjVmVvVHphOEtVdzk4SXl6TzRUb3g4QnRudVBLcDRJdFVDNVlYaWpjNDlGVDJ4VUVldXpCYjVzRkFOLzhxRjdhd3JUR2dENFNZTTFjUVVqNlcybloydGpJY1lMUFc5bWV3K1NXVTJXRnRLTWUyODFraERaRmtFQzhMK1drd2FyaXRsVncwb25jcjNOM0Nkc25JUXQ1WTF5NlhpMVJ1U2drSDFteUJha2V3R1JlWUtPR2ZLN2dIMVZrWHgxbXBWT1pZQXJCcUo4OXloaUg5T0JOb0tYK1EyOS9kYjl0c1BBVUFBQT09In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["bill_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["date"],"name":[2],"type":["date"],"align":["right"]},{"label":["chamber"],"name":[3],"type":["chr"],"align":["left"]},{"label":["sequence"],"name":[4],"type":["chr"],"align":["left"]},{"label":["action"],"name":[5],"type":["chr"],"align":["left"]},{"label":["year"],"name":[6],"type":["chr"],"align":["left"]},{"label":["legislature"],"name":[7],"type":["chr"],"align":["left"]}],"data":[{"1":"191283","2":"2009-01-13","3":"NA","4":"1","5":"(H) READ and ADOPTED.","6":"2009-2010","7":"124"},{"1":"191283","2":"2009-01-13","3":"NA","4":"2","5":"(H) Sent for concurrence. ORDERED SENT FORTHWITH.","6":"2009-2010","7":"124"},{"1":"191283","2":"2009-01-13","3":"NA","4":"3","5":"(S) Under suspension of the Rules READ and ADOPTED, in concurrence.","6":"2009-2010","7":"124"},{"1":"191284","2":"2009-02-05","3":"NA","4":"1","5":"(H) READ and ADOPTED.","6":"2009-2010","7":"124"},{"1":"191284","2":"2009-02-05","3":"NA","4":"2","5":"(H) Sent for concurrence. ORDERED SENT FORTHWITH.","6":"2009-2010","7":"124"},{"1":"191284","2":"2009-02-10","3":"NA","4":"3","5":"(S) READ and ADOPTED, in concurrence.","6":"2009-2010","7":"124"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5gYGAifQ== -->
+<pre class="r"><code>NA
+NA</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>load data on the members of each legislature</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTQsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAxNCJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE3VlYzVzdUTUJUMm1xUnBNMW9RdkVCZm9GR1NibXk5bkZUUUJLdUV1aUoyTjVuRWJheGxUdVM0WStXSzUrWmlZS2M1cmVOU0JFSkVTdktkLytNdjlzbHNjalB5Ymp5RWtJVnN5MEtXSXlGeVBzN2ZEczhSc2x0U09FSTI2cXIzbzNSNkpVRmYzaS9rM2E0Tjl2blo2RXpENXhvZTcvQkpvT0ZRdzVHUnIzK0pHY1BwNEFObFMwNUlyWDM1SnFOZjhXY2kwc0dVaWpnbFdWWmJlbGUweElNcDVoeExkYTMwM3BNSHlnWXp2QWJOczNkNW1hN3dZSTU1c2dhdlQ0UWxhMW1KcEVZVDdVMFR0ZFRkRm9lK1ZjMGFPMVVwaU50VUFWT1YzMGpkbXZxQUxnRzVjMUtXbEhBd1hHMWRMbnhWLzRlOGpEUnVrNStPd1VySElNVFdxSEIwRHV6RzZuZTEvdlQ5YjNIMTNnb1BnMmdQaEdiMDVEQ1k3WUhKd2RyN2xhSmZ0TldNdG1ha0FIaE4yTytoNXF1Z3VlTW13MkQwR3FScktVVW5EZW0wSVkzMXVKMU5TYWVCa2JzYkJjRjRHQVZoOEg4VUJpZmh0dkcvaHMyWjR6QjhUOG82ZlIvcUZpUXZNbkpMRTlqQnlndE85SUx5VXR4cW11TjdtaVRTWFZOMU05ejBhWmVyeFlJK3d0RmhOTDdUckowQ2M3SGUxWE1xR1k0aHp4dTlLQkhpRWxvS1RtTUJ0alhCY01LUE03S2taWWJGaWhOajBWMmVmL0ZoNFQwMUE3N0poencwMzAxMllya09ZQWVVWG9JRjloZGN0WS9Ra3hIaTVvV2dPWk5CTFRYS1hTUDRpS3NNbFdKejZjYm5LNmE2U29aeHVtSjN3OUF3V3dWYkd0RzlHcmMxM045MDFJSVI0TUluSUd4SkdWRG55dFdYZUxrZFdKa2N2akRacklROHdLOUNVbFV4NVJlY011RFprOXJTRjduQUVPTEZlUWFhaWhUMDlCTzh0NlNlK2dZQUFBPT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["people_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["first_name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["middle_name"],"name":[4],"type":["chr"],"align":["left"]},{"label":["last_name"],"name":[5],"type":["chr"],"align":["left"]},{"label":["suffix"],"name":[6],"type":["chr"],"align":["left"]},{"label":["nickname"],"name":[7],"type":["chr"],"align":["left"]},{"label":["party_id"],"name":[8],"type":["chr"],"align":["left"]},{"label":["party"],"name":[9],"type":["chr"],"align":["left"]},{"label":["role_id"],"name":[10],"type":["chr"],"align":["left"]},{"label":["role"],"name":[11],"type":["chr"],"align":["left"]},{"label":["district"],"name":[12],"type":["chr"],"align":["left"]},{"label":["year"],"name":[13],"type":["chr"],"align":["left"]},{"label":["legislature"],"name":[14],"type":["chr"],"align":["left"]}],"data":[{"1":"8737","2":"Hannah Pingree","3":"Hannah","4":"M.","5":"Pingree","6":"NA","7":"NA","8":"1","9":"D","10":"1","11":"Rep","12":"HD-036","13":"2009-2010","14":"124"},{"1":"8738","2":"Elizabeth Mitchell","3":"Elizabeth","4":"H.","5":"Mitchell","6":"NA","7":"NA","8":"1","9":"D","10":"2","11":"Sen","12":"SD-024","13":"2009-2010","14":"124"},{"1":"8739","2":"Lisa Marrache","3":"Lisa","4":"Tessier","5":"Marrache","6":"NA","7":"NA","8":"1","9":"D","10":"2","11":"Sen","12":"SD-025","13":"2009-2010","14":"124"},{"1":"8740","2":"Kevin Raye","3":"Kevin","4":"L.","5":"Raye","6":"NA","7":"NA","8":"2","9":"R","10":"2","11":"Sen","12":"SD-029","13":"2009-2010","14":"124"},{"1":"8741","2":"Joshua Tardy","3":"Joshua","4":"A.","5":"Tardy","6":"NA","7":"NA","8":"2","9":"R","10":"1","11":"Rep","12":"HD-025","13":"2009-2010","14":"124"},{"1":"8742","2":"Wendy Pieh","3":"Wendy","4":"NA","5":"Pieh","6":"NA","7":"NA","8":"1","9":"D","10":"1","11":"Rep","12":"HD-050","13":"2009-2010","14":"124"}],"options":{"columns":{"min":{},"max":[10],"total":[14]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>##Part II: Describe the Data</p>
+<p>This data is on bills in Maine State Legislature. Details of all
+individual bills introduced are contained in <code>bills.csv</code> for
+each legislature, and the actions taken on each bill are in
+<code>history.csv</code> for each legislature. Further, the members of
+each state legislature are in <code>people.csv</code>.</p>
+<p>For all three of these csvs, I’ve compiled long versions of each one
+across all legislatures. I’ve also converted a number of these columns
+which have ID numbers from numerical (which they were read in as) to
+categorical variables.</p>
+<div id="bills_csv" class="section level3">
+<h3>bills_csv</h3>
+<ul>
+<li><code>bill_id</code> - LegiScan bill identifier
+<ul>
+<li>categorical data, ranges from 191384 to 2022283</li>
+</ul></li>
+<li><code>session_id</code> - LegiScan session identifier
+<ul>
+<li>categorical data, ranges from 48 to 2181</li>
+</ul></li>
+<li><code>bill_number</code> - Bill number
+<ul>
+<li>categorical data, contains LD (legislative document), HP (), SP
+(senate document)</li>
+</ul></li>
+<li><code>status</code> - Status value for bill
+<ul>
+<li>categorical, values from 0-6</li>
+</ul></li>
+<li><code>status_desc</code> - Description of bill status value
+<ul>
+<li>categorical, written complement to <code>status</code>: (0 - NA, 1 -
+Introduced, 2 - Engrossed, 3 - Enrolled, 4 - Passed, 5 - Vetoed, 6 -
+Failed)</li>
+</ul></li>
+<li><code>status_date</code> - Date of status change
+<ul>
+<li>numeric, dates ranging from January 13, 2009 to April 11, 2025, when
+this data was most recently pulled from the database</li>
+</ul></li>
+<li><code>title</code> - Short title of bill
+<ul>
+<li>categorical, incredibly wide range of values</li>
+</ul></li>
+<li><code>description</code> - Long title of bill
+<ul>
+<li>categorical, also wide range of values</li>
+</ul></li>
+<li><code>committee_id</code> - LegiScan committee identifier
+<ul>
+<li>categorical, ranges from 0 to 4984</li>
+</ul></li>
+<li><code>committee</code> - Pending committee name
+<ul>
+<li>categorical, also wide range of values</li>
+</ul></li>
+<li><code>last_action_date</code> - Date of last action
+<ul>
+<li>numeric, dates ranging from January 13, 2009 to April 11, 2025, when
+this data was most recently pulled from the database</li>
+</ul></li>
+<li><code>last_action</code> - Description of last action
+<ul>
+<li>categorical, also wide range of values</li>
+</ul></li>
+<li><code>url</code> - LegiScan URL for bill detail
+<ul>
+<li>categorical, also wide range of values</li>
+</ul></li>
+<li><code>state_link</code> - State URL for bill detail
+<ul>
+<li>categorical, also wide range of values</li>
+</ul></li>
+<li><code>year</code> - Year range of the legislature
+<ul>
+<li>categorical, generated by me, ranges from 2009-2010 to
+2025-2026</li>
+</ul></li>
+<li><code>legislature</code> - Maine State Congress
+<ul>
+<li>categorical, generated by me, ranges from 124 to 132</li>
+</ul></li>
+</ul>
+</div>
+<div id="history_csv" class="section level3">
+<h3>history_csv</h3>
+<ul>
+<li><code>bill_id</code> - LegiScan bill identifier
+<ul>
+<li>categorical data, ranges from 191384 to 2022283</li>
+</ul></li>
+<li><code>date</code> - Date of history step
+<ul>
+<li>numeric, dates ranging from January 07, 2009 to April 11, 2025, when
+this data was most recently pulled from the database</li>
+</ul></li>
+<li><code>chamber</code> - Chamber the action occurred in
+<ul>
+<li>categorical, includes values NA, Joint, House, and Senate</li>
+</ul></li>
+<li><code>sequence</code> - Ordered sequence of history step
+<ul>
+<li>categorical, ranges from 1-99</li>
+</ul></li>
+<li><code>action</code> - Description of history step
+<ul>
+<li>categorical, wide range of values, including vote counts, referrals
+to committees, and committee actions</li>
+</ul></li>
+<li><code>year</code> - Year range of the legislature
+<ul>
+<li>categorical, generated by me, ranges from 2009-2010 to
+2025-2026</li>
+</ul></li>
+<li><code>legislature</code> - Maine State Congress
+<ul>
+<li>categorical, generated by me, ranges from 124 to 132</li>
+</ul></li>
+</ul>
+</div>
+<div id="people_csv" class="section level3">
+<h3>people_csv</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTYsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAxNiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE3VlUyMjdhUUJCZHNNM0ZDVzNVL0FBL2dHV2JwSUhIU3JTSzJpQlZoS3A1c3piMkFxdVl0YlZlMHRDbmZuY2YwcTZOQjlZTFZJMnFXakkrYzJabVozend6R1IwMTdmdmJJU1FnVXpEUUlZbEliSytURC8wQmdpWmRXblVrSW5hK2ZOSkJwMUxjRmJlamRKaERxNzZWd29lS0hpNHd4ZXVnajBGKzlwNXI2NHhZM2pSL1V6Wm5CTlNzbS9leC9RN3ZpZGkwUjFURVM1SUhKZWV6ZzNOY0hlTU9jZVNMa243RTNta3JEdkJhMkJPUHliWllvVzdVOHlqTlVSOUpTeGF5MHBrb1RYUjJEUlJXdTF0Y2VnN3IxbGlxeWdGZVpzcTRDck8xNDZ1angxQTE0Q2FVNUpsbEhCdzNHeEQzamw1L1YveTBvNXBWdlZwYWFxME5FRk1SUXBMMWNDc3ZQMnUxdDgrL3kydi9MYTg0OERmQTU2ZVBUb09KbnRnZExUMmZpWC9RRnZWYkdOQ1VvQzNoUDBaS3JFNTFMKzRVYy90dndYclZscitSY1c2ckZoRE5XL255NjFMOS9CSUJjZEdLamcwVXNIQmtRcjJSeXJZSDZuZ3dFalYzSmVCYW5iYmQ5MWh6M2M5OS84UTJ0L3FiYlYvTWF5dVRZdmhKY2tRck0yeWJrcVNOQ1lCaldBSTh5aFFjRVo1SmdLRk9WblNLSkxoQ3RXT2NUV21rYTFtTS9vRTA4OW8rS0I0V3lubVlyMnJaeFUyYkJLZVZIckpUY2lMYUNZNERRVjBjby9qT0JFcGlTanN1Tk13V1M2cEVFUTlZazB3N0xLVG1NeHBGbU94NGtUVHBzMlRidzdvMDVGMy9ZZjhrZXZocHk1aUtGOFhSQVRTanJEQXpvem5iNG5RczViU1RGSkJFeWFUNnVkb3M2SFU1QnJYaU5jcmxuY1M5Y0xGaWozMFBNMXRwR3llMXl5b3pkVXBjVVBCWjVzdTZ2cUNheEEycDJ5N2YyTTVkVEJyUmtRZVlVeWxIb1VjVHNvcEE4MXR5V2FPU0FTR0ZEdE1ZbUNLTjBmUHZ3RlVFenFGeVFjQUFBPT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["people_id"],"name":[1],"type":["chr"],"align":["left"]},{"label":["name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["first_name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["middle_name"],"name":[4],"type":["chr"],"align":["left"]},{"label":["last_name"],"name":[5],"type":["chr"],"align":["left"]},{"label":["suffix"],"name":[6],"type":["chr"],"align":["left"]},{"label":["nickname"],"name":[7],"type":["chr"],"align":["left"]},{"label":["party_id"],"name":[8],"type":["chr"],"align":["left"]},{"label":["party"],"name":[9],"type":["chr"],"align":["left"]},{"label":["role_id"],"name":[10],"type":["chr"],"align":["left"]},{"label":["role"],"name":[11],"type":["chr"],"align":["left"]},{"label":["district"],"name":[12],"type":["chr"],"align":["left"]},{"label":["ballotpedia"],"name":[13],"type":["chr"],"align":["left"]},{"label":["committee_id"],"name":[14],"type":["chr"],"align":["left"]},{"label":["year"],"name":[15],"type":["chr"],"align":["left"]},{"label":["legislature"],"name":[16],"type":["chr"],"align":["left"]}],"data":[{"1":"8737","2":"Hannah Pingree","3":"Hannah","4":"M.","5":"Pingree","6":"NA","7":"NA","8":"1","9":"D","10":"1","11":"Rep","12":"HD-036","13":"Hannah_Pingree","14":"0","15":"2009-2010","16":"124"},{"1":"8738","2":"Elizabeth Mitchell","3":"Elizabeth","4":"H.","5":"Mitchell","6":"NA","7":"NA","8":"1","9":"D","10":"2","11":"Sen","12":"SD-024","13":"Elizabeth_Mitchell","14":"0","15":"2009-2010","16":"124"},{"1":"8739","2":"Lisa Marrache","3":"Lisa","4":"Tessier","5":"Marrache","6":"NA","7":"NA","8":"1","9":"D","10":"2","11":"Sen","12":"SD-025","13":"Lisa_Marrache","14":"0","15":"2009-2010","16":"124"},{"1":"8740","2":"Kevin Raye","3":"Kevin","4":"L.","5":"Raye","6":"NA","7":"NA","8":"2","9":"R","10":"2","11":"Sen","12":"SD-029","13":"Kevin_Raye","14":"0","15":"2009-2010","16":"124"},{"1":"8741","2":"Joshua Tardy","3":"Joshua","4":"A.","5":"Tardy","6":"NA","7":"NA","8":"2","9":"R","10":"1","11":"Rep","12":"HD-025","13":"Joshua_Tardy","14":"0","15":"2009-2010","16":"124"},{"1":"8742","2":"Wendy Pieh","3":"Wendy","4":"NA","5":"Pieh","6":"NA","7":"NA","8":"1","9":"D","10":"1","11":"Rep","12":"HD-050","13":"Wendy_Pieh","14":"0","15":"2009-2010","16":"124"}],"options":{"columns":{"min":{},"max":[10],"total":[16]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<ul>
+<li><code>people_id</code> - LegiScan person identifier
+<ul>
+<li>categorical, ranges from 191283 to 2023520</li>
+</ul></li>
+<li><code>name</code> - Full name
+<ul>
+<li>categorical, wide range of values</li>
+</ul></li>
+<li><code>first_name</code> - First name
+<ul>
+<li>categorical, wide range of values</li>
+</ul></li>
+<li><code>middle_name</code> - Middle name
+<ul>
+<li>categorical, wide range of values</li>
+</ul></li>
+<li><code>last_name</code> - Last name
+<ul>
+<li>categorical, wide range of values</li>
+</ul></li>
+<li><code>suffix</code> - Suffix
+<ul>
+<li>categorical, wide range of values, many NAs</li>
+</ul></li>
+<li><code>nickname</code> - Nickname
+<ul>
+<li>categorical, wide range of values, many NAs</li>
+</ul></li>
+<li><code>party_id</code> - LegiScan political party identifier
+<ul>
+<li>categorical, ranges from 0-6</li>
+</ul></li>
+<li><code>party</code> - Political party description
+<ul>
+<li>categorical, 1 corresponds to D (Democratic), 2 corresponds to R
+(Republican), 3 corresponds to I (Independent). 0 are NAs, 5 are L
+(Libertarian), 6 are N (Native, non-voting members).</li>
+</ul></li>
+<li><code>role_id</code> - LegiScan legislative role identifier
+<ul>
+<li>categorical, ranges from 1-2</li>
+</ul></li>
+<li><code>role</code> - Legislative role description
+<ul>
+<li>categorical, 1 corresponds with State Representative, 2 corresponds
+with State Senator</li>
+</ul></li>
+<li><code>district</code> - Legislative district
+<ul>
+<li>categorical, ranges from HD-001 (house district 1) to HD- (house
+district 2) and SD-001 to SD-035 (senate district 35). Additionally,
+small group of HD-TRIBE for tribal representatives.</li>
+</ul></li>
+<li><code>year</code> - Year range of the legislature
+<ul>
+<li>categorical, generated by me, ranges from 2009-2010 to
+2025-2026</li>
+</ul></li>
+<li><code>legislature</code> - Maine State Congress
+<ul>
+<li>categorical, generated by me, ranges from 124 to 132</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="part-iii-pressing-issues" class="section level2">
+<h2>Part III: Pressing Issues</h2>
+<ol style="list-style-type: decimal">
+<li><p>This data is incomplete, as the 2025-2026 session is not complete
+yet, which means it isn’t complete and maybe shouldn’t be used as
+training data. This could make good test data, depending on the
+questions being asked.</p></li>
+<li><p>This data contains easy join values (<code>people_id</code> and
+<code>bill_id</code>), but this might make the data too large to be
+manageable.</p></li>
+</ol>
+<!-- rnb-text-end -->
+</div>
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiS3VtYXIgLSBTRFMyOTMgRmluYWwgUHJvamVjdCAwIgpvdXRwdXQ6CiAgcGRmX2RvY3VtZW50OiBkZWZhdWx0Ci0tLQoKIyMgUGFydCBJOiBMb2FkaW5nIGFuZCBDbGVhbmluZyB0aGUgRGF0YQoKTG9hZCBsaWJyYXJpZXMKYGBge3IgbWVzc2FnZT1GfQoKbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoZnMpCgpgYGAKCmxvYWQgZGF0YSBvbiB2YXJpb3VzIGJpbGxzIGluIGFuZCBvdXQgb2YgdGhlIHN0YXRlIGxlZ2lzbGF0dXJlcwpgYGB7ciBtZXNzYWdlPUZ9CgojIyBsb2NhdGUgd2hlcmUgYWxsIG9mIHRoZSAiYmlsbHMuY3N2InMgYXJlIGZvciBhbGwgdGhlIGRpZmZlcmVudCB5ZWFycwpiaWxsc19kaXIgPSAiL1VzZXJzL3Npcm9oaWt1bWFyL0xpYnJhcnkvQ2xvdWRTdG9yYWdlL0dvb2dsZURyaXZlLXNpcm9oaWt1bWFyMTg1QGdtYWlsLmNvbS9NeSBEcml2ZS9VTkRFUkdSQUQvMjAyNC0yNSBKVU5JT1IgWUVBUi8yMDI1IFNEUyAyOTMgLSBNQUNISU5FIExFQVJOSU5HL1NEUzI5My1GSU5BTC1QUk9KRUNUL2RhdGEvYmlsbHNfY3N2IgoKIyMgbGlzdCB0aGVzZSBjc3YgZmlsZXMKYmlsbHNfZmlsZXMgPSBmczo6ZGlyX2xzKGJpbGxzX2RpcikKCiMjIGxvYWQgaW4gYWxsIG9mIHRoZSBiaWxscyBjc3ZzLCBhZGRpbmcgYW4gaWQgY29sdW1uIHdpdGggdGhlIHllYXJzIGFuZCBjcmVhdGluZyBhIGNvbHVtbiBmb3IgbGVnaXNsYXR1cmUKYmlsbHNfY3N2ID0gYmlsbHNfZmlsZXMgJT4lCiAgICBtYXBfZGZyKHJlYWRfY3N2LCAuaWQgPSAic291cmNlIikgJT4lCiAgICBtdXRhdGUoeWVhciA9IHN1YnN0cihzb3VyY2UsIDE4NSwgMTkzKSwKICAgICAgICAgICBsZWdpc2xhdHVyZSA9IGNhc2Vfd2hlbih5ZWFyID09ICIyMDA5LTIwMTAiIH4gIjEyNCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTEtMjAxMiIgfiAiMTI1IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxMy0yMDE0IiB+ICIxMjYiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDE1LTIwMTYiIH4gIjEyNyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTctMjAxOCIgfiAiMTI4IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxOS0yMDIwIiB+ICIxMjkiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDIxLTIwMjIiIH4gIjEzMCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMjMtMjAyNCIgfiAiMTMxIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAyNS0yMDI2IiB+ICIxMzIiLCkpICU+JQogICAgc2VsZWN0KC1zb3VyY2UpICU+JQogICAgbXV0YXRlKGJpbGxfaWQgPSBhcy5jaGFyYWN0ZXIoYmlsbF9pZCksCiAgICAgICAgICAgc3RhdHVzID0gYXMuY2hhcmFjdGVyKHN0YXR1cyksCiAgICAgICAgICAgY29tbWl0dGVlX2lkID0gYXMuY2hhcmFjdGVyKGNvbW1pdHRlZV9pZCksCiAgICAgICAgICAgc2Vzc2lvbl9pZCA9IGFzLmNoYXJhY3RlcihzZXNzaW9uX2lkKSkgICAgICAgICAgICMjIGNvbnZlcnQgaWRzIHRvIGNocnMKCgpoZWFkKGJpbGxzX2NzdikKCmBgYAoKbG9hZCBkYXRhIG9uIHRoZSBhY3Rpb25zIHRha2VuIG9uIGVhY2ggYmlsbApgYGB7ciBtZXNzYWdlPUZ9CgojIyBsb2NhdGUgd2hlcmUgYWxsIG9mIHRoZSAiaGlzdG9yeS5jc3YicyBhcmUgZm9yIGFsbCB0aGUgZGlmZmVyZW50IHllYXJzCmhpc3RvcnlfZGlyID0gIi9Vc2Vycy9zaXJvaGlrdW1hci9MaWJyYXJ5L0Nsb3VkU3RvcmFnZS9Hb29nbGVEcml2ZS1zaXJvaGlrdW1hcjE4NUBnbWFpbC5jb20vTXkgRHJpdmUvVU5ERVJHUkFELzIwMjQtMjUgSlVOSU9SIFlFQVIvMjAyNSBTRFMgMjkzIC0gTUFDSElORSBMRUFSTklORy9TRFMyOTMtRklOQUwtUFJPSkVDVC9kYXRhL2hpc3RvcnlfY3N2IgoKIyMgbGlzdCB0aGVzZSBjc3YgZmlsZXMKaGlzdG9yeV9maWxlcyA9IGZzOjpkaXJfbHMoaGlzdG9yeV9kaXIpCgojIyBsb2FkIGluIGFsbCBvZiB0aGUgaGlzdG9yeSBjc3ZzLCBhZGRpbmcgYW4gaWQgY29sdW1uIHdpdGggdGhlIHllYXJzIGFuZCBjcmVhdGluZyBhIGNvbHVtbiBmb3IgbGVnaXNsYXR1cmUKaGlzdG9yeV9jc3YgPSBoaXN0b3J5X2ZpbGVzICU+JQogICAgbWFwX2RmcihyZWFkX2NzdiwgLmlkID0gInNvdXJjZSIpICU+JQogICAgbXV0YXRlKHllYXIgPSBzdWJzdHIoc291cmNlLCAxODcsIDE5NSksCiAgICAgICAgICAgbGVnaXNsYXR1cmUgPSBjYXNlX3doZW4oeWVhciA9PSAiMjAwOS0yMDEwIiB+ICIxMjQiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDExLTIwMTIiIH4gIjEyNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTMtMjAxNCIgfiAiMTI2IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxNS0yMDE2IiB+ICIxMjciLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDE3LTIwMTgiIH4gIjEyOCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTktMjAyMCIgfiAiMTI5IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAyMS0yMDIyIiB+ICIxMzAiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDIzLTIwMjQiIH4gIjEzMSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMjUtMjAyNiIgfiAiMTMyIiwpKSAlPiUKICAgIHNlbGVjdCgtc291cmNlKSAlPiUKICAgIG11dGF0ZShiaWxsX2lkID0gYXMuY2hhcmFjdGVyKGJpbGxfaWQpLAogICAgICAgICAgIHNlcXVlbmNlID0gYXMuY2hhcmFjdGVyKHNlcXVlbmNlKSkgICAgICAgICAgICAgIyMgY29udmVydCBzZXZlcmFsIGlkcyB0byBjaGFyYWN0ZXJzCgpoZWFkKGhpc3RvcnlfY3N2KQoKCmBgYAoKbG9hZCBkYXRhIG9uIHRoZSBtZW1iZXJzIG9mIGVhY2ggbGVnaXNsYXR1cmUKYGBge3IgbWVzc2FnZT1GfQoKIyMgbG9jYXRlIHdoZXJlIGFsbCBvZiB0aGUgInBlb3BsZS5jc3YicyBhcmUgZm9yIGFsbCB0aGUgZGlmZmVyZW50IHllYXJzCnBlb3BsZV9kaXIgPSAiL1VzZXJzL3Npcm9oaWt1bWFyL0xpYnJhcnkvQ2xvdWRTdG9yYWdlL0dvb2dsZURyaXZlLXNpcm9oaWt1bWFyMTg1QGdtYWlsLmNvbS9NeSBEcml2ZS9VTkRFUkdSQUQvMjAyNC0yNSBKVU5JT1IgWUVBUi8yMDI1IFNEUyAyOTMgLSBNQUNISU5FIExFQVJOSU5HL1NEUzI5My1GSU5BTC1QUk9KRUNUL2RhdGEvcGVvcGxlX2NzdiIKCiMjIGxpc3QgdGhlc2UgY3N2IGZpbGVzCnBlb3BsZV9maWxlcyA9IGZzOjpkaXJfbHMocGVvcGxlX2RpcikKCiMjIGxvYWQgaW4gYWxsIG9mIHRoZSBwZW9wbGUgY3N2cywgYWRkaW5nIGFuIGlkIGNvbHVtbiB3aXRoIHRoZSB5ZWFycyBhbmQgY3JlYXRpbmcgYSBjb2x1bW4gZm9yIGxlZ2lzbGF0dXJlCnBlb3BsZV9jc3YgPSBwZW9wbGVfZmlsZXMgJT4lCiAgICBtYXBfZGZyKHJlYWRfY3N2LCAuaWQgPSAic291cmNlIikgJT4lCiAgICBtdXRhdGUoeWVhciA9IHN1YnN0cihzb3VyY2UsIDE4NiwgMTk0KSwKICAgICAgICAgICBsZWdpc2xhdHVyZSA9IGNhc2Vfd2hlbih5ZWFyID09ICIyMDA5LTIwMTAiIH4gIjEyNCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTEtMjAxMiIgfiAiMTI1IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxMy0yMDE0IiB+ICIxMjYiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDE1LTIwMTYiIH4gIjEyNyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMTctMjAxOCIgfiAiMTI4IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAxOS0yMDIwIiB+ICIxMjkiLAogICAgICAgICAgICAgICAgICAgICAgICAgICB5ZWFyID09ICIyMDIxLTIwMjIiIH4gIjEzMCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHllYXIgPT0gIjIwMjMtMjAyNCIgfiAiMTMxIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgeWVhciA9PSAiMjAyNS0yMDI2IiB+ICIxMzIiLCkpICU+JQogICAgc2VsZWN0KC1zb3VyY2UpICU+JQogICAgbXV0YXRlKHBlb3BsZV9pZCA9IGFzLmNoYXJhY3RlcihwZW9wbGVfaWQpLAogICAgICAgcGFydHlfaWQgPSBhcy5jaGFyYWN0ZXIocGFydHlfaWQpLAogICAgICAgcm9sZV9pZCA9IGFzLmNoYXJhY3Rlcihyb2xlX2lkKSwKICAgICAgIGNvbW1pdHRlZV9pZCA9IGFzLmNoYXJhY3Rlcihjb21taXR0ZWVfaWQpLAogICAgICAga25vd3dob19waWQgPSBhcy5jaGFyYWN0ZXIoa25vd3dob19waWQpKSAlPiUgICAgICAgIyMgY29udmVydCBpZHMgdG8gY2hycwogICAgc2VsZWN0KC1mb2xsb3d0aGVtb25leV9laWQsIC12b3Rlc21hcnRfaWQsICAgICAgICAgICAgIyMgcmVtb3ZlIHVubmVjZXNzYXJ5IGNvbHVtbnMKICAgICAgICAgICAtb3BlbnNlY3JldHNfaWQsIC1rbm93d2hvX3BpZCwKICAgICAgICAgICAtYmFsbG90cGVkaWEsIC1jb21taXR0ZWVfaWQpCgpoZWFkKHBlb3BsZV9jc3YpCgpgYGAKCgojI1BhcnQgSUk6IERlc2NyaWJlIHRoZSBEYXRhCgpUaGlzIGRhdGEgaXMgb24gYmlsbHMgaW4gTWFpbmUgU3RhdGUgTGVnaXNsYXR1cmUuIERldGFpbHMgb2YgYWxsIGluZGl2aWR1YWwgYmlsbHMgaW50cm9kdWNlZCBhcmUgY29udGFpbmVkIGluIGBiaWxscy5jc3ZgIGZvciBlYWNoIGxlZ2lzbGF0dXJlLCBhbmQgdGhlIGFjdGlvbnMgdGFrZW4gb24gZWFjaCBiaWxsIGFyZSBpbiBgaGlzdG9yeS5jc3ZgIGZvciBlYWNoIGxlZ2lzbGF0dXJlLiBGdXJ0aGVyLCB0aGUgbWVtYmVycyBvZiBlYWNoIHN0YXRlIGxlZ2lzbGF0dXJlIGFyZSBpbiBgcGVvcGxlLmNzdmAuIAoKRm9yIGFsbCB0aHJlZSBvZiB0aGVzZSBjc3ZzLCBJJ3ZlIGNvbXBpbGVkIGxvbmcgdmVyc2lvbnMgb2YgZWFjaCBvbmUgYWNyb3NzIGFsbCBsZWdpc2xhdHVyZXMuIEkndmUgYWxzbyBjb252ZXJ0ZWQgYSBudW1iZXIgb2YgdGhlc2UgY29sdW1ucyB3aGljaCBoYXZlIElEIG51bWJlcnMgZnJvbSBudW1lcmljYWwgKHdoaWNoIHRoZXkgd2VyZSByZWFkIGluIGFzKSB0byBjYXRlZ29yaWNhbCB2YXJpYWJsZXMuIAoKIyMjIGJpbGxzX2NzdgoqIGBiaWxsX2lkYCAtIExlZ2lTY2FuIGJpbGwgaWRlbnRpZmllcgogICAgKiBjYXRlZ29yaWNhbCBkYXRhLCByYW5nZXMgZnJvbSAxOTEzODQgdG8gMjAyMjI4MwoqIGBzZXNzaW9uX2lkYCAtIExlZ2lTY2FuIHNlc3Npb24gaWRlbnRpZmllcgogICAgKiBjYXRlZ29yaWNhbCBkYXRhLCByYW5nZXMgZnJvbSA0OCB0byAyMTgxCiogYGJpbGxfbnVtYmVyYCAtIEJpbGwgbnVtYmVyCiAgICAqIGNhdGVnb3JpY2FsIGRhdGEsIGNvbnRhaW5zIExEIChsZWdpc2xhdGl2ZSBkb2N1bWVudCksIEhQICgpLCBTUCAoc2VuYXRlIGRvY3VtZW50KQoqIGBzdGF0dXNgIC0gU3RhdHVzIHZhbHVlIGZvciBiaWxsCiAgICAqIGNhdGVnb3JpY2FsLCB2YWx1ZXMgZnJvbSAwLTYKKiBgc3RhdHVzX2Rlc2NgIC0gRGVzY3JpcHRpb24gb2YgYmlsbCBzdGF0dXMgdmFsdWUKICAgICogY2F0ZWdvcmljYWwsIHdyaXR0ZW4gY29tcGxlbWVudCB0byBgc3RhdHVzYDogKDAgLSBOQSwgMSAtIEludHJvZHVjZWQsIDIgLSBFbmdyb3NzZWQsIDMgLSBFbnJvbGxlZCwgNCAtIFBhc3NlZCwgNSAtIFZldG9lZCwgNiAtIEZhaWxlZCkKKiBgc3RhdHVzX2RhdGVgIC0gRGF0ZSBvZiBzdGF0dXMgY2hhbmdlCiAgICAqIG51bWVyaWMsIGRhdGVzIHJhbmdpbmcgZnJvbSBKYW51YXJ5IDEzLCAyMDA5IHRvIEFwcmlsIDExLCAyMDI1LCB3aGVuIHRoaXMgZGF0YSB3YXMgbW9zdCByZWNlbnRseSBwdWxsZWQgZnJvbSB0aGUgZGF0YWJhc2UKKiBgdGl0bGVgIC0gU2hvcnQgdGl0bGUgb2YgYmlsbAogICAgKiBjYXRlZ29yaWNhbCwgaW5jcmVkaWJseSB3aWRlIHJhbmdlIG9mIHZhbHVlcwoqIGBkZXNjcmlwdGlvbmAgLSBMb25nIHRpdGxlIG9mIGJpbGwKICAgICogY2F0ZWdvcmljYWwsIGFsc28gd2lkZSByYW5nZSBvZiB2YWx1ZXMKKiBgY29tbWl0dGVlX2lkYCAtIExlZ2lTY2FuIGNvbW1pdHRlZSBpZGVudGlmaWVyCiAgICAqIGNhdGVnb3JpY2FsLCByYW5nZXMgZnJvbSAwIHRvIDQ5ODQKKiBgY29tbWl0dGVlYCAtIFBlbmRpbmcgY29tbWl0dGVlIG5hbWUKICAgICogY2F0ZWdvcmljYWwsIGFsc28gd2lkZSByYW5nZSBvZiB2YWx1ZXMKKiBgbGFzdF9hY3Rpb25fZGF0ZWAgLSBEYXRlIG9mIGxhc3QgYWN0aW9uCiAgICAqIG51bWVyaWMsIGRhdGVzIHJhbmdpbmcgZnJvbSBKYW51YXJ5IDEzLCAyMDA5IHRvIEFwcmlsIDExLCAyMDI1LCB3aGVuIHRoaXMgZGF0YSB3YXMgbW9zdCByZWNlbnRseSBwdWxsZWQgZnJvbSB0aGUgZGF0YWJhc2UKKiBgbGFzdF9hY3Rpb25gIC0gRGVzY3JpcHRpb24gb2YgbGFzdCBhY3Rpb24KICAgICogY2F0ZWdvcmljYWwsIGFsc28gd2lkZSByYW5nZSBvZiB2YWx1ZXMKKiBgdXJsYCAtIExlZ2lTY2FuIFVSTCBmb3IgYmlsbCBkZXRhaWwKICAgICogY2F0ZWdvcmljYWwsIGFsc28gd2lkZSByYW5nZSBvZiB2YWx1ZXMKKiBgc3RhdGVfbGlua2AgLSBTdGF0ZSBVUkwgZm9yIGJpbGwgZGV0YWlsCiAgICAqIGNhdGVnb3JpY2FsLCBhbHNvIHdpZGUgcmFuZ2Ugb2YgdmFsdWVzCiogYHllYXJgIC0gWWVhciByYW5nZSBvZiB0aGUgbGVnaXNsYXR1cmUKICAgICogY2F0ZWdvcmljYWwsIGdlbmVyYXRlZCBieSBtZSwgcmFuZ2VzIGZyb20gMjAwOS0yMDEwIHRvIDIwMjUtMjAyNgoqIGBsZWdpc2xhdHVyZWAgLSBNYWluZSBTdGF0ZSBDb25ncmVzcwogICAgKiBjYXRlZ29yaWNhbCwgZ2VuZXJhdGVkIGJ5IG1lLCByYW5nZXMgZnJvbSAxMjQgdG8gMTMyCgojIyMgaGlzdG9yeV9jc3YKCiogYGJpbGxfaWRgIC0gTGVnaVNjYW4gYmlsbCBpZGVudGlmaWVyCiAgICAqIGNhdGVnb3JpY2FsIGRhdGEsIHJhbmdlcyBmcm9tIDE5MTM4NCB0byAyMDIyMjgzCiogYGRhdGVgIC0gRGF0ZSBvZiBoaXN0b3J5IHN0ZXAKICAgICogbnVtZXJpYywgZGF0ZXMgcmFuZ2luZyBmcm9tIEphbnVhcnkgMDcsIDIwMDkgdG8gQXByaWwgMTEsIDIwMjUsIHdoZW4gdGhpcyBkYXRhIHdhcyBtb3N0IHJlY2VudGx5IHB1bGxlZCBmcm9tIHRoZSBkYXRhYmFzZQoqIGBjaGFtYmVyYCAtIENoYW1iZXIgdGhlIGFjdGlvbiBvY2N1cnJlZCBpbgogICAgKiBjYXRlZ29yaWNhbCwgaW5jbHVkZXMgdmFsdWVzIE5BLCBKb2ludCwgSG91c2UsIGFuZCBTZW5hdGUKKiBgc2VxdWVuY2VgIC0gT3JkZXJlZCBzZXF1ZW5jZSBvZiBoaXN0b3J5IHN0ZXAKICAgICogY2F0ZWdvcmljYWwsIHJhbmdlcyBmcm9tIDEtOTkKKiBgYWN0aW9uYCAtIERlc2NyaXB0aW9uIG9mIGhpc3Rvcnkgc3RlcAogICAgKiBjYXRlZ29yaWNhbCwgd2lkZSByYW5nZSBvZiB2YWx1ZXMsIGluY2x1ZGluZyB2b3RlIGNvdW50cywgcmVmZXJyYWxzIHRvIGNvbW1pdHRlZXMsIGFuZCBjb21taXR0ZWUgYWN0aW9ucwoqIGB5ZWFyYCAtIFllYXIgcmFuZ2Ugb2YgdGhlIGxlZ2lzbGF0dXJlCiAgICAqIGNhdGVnb3JpY2FsLCBnZW5lcmF0ZWQgYnkgbWUsIHJhbmdlcyBmcm9tIDIwMDktMjAxMCB0byAyMDI1LTIwMjYKKiBgbGVnaXNsYXR1cmVgIC0gTWFpbmUgU3RhdGUgQ29uZ3Jlc3MKICAgICogY2F0ZWdvcmljYWwsIGdlbmVyYXRlZCBieSBtZSwgcmFuZ2VzIGZyb20gMTI0IHRvIDEzMgoKIyMjIHBlb3BsZV9jc3YKCmBgYHtyfQoKaGVhZChwZW9wbGVfY3N2KQoKYGBgCgoqIGBwZW9wbGVfaWRgIC0gTGVnaVNjYW4gcGVyc29uIGlkZW50aWZpZXIKICAgICogY2F0ZWdvcmljYWwsIHJhbmdlcyBmcm9tIDE5MTI4MyB0byAyMDIzNTIwCiogYG5hbWVgIC0gRnVsbCBuYW1lCiAgICAqIGNhdGVnb3JpY2FsLCB3aWRlIHJhbmdlIG9mIHZhbHVlcwoqIGBmaXJzdF9uYW1lYCAtIEZpcnN0IG5hbWUKICAgICogY2F0ZWdvcmljYWwsIHdpZGUgcmFuZ2Ugb2YgdmFsdWVzCiogYG1pZGRsZV9uYW1lYCAtIE1pZGRsZSBuYW1lCiAgICAqIGNhdGVnb3JpY2FsLCB3aWRlIHJhbmdlIG9mIHZhbHVlcwoqIGBsYXN0X25hbWVgIC0gTGFzdCBuYW1lCiAgICAqIGNhdGVnb3JpY2FsLCB3aWRlIHJhbmdlIG9mIHZhbHVlcwoqIGBzdWZmaXhgIC0gU3VmZml4CiAgICAqIGNhdGVnb3JpY2FsLCB3aWRlIHJhbmdlIG9mIHZhbHVlcywgbWFueSBOQXMKKiBgbmlja25hbWVgIC0gTmlja25hbWUKICAgICogY2F0ZWdvcmljYWwsIHdpZGUgcmFuZ2Ugb2YgdmFsdWVzLCBtYW55IE5BcwoqIGBwYXJ0eV9pZGAgLSBMZWdpU2NhbiBwb2xpdGljYWwgcGFydHkgaWRlbnRpZmllcgogICAgKiBjYXRlZ29yaWNhbCwgcmFuZ2VzIGZyb20gMC02CiogYHBhcnR5YCAtIFBvbGl0aWNhbCBwYXJ0eSBkZXNjcmlwdGlvbgogICAgKiBjYXRlZ29yaWNhbCwgMSBjb3JyZXNwb25kcyB0byBEIChEZW1vY3JhdGljKSwgMiBjb3JyZXNwb25kcyB0byBSIChSZXB1YmxpY2FuKSwgMyBjb3JyZXNwb25kcyB0byBJIChJbmRlcGVuZGVudCkuIDAgYXJlIE5BcywgNSBhcmUgTCAoTGliZXJ0YXJpYW4pLCA2IGFyZSBOIChOYXRpdmUsIG5vbi12b3RpbmcgbWVtYmVycykuIAoqIGByb2xlX2lkYCAtIExlZ2lTY2FuIGxlZ2lzbGF0aXZlIHJvbGUgaWRlbnRpZmllcgogICAgKiBjYXRlZ29yaWNhbCwgcmFuZ2VzIGZyb20gMS0yCiogYHJvbGVgIC0gTGVnaXNsYXRpdmUgcm9sZSBkZXNjcmlwdGlvbgogICAgKiBjYXRlZ29yaWNhbCwgMSBjb3JyZXNwb25kcyB3aXRoIFN0YXRlIFJlcHJlc2VudGF0aXZlLCAyIGNvcnJlc3BvbmRzIHdpdGggU3RhdGUgU2VuYXRvcgoqIGBkaXN0cmljdGAgLSBMZWdpc2xhdGl2ZSBkaXN0cmljdAogICAgKiBjYXRlZ29yaWNhbCwgcmFuZ2VzIGZyb20gSEQtMDAxIChob3VzZSBkaXN0cmljdCAxKSB0byBIRC0gKGhvdXNlIGRpc3RyaWN0IDIpIGFuZCBTRC0wMDEgdG8gU0QtMDM1IChzZW5hdGUgZGlzdHJpY3QgMzUpLiBBZGRpdGlvbmFsbHksIHNtYWxsIGdyb3VwIG9mIEhELVRSSUJFIGZvciB0cmliYWwgcmVwcmVzZW50YXRpdmVzLiAKKiBgeWVhcmAgLSBZZWFyIHJhbmdlIG9mIHRoZSBsZWdpc2xhdHVyZQogICAgKiBjYXRlZ29yaWNhbCwgZ2VuZXJhdGVkIGJ5IG1lLCByYW5nZXMgZnJvbSAyMDA5LTIwMTAgdG8gMjAyNS0yMDI2CiogYGxlZ2lzbGF0dXJlYCAtIE1haW5lIFN0YXRlIENvbmdyZXNzCiAgICAqIGNhdGVnb3JpY2FsLCBnZW5lcmF0ZWQgYnkgbWUsIHJhbmdlcyBmcm9tIDEyNCB0byAxMzIKCgojIyBQYXJ0IElJSTogUHJlc3NpbmcgSXNzdWVzCgoxLiBUaGlzIGRhdGEgaXMgaW5jb21wbGV0ZSwgYXMgdGhlIDIwMjUtMjAyNiBzZXNzaW9uIGlzIG5vdCBjb21wbGV0ZSB5ZXQsIHdoaWNoIG1lYW5zIGl0IGlzbid0IGNvbXBsZXRlIGFuZCBtYXliZSBzaG91bGRuJ3QgYmUgdXNlZCBhcyB0cmFpbmluZyBkYXRhLiBUaGlzIGNvdWxkIG1ha2UgZ29vZCB0ZXN0IGRhdGEsIGRlcGVuZGluZyBvbiB0aGUgcXVlc3Rpb25zIGJlaW5nIGFza2VkLiAKCjIuIFRoaXMgZGF0YSBjb250YWlucyBlYXN5IGpvaW4gdmFsdWVzIChgcGVvcGxlX2lkYCBhbmQgYGJpbGxfaWRgKSwgYnV0IHRoaXMgbWlnaHQgbWFrZSB0aGUgZGF0YSB0b28gbGFyZ2UgdG8gYmUgbWFuYWdlYWJsZS4g</div>
 
 
 

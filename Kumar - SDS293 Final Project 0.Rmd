@@ -1,9 +1,12 @@
 ---
 title: "Kumar - SDS293 Final Project 0"
-output: html_notebook
+output:
+  pdf_document: default
 ---
 
-load libraries
+## Part I: Loading and Cleaning the Data
+
+Load libraries
 ```{r message=F}
 
 library(tidyverse)
@@ -20,7 +23,7 @@ bills_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@
 ## list these csv files
 bills_files = fs::dir_ls(bills_dir)
 
-## load in all of the bills csvs, adding an id column with the name of the original csv and creating a column for legislature
+## load in all of the bills csvs, adding an id column with the years and creating a column for legislature
 bills_csv = bills_files %>%
     map_dfr(read_csv, .id = "source") %>%
     mutate(year = substr(source, 185, 193),
@@ -33,11 +36,176 @@ bills_csv = bills_files %>%
                            year == "2021-2022" ~ "130",
                            year == "2023-2024" ~ "131",
                            year == "2025-2026" ~ "132",)) %>%
-    select(-source) 
+    select(-source) %>%
+    mutate(bill_id = as.character(bill_id),
+           status = as.character(status),
+           committee_id = as.character(committee_id),
+           session_id = as.character(session_id))           ## convert ids to chrs
+
 
 head(bills_csv)
 
 ```
 
-load data on the characteristics of the maine state legislatures
+load data on the actions taken on each bill
+```{r message=F}
 
+## locate where all of the "history.csv"s are for all the different years
+history_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/history_csv"
+
+## list these csv files
+history_files = fs::dir_ls(history_dir)
+
+## load in all of the history csvs, adding an id column with the years and creating a column for legislature
+history_csv = history_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 187, 195),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(bill_id = as.character(bill_id),
+           sequence = as.character(sequence))             ## convert several ids to characters
+
+head(history_csv)
+
+
+```
+
+load data on the members of each legislature
+```{r message=F}
+
+## locate where all of the "people.csv"s are for all the different years
+people_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/people_csv"
+
+## list these csv files
+people_files = fs::dir_ls(people_dir)
+
+## load in all of the people csvs, adding an id column with the years and creating a column for legislature
+people_csv = people_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 186, 194),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(people_id = as.character(people_id),
+       party_id = as.character(party_id),
+       role_id = as.character(role_id),
+       committee_id = as.character(committee_id),
+       knowwho_pid = as.character(knowwho_pid)) %>%       ## convert ids to chrs
+    select(-followthemoney_eid, -votesmart_id,            ## remove unnecessary columns
+           -opensecrets_id, -knowwho_pid,
+           -ballotpedia, -committee_id)
+
+head(people_csv)
+
+```
+
+
+##Part II: Describe the Data
+
+This data is on bills in Maine State Legislature. Details of all individual bills introduced are contained in `bills.csv` for each legislature, and the actions taken on each bill are in `history.csv` for each legislature. Further, the members of each state legislature are in `people.csv`. 
+
+For all three of these csvs, I've compiled long versions of each one across all legislatures. I've also converted a number of these columns which have ID numbers from numerical (which they were read in as) to categorical variables. 
+
+### bills_csv
+* `bill_id` - LegiScan bill identifier
+    * categorical data, ranges from 191384 to 2022283
+* `session_id` - LegiScan session identifier
+    * categorical data, ranges from 48 to 2181
+* `bill_number` - Bill number
+    * categorical data, contains LD (legislative document), HP (), SP (senate document)
+* `status` - Status value for bill
+    * categorical, values from 0-6
+* `status_desc` - Description of bill status value
+    * categorical, written complement to `status`: (0 - NA, 1 - Introduced, 2 - Engrossed, 3 - Enrolled, 4 - Passed, 5 - Vetoed, 6 - Failed)
+* `status_date` - Date of status change
+    * numeric, dates ranging from January 13, 2009 to April 11, 2025, when this data was most recently pulled from the database
+* `title` - Short title of bill
+    * categorical, incredibly wide range of values
+* `description` - Long title of bill
+    * categorical, also wide range of values
+* `committee_id` - LegiScan committee identifier
+    * categorical, ranges from 0 to 4984
+* `committee` - Pending committee name
+    * categorical, also wide range of values
+* `last_action_date` - Date of last action
+    * numeric, dates ranging from January 13, 2009 to April 11, 2025, when this data was most recently pulled from the database
+* `last_action` - Description of last action
+    * categorical, also wide range of values
+* `url` - LegiScan URL for bill detail
+    * categorical, also wide range of values
+* `state_link` - State URL for bill detail
+    * categorical, also wide range of values
+* `year` - Year range of the legislature
+    * categorical, generated by me, ranges from 2009-2010 to 2025-2026
+* `legislature` - Maine State Congress
+    * categorical, generated by me, ranges from 124 to 132
+
+### history_csv
+
+* `bill_id` - LegiScan bill identifier
+    * categorical data, ranges from 191384 to 2022283
+* `date` - Date of history step
+    * numeric, dates ranging from January 07, 2009 to April 11, 2025, when this data was most recently pulled from the database
+* `chamber` - Chamber the action occurred in
+    * categorical, includes values NA, Joint, House, and Senate
+* `sequence` - Ordered sequence of history step
+    * categorical, ranges from 1-99
+* `action` - Description of history step
+    * categorical, wide range of values, including vote counts, referrals to committees, and committee actions
+* `year` - Year range of the legislature
+    * categorical, generated by me, ranges from 2009-2010 to 2025-2026
+* `legislature` - Maine State Congress
+    * categorical, generated by me, ranges from 124 to 132
+
+### people_csv
+
+* `people_id` - LegiScan person identifier
+    * categorical, ranges from 191283 to 2023520
+* `name` - Full name
+    * categorical, wide range of values
+* `first_name` - First name
+    * categorical, wide range of values
+* `middle_name` - Middle name
+    * categorical, wide range of values
+* `last_name` - Last name
+    * categorical, wide range of values
+* `suffix` - Suffix
+    * categorical, wide range of values, many NAs
+* `nickname` - Nickname
+    * categorical, wide range of values, many NAs
+* `party_id` - LegiScan political party identifier
+    * categorical, ranges from 0-6
+* `party` - Political party description
+    * categorical, 1 corresponds to D (Democratic), 2 corresponds to R (Republican), 3 corresponds to I (Independent). 0 are NAs, 5 are L (Libertarian), 6 are N (Native, non-voting members). 
+* `role_id` - LegiScan legislative role identifier
+    * categorical, ranges from 1-2
+* `role` - Legislative role description
+    * categorical, 1 corresponds with State Representative, 2 corresponds with State Senator
+* `district` - Legislative district
+    * categorical, ranges from HD-001 (house district 1) to HD- (house district 2) and SD-001 to SD-035 (senate district 35). Additionally, small group of HD-TRIBE for tribal representatives. 
+* `year` - Year range of the legislature
+    * categorical, generated by me, ranges from 2009-2010 to 2025-2026
+* `legislature` - Maine State Congress
+    * categorical, generated by me, ranges from 124 to 132
+
+
+## Part III: Pressing Issues
+
+1. This data is incomplete, as the 2025-2026 session is not complete yet, which means it isn't complete and maybe shouldn't be used as training data. This could make good test data, depending on the questions being asked. 
+
+2. This data contains easy join values (`people_id` and `bill_id`), but this might make the data too large to be manageable. 
