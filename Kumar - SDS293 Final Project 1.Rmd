@@ -1,0 +1,215 @@
+---
+title: "Kumar - SDS293 Final Project 1"
+output:
+  pdf_document: default
+---
+
+## Part I: Loading and Cleaning the Data
+
+Load libraries
+```{r message=F}
+
+library(tidyverse)
+library(fs)
+
+```
+
+load data on the members of each legislature
+```{r message=F}
+
+## locate where all of the "people.csv"s are for all the different years
+people_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/people_csv"
+
+## list these csv files
+people_files = fs::dir_ls(people_dir)
+
+## load in all of the people csvs, adding an id column with the years and creating a column for legislature
+people_csv = people_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 186, 194),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(people_id = as.character(people_id),
+       party_id = as.character(party_id),
+       role_id = as.character(role_id),
+       committee_id = as.character(committee_id),
+       knowwho_pid = as.character(knowwho_pid)) %>%       ## convert ids to chrs
+    select(-followthemoney_eid, -votesmart_id,            ## remove unnecessary columns
+           -opensecrets_id, -knowwho_pid,
+           -ballotpedia, -committee_id, -first_name, 
+           -middle_name, -last_name, -suffix, -nickname)
+
+## filter out the wrong years because of redistricting
+people_csv = people_csv %>%
+    filter(legislature < 131 & legislature > 125) %>%
+    mutate(legislature = as.character(legislature))
+
+head(people_csv)
+
+```
+
+load data on various bills in and out of the state legislatures
+```{r message=F}
+
+## locate where all of the "bills.csv"s are for all the different years
+bills_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/bills_csv"
+
+## list these csv files
+bills_files = fs::dir_ls(bills_dir)
+
+## load in all of the bills csvs, adding an id column with the years and creating a column for legislature
+bills_csv = bills_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 185, 193),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(bill_id = as.character(bill_id),
+           status = as.character(status),
+           committee_id = as.character(committee_id),
+           legislature = as.numeric(legislature),
+           session_id = as.character(session_id))           ## convert ids to chrs
+
+## remove data from before 2013 and after 2022 because of redistricting every 10 years
+bills_csv = bills_csv %>%
+    filter(legislature < 131 & legislature > 125) %>%
+    mutate(legislature = as.character(legislature))
+
+head(bills_csv)
+
+```
+
+determine who introduced each bill -- this data is in the sponsors.csv documents
+```{r message=F}
+
+sponsors_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/sponsors_csv"
+
+## list these csv files
+sponsors_files = fs::dir_ls(sponsors_dir)
+
+## load in all of the bills csvs, adding an id column with the years and creating a column for legislature
+sponsors_csv = sponsors_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 188, 196),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(bill_id = as.character(bill_id),
+           people_id = as.character(people_id),
+           legislature = as.numeric(legislature),
+           position = as.character(position))           ## convert ids to chrs
+
+## similarly filter out the wrong years because of redistricting
+sponsors_csv = sponsors_csv %>%
+    filter(legislature < 131 & legislature > 125) %>%
+    mutate(legislature = as.character(legislature))
+
+head(sponsors_csv)
+
+```
+
+sponsors_csv and bills_csv don't have the same dimensions because of missing data
+```{r message=F}
+
+# number of unique bills in sponsors_csv --> 9536
+sponsors_csv %>% summarise(count = n_distinct(bill_id))
+
+# number of unique bills in bills_csv --> 10240, as for some bills, sponsorship info is not available
+bills_csv %>% summarise(count = n_distinct(bill_id))
+
+# list of bills that are in bills_csv but not sponsors_csv, as for some bills, sponsorship info is not available
+z <- union(sponsors_csv$bill_id, bills_csv$bill_id)  
+z[! z %in% intersect(sponsors_csv$bill_id, bills_csv$bill_id)]
+
+```
+
+we can join these two dataframes now, but likely will have to filter down data to only those bills where sponsorship information is available, as i don't have time to manually find all of the sponsors
+```{r}
+
+## filter sponsors until we have the primary sponsor for each bill (aka who introduced it)
+sponsors_csv = sponsors_csv %>% 
+    filter(position == 1) 
+
+## join the people_id column (primary sponsor id) to bills_csv by bill_id
+bills_csv = bills_csv %>%
+    left_join(sponsors_csv[,c("people_id","bill_id")], by = join_by(bill_id))
+
+## bills now contains the people_id of its sponsor
+head(bills_csv)
+
+```
+
+We can now work backwards to create efficiency scores for each member of the legislature based on the number of bills they have introduced, number that have passed, number died, ratio of pass/fail, etc. 
+```{r}
+
+# filter out the people who are only in once
+dup_members = people_csv %>%
+    group_by(people_id) %>%
+    filter(n() > 1) %>%
+    ungroup()
+
+dup_members
+
+# filter down to those whose districts are in there twice
+changed_members = dup_members %>%
+    group_by(people_id) %>%
+    filter(n_distinct(district) > 1) %>%
+    ungroup()
+
+changed_members
+
+```
+
+
+load data on the actions taken on each bill --> currently not useful
+```{r echo=F}
+
+## locate where all of the "history.csv"s are for all the different years
+history_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/history_csv"
+
+## list these csv files
+history_files = fs::dir_ls(history_dir)
+
+## load in all of the history csvs, adding an id column with the years and creating a column for legislature
+history_csv = history_files %>%
+    map_dfr(read_csv, .id = "source") %>%
+    mutate(year = substr(source, 187, 195),
+           legislature = case_when(year == "2009-2010" ~ "124",
+                           year == "2011-2012" ~ "125",
+                           year == "2013-2014" ~ "126",
+                           year == "2015-2016" ~ "127",
+                           year == "2017-2018" ~ "128",
+                           year == "2019-2020" ~ "129",
+                           year == "2021-2022" ~ "130",
+                           year == "2023-2024" ~ "131",
+                           year == "2025-2026" ~ "132",)) %>%
+    select(-source) %>%
+    mutate(bill_id = as.character(bill_id),
+           sequence = as.character(sequence))             ## convert several ids to characters
+
+head(history_csv)
+
+```
+
