@@ -1,5 +1,5 @@
 ---
-title: "Kumar - SDS293 Final Project 1"
+title: "Kumar - SDS293 Final Project 2"
 output:
   pdf_document: default
 ---
@@ -9,12 +9,16 @@ output:
 Load libraries
 ```{r message=F}
 
+library(ggplot2)
 library(tidyverse)
+library(randomForest)
+library(stringr)
+library(tree)
 library(fs)
 
 ```
 
-load data on the members of each legislature
+Load data on each member of the legislature - `people_csv`
 ```{r message=F}
 
 ## locate where all of the "people.csv"s are for all the different years
@@ -23,7 +27,7 @@ people_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185
 ## list these csv files
 people_files = fs::dir_ls(people_dir)
 
-## load in all of the people csvs, adding an id column with the years and creating a column for legislature
+## load in all of the people.csvs, adding an id column with the years and creating a column for legislature
 people_csv = people_files %>%
     map_dfr(read_csv, .id = "source") %>%
     mutate(year = substr(source, 186, 194),
@@ -41,11 +45,12 @@ people_csv = people_files %>%
        party_id = as.character(party_id),
        role_id = as.character(role_id),
        committee_id = as.character(committee_id),
-       knowwho_pid = as.character(knowwho_pid)) %>%       ## convert ids to chrs
-    select(-followthemoney_eid, -votesmart_id,            ## remove unnecessary columns
+       knowwho_pid = as.character(knowwho_pid)) %>%     ## convert ids to chrs
+    select(-followthemoney_eid, -votesmart_id,          ## remove unnecessary columns
            -opensecrets_id, -knowwho_pid,
            -ballotpedia, -committee_id, -first_name, 
-           -middle_name, -last_name, -suffix, -nickname)
+           -middle_name, -last_name, -suffix, -nickname,
+           -role_id, -year, -party_id)                  ## remove redundant predictors
 
 ## filter out the wrong years because of redistricting
 people_csv = people_csv %>%
@@ -56,7 +61,7 @@ head(people_csv)
 
 ```
 
-load data on various bills in and out of the state legislatures
+Load data on all bills from each Congress - `bills.csv`
 ```{r message=F}
 
 ## locate where all of the "bills.csv"s are for all the different years
@@ -94,7 +99,7 @@ head(bills_csv)
 
 ```
 
-determine who introduced each bill -- this data is in the sponsors.csv documents
+Determine who introduced each bill - `sponsors.csv` 
 ```{r message=F}
 
 sponsors_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/sponsors_csv"
@@ -130,73 +135,7 @@ head(sponsors_csv)
 
 ```
 
-load data on the actions taken on each bill
-```{r echo=F}
-
-## locate where all of the "history.csv"s are for all the different years
-history_dir = "/Users/sirohikumar/Library/CloudStorage/GoogleDrive-sirohikumar185@gmail.com/My Drive/UNDERGRAD/2024-25 JUNIOR YEAR/2025 SDS 293 - MACHINE LEARNING/SDS293-FINAL-PROJECT/data/history_csv"
-
-## list these csv files
-history_files = fs::dir_ls(history_dir)
-
-## load in all of the history csvs, adding an id column with the years and creating a column for legislature
-history_csv = history_files %>%
-    map_dfr(read_csv, .id = "source") %>%
-    mutate(year = substr(source, 187, 195),
-           legislature = case_when(year == "2009-2010" ~ "124",
-                           year == "2011-2012" ~ "125",
-                           year == "2013-2014" ~ "126",
-                           year == "2015-2016" ~ "127",
-                           year == "2017-2018" ~ "128",
-                           year == "2019-2020" ~ "129",
-                           year == "2021-2022" ~ "130",
-                           year == "2023-2024" ~ "131",
-                           year == "2025-2026" ~ "132",)) %>%
-    select(-source) %>%
-    mutate(bill_id = as.character(bill_id),
-           sequence = as.character(sequence))             ## convert several ids to characters
-
-head(history_csv)
-
-```
-
-determine which chamber the bill comes from: 
-```{r}
-
-bill_chamber = history_csv %>%
-    group_by(bill_id) %>%
-    filter(sequence == 1) %>%       ## the first step for each bill
-    select(bill_id, action, chamber, date)
-
-head(bill_chamber)
-
-```
-
-attach chamber of origin for each bill to bills_csv
-```{r}
-
-bills_csv = left_join(bills_csv, bill_chamber, by = join_by(bill_id)) %>%
-    select(-status_date, -action, -date, -last_action_date)        ## these columns were to sanity check the left_join
-head(bills_csv)
-
-```
-
-sponsors_csv and bills_csv don't have the same dimensions because of missing data
-```{r message=F}
-
-# number of unique bills in sponsors_csv --> 9536
-sponsors_csv %>% summarise(count = n_distinct(bill_id))
-
-# number of unique bills in bills_csv --> 10240, as for some bills, sponsorship info is not available
-bills_csv %>% summarise(count = n_distinct(bill_id))
-
-# list of bills that are in bills_csv but not sponsors_csv, as for some bills, sponsorship info is not available
-z <- union(sponsors_csv$bill_id, bills_csv$bill_id)  
-z[! z %in% intersect(sponsors_csv$bill_id, bills_csv$bill_id)]
-
-```
-
-add primary sponsor to bills_csv: we can join these two dataframes now, but likely will have to filter down data to only those bills where sponsorship information is available, as i don't have time to manually find all of the sponsors. 
+Add the primary sponsor (person who introduced the bills) to `bills_csv`. We will have to filter out bills where sponsorship data is unavailable.  
 ```{r}
 
 ## filter sponsors until we have the primary sponsor for each bill (aka who introduced it)
@@ -207,7 +146,7 @@ sponsors_csv = sponsors_csv %>%
 bills_csv = bills_csv %>%
     left_join(sponsors_csv[,c("people_id","bill_id")], by = join_by(bill_id)) %>%
     
-    ## remove bills without primary sponsors and without status
+    ## remove bills without primary sponsors and without a current status
     filter(!is.na(people_id) & !is.na(status_desc))
 
 ## bills now contains the people_id of its sponsor
@@ -215,30 +154,10 @@ head(bills_csv)
 
 ```
 
-now we should separate bills_csv and people_csv both by chamber to more effectively fix a mistake in the data
-
-this might be unnecessary
+There is some inconsistency between members' roles and districts if they moved between chambers. Filter out rows where the district doesn't align with the chamber the member resides in. Dataframe goes from 953 --> 905 rows. 
 ```{r}
 
-## filter bills by senate and house bills
-sen_bills = bills_csv %>%
-    filter(chamber == "Senate")
-head(sen_bills)
-
-house_bills = bills_csv %>%
-    filter(chamber == "House")
-head(house_bills)
-
-```
-
-need to clean the data collected on members from both chambers, there are a few several issues: 
-
-* from the LegiScan data source: some members have the correct role (Rep/Sen), but if they moved chambers between elections, they have the incorrect district written. This happens in both directions (Mark Warner went from House --> Senate but has a Senate district for his House entries, while Nicole Grohoski went from House --> Senate but has Rep written for her correct Senate district), so I can't just change all roles to match district allocations. This is also the case in the `senate_members`, as some members who changed districts have the incorrect district or role written. 
-    * to address this, i'm filtering out any entries in both `senate_members` and `house_members` where `role` and `district` don't align. 
-    * this means i remove a total of 48 rows, going from 953 --> 905 rows. 
-
-```{r}
-
+## look at an example
 people_csv %>%
     filter(people_id == 8815)
 
@@ -253,54 +172,177 @@ senate_members = people_csv %>%
 ## combine house and senate members back into people_csv
 people_csv = rbind(senate_members, house_members)
 
+## look at the example again
 people_csv %>%
     filter(people_id == 8815)
-
-# head(bills_csv)
 
 ```
 
 ## Part 2: Calculating efficacy of members
 
-* group the bills_csv data by legislatures and people
-* create a count for each person/legislature of bills at each status
-* merge with the correct person/legislature in people_csv
-
+For each member during each legislature, determine the number of their bills at each status a bill can be at: Passed, Failed, Introduced, etc. These are exclusive labels - no bill is in two categories. 
 ```{r}
 
-## generate scores for each member during their legislature based on bill progress
+## isolate the number of bills at each status and then pivot wider
 scores = bills_csv %>%
     group_by(people_id, legislature, status_desc) %>%
     summarise(bill_count = n(), .groups = "drop") %>%
     pivot_wider(names_from = status_desc,
                 values_from = bill_count,
                 values_fill = list(bill_count = 0)) %>%
-    group_by(people_id, legislature) %>%
-    mutate(Total = sum(Failed, Passed, Engrossed, Enrolled, Introduced, Vetoed))%>%
+    group_by(people_id, legislature)%>%
     ungroup()
 
 ## right join because we filtered out some people earlier with mismatched districts/roles
 people_csv = scores %>%
   right_join(people_csv, by = c("people_id", "legislature"))
 
+## there are some people who didn't introduce any legislation during some terms, which have NAs for their status_desc columns (Passed, Failed, etc). Fill with zeros. 
+people_csv = people_csv %>%
+    mutate_at(vars(Failed, Passed, Engrossed, Enrolled, Introduced, Vetoed), 
+              ~replace_na(., 0))
+
 head(people_csv)
 
 ```
 
-## Part 3: Basic model
+Clean the data again, making sure all columns are the correct data type. 
+```{r}
 
-Predicting someone's efficacy (in the form of bills passed) as a function of their party using a least squares regression model: 
+## turn several into factors (party_id, district, role, etc)
+people_csv = people_csv %>%
+    mutate(district = as.factor(district),
+           party = as.factor(party),
+           role = as.factor(role),
+           legislature = as.factor(legislature),
+           Passed = as.numeric(Passed))
 
+## filter some people ran unenrolled, mark them independents
+people_csv = people_csv %>%
+    mutate_at(vars(party), ~replace_na(., "I"))
+
+## make districts into a numerical predictor by taking right 3 characters of district
+people_csv = people_csv %>%
+    filter(district != "HD-TRIBE") %>%
+    mutate(district = as.numeric(str_sub(district, start = -3)))
+
+head(people_csv)
+
+```
+
+## Part 3: Exploratory Analysis
+
+Examine the co-linearity between the numeric predictors
+```{r}
+
+num_preds = people_csv %>%
+    select(district, Passed, Failed, Engrossed, Enrolled, Vetoed, Introduced) %>%
+    as.data.frame()
+    
+# Compute the correlation matrix
+cor_matrix <- cor(num_preds)
+
+# Visualize the correlation matrix
+corrplot::corrplot(cor_matrix, method = "circle")
+
+```
+
+## Part 4: Random Forest
+
+Predicting someone's efficacy (in the form of bills passed) as a function of all possible predictors using random forest: 
 ```{r}
 
 set.seed(1)
 
-## training data is randomly half of the dataset
-train = sample(nrow(people_csv), nrow(people_csv) / 2)
+## split for test/training data
+train = people_csv %>%
+    group_by(people_id) %>%
+    summarize(people_id = unique(people_id))
 
-lm(Passed ~ party_id, data = people_csv,
-   subset = train)
+## training data is 80% of total data
+train = train %>% sample_frac(0.8) 
+train = dplyr::right_join(people_csv, train, by = 'people_id')
+test = dplyr::anti_join(people_csv, train, by = 'people_id')
+
+head(train)
 
 ```
 
+Random forest is done using `randomForest()`, where `mtry` is the number of variables considered at each split. We will also optimize m, and find that OOB error is lowest at `m = 2`. 
+```{r}
 
+rf.maine = randomForest(Passed ~ ., data = train, mtry = 3,
+                         importance = T)
+
+oob.values = vector(length = 10)
+
+for (i in 1:10) {
+    temp.model = randomForest(Passed ~ ., data = train,
+                              mtry = i, ntree = 500)
+    oob.values[i] = temp.model$mse[length(temp.model$mse)]
+}
+
+oob.values
+
+```
+
+Recreate the model where `m = 2`: 
+```{r}
+
+rf.maine = randomForest(Passed ~ ., data = train, mtry = 2,
+                         importance = T)
+
+rf.maine
+
+```
+
+Visualize the error as a function of the number of trees. As increasing the number of trees doesn't lead to over-fitting, We can use this default high number of trees (500).
+```{r}
+
+plot(rf.maine)
+
+```
+
+We can visualize the accuracy of the model on the training data: 
+```{r}
+
+plot(predict(rf.maine), train$Passed, 
+     xlab = "Predicted", ylab = "Actual")
+abline(0, 1)
+
+```
+
+Calculate test MSE using optimized model
+```{r}
+
+maine.test = test[, "Passed"]
+yhat.rf = as.data.frame(predict(rf.maine, newdata = test))
+
+cbind(maine.test, yhat.rf) %>%
+    mutate(diff = Passed - `predict(rf.maine, newdata = test)`,
+           squared = diff^2) %>%
+    summarize(testMSE = mean(squared))
+
+```
+
+We can use `importance()` to view the influence of each node on two parameters: 
+```{r}
+
+importance(rf.maine)
+
+```
+
+We can visualize these importance measures using `varImpPlot()`
+```{r}
+
+varImpPlot(rf.maine)
+
+```
+
+Visualize the effects of the most influential variables on `%IncMSE` and `IncNodePurity`: 
+```{r}
+
+partialPlot(rf.maine, train %>% as.data.frame(), "role")
+partialPlot(rf.maine, train %>% as.data.frame(), "Introduced")
+
+```
